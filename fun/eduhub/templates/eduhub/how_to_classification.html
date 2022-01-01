@@ -1,0 +1,82 @@
+
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% comment %}
+    simpleness is the best
+    make perfection more perfect
+{% endcomment %}
+
+{% comment %}
+    My English is very poor, I'm trying to improve it.
+{% endcomment %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% block title %} {% trans 'How to classification' %} {% endblock title %}
+
+{% block optionalcss %}
+    <style>
+        .eduhub-classification-tip
+        {
+            cursor: pointer;
+            font-size: x-large; 
+            font-weight: bolder; 
+            margin: 10px;
+        }
+    </style>
+{% endblock optionalcss %}
+
+{% block content %} 
+
+    <div class="text-center " 
+        style="font-size: xx-large; font-weight: bolder;">
+        {% trans 'How to classify the eduhub content' %}
+    </div>
+    {% include 'eduhub/_classification_nav.html' %}
+    <hr/>
+    <div class="col col-12 how-to-classification" ></div>
+
+    {% with edu_clsifi=request.COOKIES.edu_clsifi %}
+        {% if edu_clsifi == 'subject' or edu_clsifi == '' %}
+            {% include 'eduhub/_classification_subject.html' %}
+        {% elif edu_clsifi == 'develop' %}
+            {% include 'eduhub/_classification_develop.html' %}
+        {% elif edu_clsifi == 'food' %}
+            {% include 'eduhub/_classification_food.html' %}
+        {% elif edu_clsifi == 'live' %}
+            {% include 'eduhub/_classification_live.html' %}
+        {% endif %}
+    {% endwith %}
+
+{% endblock content%}
+
+{% block eduhub_optionaljs %}
+    <script src="{% static 'node_modules/clipboard/dist/clipboard.min.js' %}">
+    </script>
+    <script>
+        var eduhub_classification_clipboard = 
+            new ClipboardJS('.eduhub-classification-tip');
+
+        eduhub_classification_clipboard.on('success', function(e) {
+            makeGlobalAlert( "{% trans 'classification copied' %}" );
+        });
+
+        $(`[data-nav_to=${Cookies.get('edu_clsifi','subject')}]`)
+            .addClass('disabled')
+
+        $( document ).on('click' , '.classification-nav' , 
+            (event)=>{
+                Cookies.set(
+                    'edu_clsifi', 
+                    $(event.currentTarget).data('nav_to') );
+                location.reload();
+        });
+        
+    </script>
+{% endblock eduhub_optionaljs %}
+

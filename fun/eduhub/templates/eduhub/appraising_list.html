@@ -1,0 +1,85 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Home{% endblock title %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+
+{% block content %} 
+
+
+    <h2 class="text-center">{% trans 'Eduhub contents' %}</h2>
+    {% if label %}
+        <h5>{{ label.name }}</h5>
+    {% endif %}
+    <hr/>
+    {% if label.author == request.user %}
+        <div class="col col-12 text-right" >
+            <a href="{% url 'eduhub:funcontent_create' label_id=label.id %}" 
+                class="btn btn-sm btn-outline-info ">{% trans 'Add' %}</a>
+        </div>
+    {% endif %}
+    <div class="row">
+            {% for funcontent in funcontents %} 
+
+                <div class=
+                    "col col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 mt-2">
+                    <div class="card eduhub-content-card click-to-url" 
+                        style="max-width: 100%;" 
+                        data-url=
+                    "{% url 'eduhub:funcontent_detail' pk=funcontent.id %}">
+
+                        <div class="card-body">
+                            <p class="card-title small">
+                                {{ funcontent.title }}
+                            </p>
+
+                            <p class="card-text small d-none d-md-block">
+                                {{ funcontent.comment }}
+                            </p>
+
+                            <p class="text-right border-right" 
+                                style="font-size: x-small;">
+                                {{ funcontent.uploading_date }}
+                            </p>
+
+                            <a href=
+                        "{% url 'eduhub:funcontent_detail' pk=funcontent.id %}" 
+                                class="card-link small">
+                                {% trans 'View' %}
+                            </a>
+
+                            {% if funcontent.label.author == request.user %}    
+                                <a href=
+                    "{% url 'eduhub:funcontent_update'  pk=funcontent.id %}" 
+                                    class="card-link small">
+                                    {% trans 'Edit' %}
+                                </a>
+
+                                <a href=
+                    "{% url 'eduhub:funcontent_delete' pk=funcontent.id %}" 
+                                    class="card-link small">
+                                    {% trans 'Delete' %}
+                                </a>
+
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+    
+    </div>
+
+    {% include 'funhome/_common_pagination.html' %}
+
+    {% include 'funhome/_ckeditor.html' %}
+
+{% endblock %}

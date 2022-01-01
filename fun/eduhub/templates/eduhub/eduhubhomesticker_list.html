@@ -1,0 +1,113 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Eduhub home' %}
+{% endblock title %}
+
+{% block content %} 
+
+    <div class="container">
+        <div class="col offset-1 col-10">
+            <div class="homeCarousel">
+                <div id="eduhubHomeCarouselCaptions" class="carousel slide" 
+                    data-ride="carousel">
+                    <ol class="carousel-indicators">
+        
+                {% for eduhubhomesticker in eduhubhomestickers|slice:':3' %} 
+                        <li data-target="#eduhubHomeCarouselCaptions" 
+                            data-slide-to="0" 
+                            class="{% if forloop.first %} active {% endif %}">
+                        </li>
+                {% endfor %} 
+        
+                    </ol>
+                    <div class="carousel-inner home-carousel-inner"> 
+        
+                {% for eduhubhomesticker in eduhubhomestickers|slice:':3' %}
+
+    {% url 'eduhub:eduhubhomesticker_detail' eduhubhomesticker.id as e_h_url %}
+                
+                        <div class=
+                    "carousel-item {% if forloop.first %} active {% endif %}">
+                            
+                            <img src=
+            "{% url 'funfile:get_file' file_id=eduhubhomesticker.cover.name %}" 
+                                class="d-block w-100 carousel-item-img" 
+                                alt=""/>
+
+                            <div class=
+                "carousel-caption homesticker-carousel-caption click-to-url" 
+                                data-url=
+"{% if eduhubhomestickers|length_is:'0' %}#{% else %}{{ e_h_url }}{% endif %}" 
+                                title="{% trans 'View' %}">
+                                
+                                <h5>{{ eduhubhomesticker.title }}</h5>
+                                <p>{{ eduhubhomesticker.subtitle }}</p> 
+                            </div>
+                        </div>
+                {% endfor %}
+                                
+                    </div>
+                    {% if not eduhubhomestickers|length_is:"0" %}
+                        <a class="carousel-control-prev" 
+                            href="#eduhubHomeCarouselCaptions" role="button" 
+                            data-slide="prev">
+                            
+                            <span class="carousel-control-prev-icon" 
+                                aria-hidden="true"></span>
+                            
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control-next" 
+                            href="#eduhubHomeCarouselCaptions" role="button" 
+                            data-slide="next">
+                            
+                            <span class="carousel-control-next-icon" 
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col col-12">
+
+            <div class="row mt-2">
+                {% for eduhubhomesticker in eduhubhomestickers|slice:'3:' %}
+                    <div class="col col-auto mt-2">                
+                        <div class="card homesticker-card" 
+                            style="width: 18rem;">
+                            
+                            <img src=
+            "{% url 'funfile:get_file' file_id=eduhubhomesticker.cover.name %}" 
+                            class="card-img-top" alt="{% trans 'cover' %}">
+                            
+                            <div class="card-body">
+                                <p class="card-text">
+                                    {% autoescape off %}
+                                        {{ eduhubhomesticker.description }}
+                                    {% endautoescape %}
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                {% endfor %} 
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}

@@ -1,0 +1,91 @@
+
+{% load i18n %}
+{% load l10n %}
+{% load funhome_tags %}
+
+
+<div class="btn-group dropup">
+    <button type="button" class="btn  dropdown-toggle " id="themeDropdown" 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% trans 'Theme' %}:{% get_current_theme_name %}
+    </button>
+    <div class="dropdown-menu  theme-dropdown-menu"  
+        aria-labelledby='themeDropdown'>
+        <span class="dropdown-item-text btn-sm" >
+            {% trans 'Select theme' %}
+        </span>
+        <div class="dropdown-divider small"></div> 
+        
+        <a class="dropdown-item btn-link btn-sm" data-theme="cerulean" >
+            {% trans 'cerulean' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="cyborg" >
+            {% trans 'cyborg' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="flatly" >
+            {% trans 'flatly' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="litera" >
+            {% trans 'litera' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="lux" >
+            {% trans 'lux' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="minty" >
+            {% trans 'minty' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="sandstone" >
+            {% trans 'sandstone' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="sketchy" >
+            {% trans 'sketchy' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="solar" >
+            {% trans 'solar' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="superhero" >
+            {% trans 'superhero' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="yeti" >
+            {% trans 'yeti' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="cosmo" >
+            {% trans 'cosmo' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="darkly" >
+            {% trans 'darkly' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="journal" >
+            {% trans 'journal' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="lumen" >
+            {% trans 'lumen' %}</a>
+            
+        <a class="dropdown-item btn-link btn-sm" data-theme="pulse" >
+            {% trans 'pulse' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="simplex" >
+            {% trans 'simplex' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="slate" >
+            {% trans 'slate' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="spacelab" >
+            {% trans 'spacelab' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="united" >
+            {% trans 'united' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="materia" >
+            {% trans 'materia' %}</a>
+
+        <a class="dropdown-item btn-link btn-sm" data-theme="default" >
+            {% trans 'default' %}</a>
+            
+        {% comment %}
+            <div class="dropdown-divider small"></div>
+            <a class="dropdown-item btn-link btn-sm" data-theme="auto">
+                {% trans 'auto' %}</a>
+        {% endcomment %}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+
+django
+django-crispy-forms
+django-imagekit
+pillow
+django-ckeditor
+django-allauth
+bleach
+humanize
+python-magic
+crispy-bootstrap5
+pytz

@@ -1,0 +1,57 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block head_title %}
+  {% trans "Sign In" %}
+{% endblock %} 
+
+{% block optionalcss %}
+  <link rel="stylesheet" href="{% static 'account/account.css' %}"/>
+{% endblock optionalcss %}
+
+{% block content %}
+  <div class="row justify-content-center text-center mt-5 "  >
+    <div class="col col-10 col-md-6 col-lg-4 col-xl-4 login-border">
+
+      <h1>{% trans "Sign In" %}</h1>
+
+      <p>
+        
+        {% trans 'If you have not created an account yet, then please' %}
+        <a href="{{ signup_url }}"> {% trans 'sign up' %}</a> 
+      </p>
+
+      <form class="login" method="POST" id="login_form" 
+        action="{% url 'account_login' %}">
+        
+        {% csrf_token %}
+        
+        {{ form|crispy }}
+
+        {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" 
+          value="{{ redirect_field_value }}" />
+        {% endif %}
+                
+        <button class="primaryAction btn btn-outline-info w-75 mb-2" 
+          type="submit">{% trans "Sign In" %}
+        </button>
+
+        <br/>
+        
+        <a class="button secondaryAction " 
+          href="{% url 'account_reset_password' %}">
+          {% trans "Forgot Password?" %}
+        </a> 
+        
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

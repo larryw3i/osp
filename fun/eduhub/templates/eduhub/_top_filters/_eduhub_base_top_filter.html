@@ -1,0 +1,279 @@
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+
+<div class="collapse" id="top_filter_collapse">
+    <div class="card card-body">
+        <h5 class="first_fliter preschool" 
+            data-label="Preschool">{% trans 'Preschool' %}</h5>
+        <hr/>
+        <p>
+            <button type="button" 
+                data-label="Math"
+                data-first_filter="preschool" 
+                class="btn btn-link second_filter">
+                {% trans 'Math' %}
+            </button>
+            <button type="button"  data-first_filter="preschool" 
+                data-label="Yuwen"
+                class="btn btn-link second_filter">
+                {% trans 'Yuwen' %}
+            </button>
+            <button type="button"  data-first_filter="preschool" 
+                data-label="Yingyu"
+                class="btn btn-link second_filter">
+                {% trans 'Yingyu' %}
+            </button>
+            <button type="button"  data-first_filter="preschool" 
+                data-label="Science"
+                class="btn btn-link second_filter">
+                {% trans 'Science' %}
+            </button>
+    
+        </p>
+
+        <h5 class="first_fliter primary_school"
+            data-label="Primary school">
+            {% trans 'Primary school' %}</h5>
+        <hr/>
+
+        <p>
+            <button type="button"  data-first_filter="primary_school" 
+                data-label="Math"
+                class="btn btn-link second_filter">
+                {% trans 'Math' %}
+            </button>
+            <button type="button"   data-first_filter="primary_school"
+                data-label="Yuwen"
+                class="btn btn-link second_filter">
+                {% trans 'Yuwen' %}
+            </button>
+            <button type="button"   data-first_filter="primary_school"
+                data-label="Yingyu"
+                class="btn btn-link second_filter">
+                {% trans 'Yingyu' %}
+            </button>
+            <button type="button"   data-first_filter="primary_school"
+                data-label="Science"
+                class="btn btn-link second_filter">
+                {% trans 'Science' %}
+            </button>
+            <button type="button" 
+                data-first_filter="primary_school"
+                data-label="Morality and Society"
+                class="btn btn-link second_filter">
+                {% trans 'Morality and Society' %}
+            </button>
+            <button type="button" 
+                data-first_filter="primary_school"
+                data-label="Information Technology"
+                class="btn btn-link second_filter">
+                {% trans 'Information Technology' %}
+            </button>
+            <button type="button" 
+                data-label="Art"
+                data-first_filter="primary_school"
+                class="btn btn-link second_filter">
+                {% trans 'Art' %}
+            </button>
+    
+        </p>
+
+        <h5 class="first_fliter junior_high_school"
+            data-label="Junior high school">
+            {% trans 'Junior high school' %}</h5>
+        <hr/>
+        <p>
+            <button type="button"   data-first_filter="junior_high_school" 
+                data-label="Math"
+                class="btn btn-link second_filter">
+                {% trans 'Math' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Yuwen"
+                class="btn btn-link second_filter">
+                {% trans 'Yuwen' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Yingyu"
+                class="btn btn-link second_filter">
+                {% trans 'Yingyu' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Geography"
+                class="btn btn-link second_filter">
+                {% trans 'Geography' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Physics"
+                class="btn btn-link second_filter">
+                {% trans 'Physics' %}
+            </button>
+            <button type="button"   
+                data-label="Biology"
+                data-first_filter="junior_high_school"
+                class="btn btn-link second_filter">
+                {% trans 'Biology' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Politics"
+                class="btn btn-link second_filter">
+                {% trans 'Politics' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Information Technology"
+                class="btn btn-link second_filter">
+                {% trans 'Information Technology' %}
+            </button>
+            <button type="button"   data-first_filter="junior_high_school"
+                data-label="Art"
+                class="btn btn-link second_filter">
+                {% trans 'Art' %}
+            </button>
+    
+        </p>
+
+        <h5 class="first_fliter senior_high_school" 
+            data-label="Senior high school">
+            {% trans 'Senior high school' %}
+        </h5>
+        <hr/>
+        <p>
+            <button type="button"   data-first_filter="senior_high_school"
+                data-label="Math"
+                class="btn btn-link second_filter">
+                {% trans 'Math' %}
+            </button>
+            <button type="button" data-first_filter="senior_high_school"
+                data-label="Yuwen"
+                class="btn btn-link second_filter">
+                {% trans 'Yuwen' %}
+            </button>
+            <button type="button"  data-first_filter="senior_high_school"
+                data-label="Yingyu"
+                class="btn btn-link second_filter">
+                {% trans 'Yingyu' %}
+            </button>
+            <button type="button"  data-first_filter="senior_high_school"
+                data-label="Geography"
+                class="btn btn-link second_filter">
+                {% trans 'Geography' %}
+            </button>
+            <button type="button" data-first_filter="senior_high_school" 
+                data-label="Physics"
+                class="btn btn-link second_filter">
+                {% trans 'Physics' %}
+            </button>
+            <button type="button"  data-first_filter="senior_high_school"
+                data-label="Biology"
+                class="btn btn-link second_filter">
+                {% trans 'Biology' %}
+            </button>
+            <button type="button"  data-first_filter="senior_high_school"
+                data-label="Politics"
+                class="btn btn-link second_filter">
+                {% trans 'Politics' %}
+            </button>
+            <button type="button" data-first_filter="senior_high_school"
+                data-label="Information Technology"
+                class="btn btn-link second_filter">
+                {% trans 'Information Technology' %}
+            </button>
+            <button type="button" data-first_filter="senior_high_school"
+                data-label="Art"
+                class="btn btn-link second_filter">
+                {% trans 'Art' %}
+            </button>
+    
+        </p>
+
+        <h5 class="first_fliter collage" data-label="Collage">
+            {% trans 'Collage' %}</h5>
+        <hr/>
+        <p>
+            <button type="button"  data-first_filter="collage"
+                data-label="Philosophy"
+                class="btn btn-link second_filter">
+                {% trans 'Philosophy' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Economics"
+                class="btn btn-link second_filter">
+                {% trans 'Economics' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Law"
+                class="btn btn-link second_filter">
+                {% trans 'Law' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Pedagogy"
+                class="btn btn-link second_filter">
+                {% trans 'Pedagogy' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Jurisprudence"
+                class="btn btn-link second_filter">
+                {% trans 'Jurisprudence' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Literature"
+                class="btn btn-link second_filter">
+                {% trans 'Literature' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="History"
+                class="btn btn-link second_filter">
+                {% trans 'History' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Sciences"
+                class="btn btn-link second_filter">
+                {% trans 'Sciences' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Engineering"
+                class="btn btn-link second_filter">
+                {% trans 'Engineering' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Agriculture"
+                class="btn btn-link second_filter">
+                {% trans 'Agriculture' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Medicine"
+                class="btn btn-link second_filter">
+                {% trans 'Medicine' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Military"
+                class="btn btn-link second_filter">
+                {% trans 'Military' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Management"
+                class="btn btn-link second_filter">
+                {% trans 'Management' %}
+            </button>
+            <button type="button"  data-first_filter="collage"
+                data-label="Art"
+                class="btn btn-link second_filter">
+                {% trans 'Art' %}
+            </button>
+            
+        </p>
+        
+        <h5 style="cursor: pointer;" class="text-primary first_fliter_all">
+            {% trans 'All' %}
+        </h5>    
+
+    </div>
+</div>

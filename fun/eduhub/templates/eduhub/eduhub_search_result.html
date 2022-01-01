@@ -1,0 +1,173 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Eduhub search' %}
+{% endblock title %}
+
+{% block content %} 
+
+    <div class="container">
+
+        {% if labels %}
+            <a  class="eduhub_search_filter labels" href="#">
+                {% trans 'Eduhub labels' %}
+            </a>
+            <div class="row">
+                {% for label in labels %}
+                    <div class="col col-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+                        <div class="card homesticker-card click-to-url" 
+                            data-url=
+                        "{% url 'eduhub:funcontent_list' label_id=label.id %}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ label.name }}</h5>
+                                <p class="card-text"> 
+                                    <span class="small  " >
+                                        {{ label.comment }}
+                                    </span>
+                                    <span class="
+                                        border-right small float-right">
+                                        {{ label.author }} 
+                                        {{ label.creating_date }}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <hr/>
+        {% endif %}
+
+        {% if  funcontents %}
+            <a class="eduhub_search_filter funcontents" href="#">
+                {% trans 'Eduhub contents' %}
+            </a>
+
+            <div class="row">
+                {% for funcontent in funcontents %}
+                    <div class="col col-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+                        <div class="card homesticker-card click-to-url" 
+                            data-url=
+                    "{% url 'eduhub:funcontent_detail' pk=funcontent.id %}">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    {{ funcontent.title }}
+                                </h5>
+
+                                <p class="card-text"> 
+                                    <span class="small  " >
+                                        {{ funcontent.classification }}
+                                    </span>
+                                    
+                                    <span 
+                                        class="border-right small float-right">
+                                        {{ funcontent.label.author }} 
+                                        {{ funcontent.uploading_date }}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+    </div>
+
+{% with f_np=funcontents.paginator.num_pages l_np=labels.paginator.num_pages %}
+
+    {% if request.GET.filter == 'funcontents' or f_np > l_np %}
+        <div class="pagination justify-content-center  align-items-center mt-5" 
+            style="font-size: large;">
+            <span class="step-links">
+                {% if funcontent.has_previous %}
+
+                    {% ifnotequal funcontent.number|add:'-1' 1 %}
+                        <a href="?page=1" class="btn btn-primary btn-sm">
+                            &laquo; {% trans 'first page' %}
+                        </a>
+                    {% endifnotequal %} 
+
+                    <a href="?page={{ funcontent.previous_page_number }}"  
+                        class="btn btn-primary btn-sm">
+                        {% trans 'previous page' %}
+                    </a>
+
+                {% endif %}
+
+                <span class="current">
+                    {{ funcontents.number }}/
+                    {{ funcontents.paginator.num_pages }} {% trans 'Page' %} 
+                </span>
+
+                {% if funcontent.has_next %}
+                    <a href="?page={{ funcontent.next_page_number }}"  
+                        class="btn btn-primary btn-sm">
+                        {% trans 'next page' %}
+                    </a>
+    {% ifnotequal funcontent.number|add:'1' funcontent.paginator.num_pages %}
+                        <a href="?page={{ funcontent.paginator.num_pages }}"  
+                            class="btn btn-primary btn-sm">
+                            {% trans 'last page' %} &raquo;
+                        </a>
+    {% endifnotequal %}
+
+                {% endif %}
+
+            </span>
+        </div>
+    {% else %}
+        <div class="pagination justify-content-center  align-items-center mt-5" 
+            style="font-size: large;">
+            <span class="step-links">
+                {% if label.has_previous %}
+
+                    {% ifnotequal label.number|add:'-1' 1 %}
+                        <a href="?page=1" class="btn btn-primary btn-sm">
+                            &laquo; {% trans 'first page' %}
+                        </a>
+                    {% endifnotequal %} 
+
+                    <a href="?page={{ label.previous_page_number }}"  
+                        class="btn btn-primary btn-sm">
+                        {% trans 'previous page' %}
+                    </a>
+
+                {% endif %}
+
+                <span class="current">
+                    {{ labels.number }}/{{ labels.paginator.num_pages }} 
+                    {% trans 'Page' %} 
+                </span>
+
+                {% if label.has_next %}
+                    <a href="?page={{ label.next_page_number }}"  
+                        class="btn btn-primary btn-sm">
+                        {% trans 'next page' %}
+                    </a>
+
+                {% ifnotequal label.number|add:'1' label.paginator.num_pages %}
+                        <a href="?page={{ label.paginator.num_pages }}" 
+                            class="btn btn-primary btn-sm">
+                            {% trans 'last page' %} &raquo;
+                        </a>
+                {% endifnotequal %}
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
+
+{% endwith %}
+
+
+{% endblock %}

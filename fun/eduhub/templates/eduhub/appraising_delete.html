@@ -1,0 +1,50 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Delete label'  %}
+{% endblock title %}
+
+
+{% block content %} 
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            {% trans 'Are you sure you want to delete' %} 
+            "{{ funcontent.title }}"?
+        </p>
+        <input class="btn btn-danger" type="submit" 
+            value="{% trans 'Delete' %}">
+    </form>
+
+    <h6 class="text-center">{{ funcontent.title }}</h6>
+    <hr/> 
+    {% autoescape off %}
+        {{ funcontent.content }}
+    {% endautoescape %}
+    <hr/>
+
+    <p class="text-right " >
+        <a 
+            href=
+        "{% url 'funuser:funuser_detail' user=funcontent.label.author.id %}">
+            {{ funcontent.label.author }}
+        </a> 
+    </p> 
+    <p class="text-right small">{{ funcontent.uploading_date }}</p>
+    <hr/>
+    <p class="small">
+        {{ funcontent.comment }}
+    </p> 
+    {% include 'funhome/_ckeditor.html' %}
+
+{% endblock %}

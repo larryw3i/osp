@@ -1,0 +1,46 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <meta name="viewport" 
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+            
+        <title>{% block title %}x-dove{% endblock title %}</title>
+        
+        {% include 'funhome/_css.html' %}
+        
+        {% comment %}
+            optional css
+        {% endcomment %}
+        {% block optionalcss %}{% endblock optionalcss %}
+
+    </head>
+
+    <body >
+        <header>
+            {% include 'funhome/_navbar.html' %}
+            {% block subnavbar %}{% endblock subnavbar %}
+        </header>
+
+        <div class="container body-content">
+            {% block content %}
+            {% endblock content %}
+        </div>
+        
+        {% include 'funhome/_footer.html' %}
+        
+        {% include 'funhome/_js.html' %}
+        
+        {% comment %}
+            With jQuery, Bootsreap and so on . . .
+        {% endcomment %}
+        {% block optionaljs %}{% endblock optionaljs %}
+        
+    </body>
+        
+</html>

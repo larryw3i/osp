@@ -1,0 +1,60 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Delete label'  %}
+{% endblock title %}
+
+
+{% block content %} 
+    <div class="row">
+
+        <div class="col  col-sm-4 col-md-4 col-lg-3 text-center ">
+            <img class="w-100" 
+                src="{% url 'funfile:get_file' file_id=label.cover.name %}" />
+        </div>
+        <div class="col  offset-1 col-sm-7 col-md-7 col-lg-8">
+
+            <table class="table table-striped ">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{% trans 'Name' %}</th>
+                        <td>{{ label.name }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% trans 'Creating date' %}</th>
+                        <td>{{ label.creating_date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form method="post">
+                {% csrf_token %}
+                <p>
+                    {% trans 'Are you sure you want to delete' %} 
+                    <span class="font-weight-bold">{{ label.name }}</span>?
+                </p>
+                <input type="submit" value="{% trans 'Delete' %}" 
+                    class="btn btn-danger"/>
+            </form>     
+        </div>
+    </div>
+
+
+{% endblock %}

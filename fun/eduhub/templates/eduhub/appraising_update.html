@@ -1,0 +1,42 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Update label'  %}
+{% endblock title %}
+
+
+{% block content %} 
+
+
+    <div class="row mt-5">
+        <div class="col  offset-xl-2 col-auto">
+            <form method="post"  enctype="multipart/form-data">
+        
+                {% csrf_token %}
+                
+                {{ form.media }}
+                
+                {{ form|crispy }}
+        
+                <div class="col col-12 text-right" >
+                    <input class="btn btn-outline-info " type="submit" 
+                        value="{% trans 'Update' %}" />
+                </div>
+        
+            </form>    
+        </div>
+        
+    </div>
+
+    {% include 'funhome/_ckeditor.html' %}
+
+{% endblock %}

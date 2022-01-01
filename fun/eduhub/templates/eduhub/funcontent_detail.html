@@ -1,0 +1,48 @@
+
+{% extends 'eduhub/_eduhub_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% block title %}
+    {% trans 'Content details'  %}
+{% endblock title %}
+
+{% block content %} 
+
+    <h6 class="text-center">{{ funcontent.title }}</h6>
+    <hr/> 
+    {% autoescape off %}
+        {{ funcontent.content }}
+    {% endautoescape %}
+    <hr/>
+
+    <p class="text-right " >
+        <a href="
+        {% url 'funuser:funuser_detail' user_id=funcontent.label.author.id %}">
+            {{ funcontent.label.author }}
+        </a> 
+    </p> 
+    <p class="text-right small">
+        {{ funcontent.uploading_date }}
+        <br/>
+        {{ funcontent.classification }}
+    </p>
+    <hr/>
+    <p class="small">
+        {{ funcontent.comment }}
+    </p>
+    {% ifequal funcontent.label.author request.user %} 
+        <div class="col col-12 text-center" >
+            <a href="{% url 'eduhub:funcontent_update'  pk=funcontent.id %}" 
+                class="btn btn-sm btn-info">{% trans 'Edit' %}
+            </a>
+            <a href="{% url 'eduhub:funcontent_delete'  pk=funcontent.id %}" 
+                class="btn btn-sm btn-danger">{% trans 'Delete' %}
+            </a>
+        </div>
+    {% endifequal %}
+ 
+
+{% endblock %}

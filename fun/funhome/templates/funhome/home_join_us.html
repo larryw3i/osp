@@ -1,0 +1,93 @@
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% load static %}
+
+<div class="text-center border-bottom  border-success ">
+  <p style="font-size: x-large;">{% trans 'Join us now' %}</p>
+</div>
+
+
+<div class="row justify-content-center text-center mt-5" >
+  <div class="col col-10 col-md-6 col-lg-4 col-xl-4 ">
+
+    <form class="signup" id="signup_form" method="post" 
+      action="{% url 'account_signup' %}">
+
+      {% csrf_token %}
+      <div id="div_id_email" class="form-group">
+
+        <label for="id_email" 
+          class=" requiredField">
+          {% trans 'E-mail' %}
+          <span class="asteriskField">*</span> 
+        </label>
+
+        <div class=""> 
+          <input type="email" name="email"  
+            class=" text-center textinput textInput form-control"
+            required="" id="id_email"/> 
+        </div>
+
+      </div>
+
+
+      <div id="div_id_username" class="form-group"> 
+        <label for="id_username" class=" requiredField">
+          {% trans 'Username' %}
+          <span class="asteriskField">*</span> 
+        </label>
+
+        <div class=""> 
+          <input type="text" name="username"  minlength="2"
+            maxlength="150" 
+            class=" text-center textinput textInput form-control" 
+            required="" id="id_username"/> 
+        </div>
+
+      </div>
+
+
+      <div id="div_id_password1" class="form-group"> 
+        <label for="id_password1" class=" requiredField">
+          {% trans 'Password' %}
+          <span class="asteriskField">*</span> 
+        </label>
+
+        <div class=""> 
+          <input type="password" name="password1"  
+            class="text-center textinput textInput form-control"
+            required="" id="id_password1"/> 
+        </div>
+      </div>
+      <div id="div_id_password2" class="form-group"> 
+        <label for="id_password2" class=" requiredField">
+          {% trans 'Password (again)' %}
+          <span class="asteriskField">*</span> 
+        </label>
+
+        <div class=""> 
+          <input type="password" name="password2"
+            class="text-center textinput textInput form-control" 
+            required="" id="id_password2"/> 
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-info btn-lg w-75 mt-2">
+        {% trans 'Join now' %} &raquo;
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<div class="text-center mt-2">
+  <p>
+    {% trans 'Already have an account' %}?
+    <a href="{% url 'account_login' %}">{% trans 'sign in' %}</a>.
+  </p>
+</div>

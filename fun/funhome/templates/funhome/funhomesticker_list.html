@@ -1,0 +1,64 @@
+{% extends 'funhome/_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Sticker list'  %}
+{% endblock title %}
+
+{% block content %} 
+
+    <h5 class="text-center font-weight-bold">{% trans 'Sticker list' %}</h5>
+    <hr/>
+    <a href="{% url 'homesticker_list' %}" 
+        class="btn btn-sm btn-outline-info float-right">{% trans 'Older' %}</a>
+    <div class="row">
+
+        {% for funhomesticker in funhomestickers %}
+
+            <div class="col  col-sm-6 col-md-4 col-lg-3 col-xl-3 col-12 mt-2">
+                <div class="card bg-transparent text-white click-to-url 
+                    homesticker-list-card" 
+                    data-url=
+                    "{% url 'funhomesticker_detail' pk=funhomesticker.id %}">
+
+                    <img src=
+            "{% url 'funfile:get_file' file_id=funhomesticker.cover.name %}" 
+                        class="card-img" alt="cover"/>
+
+                    <div class="card-img-overlay">
+                        <div class="homesticker-list-card-text">
+
+                            <p class="card-title text-center">
+                                {{ funhomesticker.title }}
+                            </p>
+
+                            <p class=
+                                "card-subtitle text-center d-none d-md-block">
+                                {{ funhomesticker.subtitle }}
+                            </p>
+
+                            <p class="card-text text-right">
+                                {{ funhomesticker.promulgating_date }}
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+    </div>
+
+
+    {% include 'funhome/_common_pagination.html' %}
+
+{% endblock %}

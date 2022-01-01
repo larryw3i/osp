@@ -1,0 +1,33 @@
+
+{% extends 'funhome/_base.html' %}  
+{% comment %} custom _base.html {% endcomment %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block title %}  {% endblock title %}
+
+{% comment %} It's going to be in the tail of head tag {% endcomment %}
+{% block optionalcss %}
+
+{% endblock optionalcss %}
+
+{% block content %} 
+
+{% endblock content%}
+
+
+{% comment %} It's going to be in the tail of html tag {% endcomment %}
+{% block optionaljs %}
+
+{% endblock optionaljs %}
+
+{% coment %} 
+The easiest way to create a template: 
+cp templates/funhome/a_standard_subtemplate.min.html your_template.html 
+{% endcomment %}

@@ -1,0 +1,58 @@
+
+{% load i18n %}
+{% load l10n %}
+{% load account %}
+{% load funhome_tags %}
+{% load tz %}
+
+<footer class="border-top footer text-muted">
+    <div class="container ">
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col col-auto">
+                &copy; {% now "Y" %} 
+                {# a bug >> site name coudn`t get here #}
+                - <a href="/"> 
+                    {% blocktrans %}
+                        x-dove
+                    {% endblocktrans %} 
+                </a>
+            </div>
+            
+            <div class="col col-auto">
+                <a href="{% url 'legal_information' %}">
+                    {% trans 'Legal information' %}
+                </a>
+            </div>
+            <div class="col col-auto">
+                <a href="{% url 'data_privacy' %}">
+                    {% trans ' Data privacy' %}
+                </a>
+            </div>
+            <div class="col col-auto">
+                <a href="#">{% trans 'Developer' %}</a>
+            </div>
+            <div class="col col-auto float-right">
+                {% include 'funhome/_footer_language.html' %}
+            </div>
+            <div class="col col-auto float-right">
+                {% include 'funhome/_footer_theme.html' %}
+            </div>
+            <div class="col col-auto">
+                <a href="https://github.com/larryw3i/fun">
+                    {% trans 'this site' %}
+                </a>
+            </div>
+
+            {% get_beian_text as beian_text %}
+            {% if beian_text %}
+                <div class="col col-12 text-center beian_text">
+                    <a href="{% get_beian_url %}" class="small">
+                        {{ beian_text }}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+
+    </div>
+</footer>

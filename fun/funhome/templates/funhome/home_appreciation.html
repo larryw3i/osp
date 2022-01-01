@@ -1,0 +1,100 @@
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% load static %}
+
+{% load funhome_tags %}
+
+<div class="text-center border-bottom border-info">
+  <p style="font-size: x-large;">{% trans 'Why choose us' %}?</p>
+</div>
+
+<div class="col col-12">
+    <div class="row funhomesticker-row mt-2">
+        {% for appreciation in appreciations %}
+            <div class="col appreciation-col col-12 col-md-11 
+              offset-md-{% cycle '0' '1' %} col-lg-11 
+              offset-lg-{% cycle '0' '1' %} col-xl-10 
+              offset-xl-{% cycle '0' '2' %} mt-2 click-to-url" 
+
+              data-url="{% url 'appreciation_detail' appreciation.id %}">
+
+                {% cycle 'start' 'end' as appreciation_items_content silent %}
+                <div class="card mb-3 appreciation-card  p-2 
+                  align-items-{{appreciation_items_content}}" >
+
+                    <div class="row no-gutters ">
+                      {% if appreciation_items_content == 'start' %}
+
+                        <div class="col col-sm-2 col-md-2 col-lg-2
+                          col-xl-2 col-2">
+                          <img 
+                            src="{% get_file_url appreciation.illustration %}" 
+                            class="rounded-circle " style="width: 100%;"/>
+                        </div>
+
+                        <div class="col col-12 col-md-10 col-lg-10  col-xl-10">
+                          <div class="card-body ">
+                            <p class="card-title" style="font-size: medium;">
+                              {{ appreciation.invitee }}<br/>
+                              {{  appreciation.invitee_title }}
+                            </p>
+
+                            <p class="card-text">
+                              {{ appreciation.home_comment }}
+                            </p>
+
+                            <p class="card-text text-right">
+                              <small class="text-muted">
+                                {{ appreciation.submitting_date }}
+                              </small>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      {% else %}
+
+                        <div class="col col-2 offset-10 d-block d-md-none  ">
+                          <img 
+                            src="{% get_file_url appreciation.illustration %}" 
+                            class="rounded-circle " style="width: 100%;" />
+
+                        </div>
+                        <div class="col col-md-10 col-lg-10 col-xl-10 col-12 ">
+                          <div class="card-body w-100" style="text-align: right;">
+
+                            <p class="card-title" style="font-size: medium;">
+                              {{ appreciation.invitee }}<br/>
+                              {{  appreciation.invitee_title }}
+                            </p>
+
+                            <p class="card-text">
+                              {{ appreciation.home_comment }}
+                            </p>
+
+                            <p class="card-text text-left">
+                              <small class="text-muted">
+                                {{ appreciation.submitting_date }}
+                              </small>
+                            </p>
+
+                          </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 col-12 d-none 
+                          d-md-block d-lg-block d-xl-block ">
+
+                          <img 
+                            src="{% get_file_url appreciation.illustration %}" 
+                            class="rounded-circle " style="width: 100%;"/>
+                            
+                        </div>
+                      {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %} 
+    </div>
+</div>

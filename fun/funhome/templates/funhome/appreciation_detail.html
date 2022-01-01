@@ -1,0 +1,56 @@
+
+{% extends 'funhome/_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block title %} 
+    {% trans 'appreciation detail' %}
+{% endblock title %}
+
+{% block optionalcss %}
+
+{% endblock optionalcss %}
+
+{% block content %} 
+
+    <div class="text-center ">
+        <img src=
+            "{% url 'funfile:get_file' file_id=appreciation.illustration  %}" 
+            class="rounded-circle" style="width: 20%;" />
+    </div>
+    <hr/> 
+    <div class=" text-center" style="font-size: large;">
+        {{ appreciation.brief_comment }}
+    </div> 
+
+    {% autoescape off %}
+        {{ appreciation.content }}
+    {% endautoescape %}
+    <hr/>
+
+    <p class="text-right small">{{ appreciation.invitee }}</p>
+    <p class="text-right small">{{ appreciation.submitting_date }}</p>
+    <hr/>
+    
+    {% ifequal appreciation.submitter  request.user  %}
+
+        <div class="col col-12 text-right" >
+            <a class=" btn btn-sm btn-info" 
+                href="/admin/funhome/appreciation/{{ appreciation.id }}">
+                {% trans 'Edit' %}
+            </a>
+        </div>
+
+    {% endifequal %}
+
+{% endblock content%}
+
+{% block optionaljs %}
+
+{% endblock optionaljs %}

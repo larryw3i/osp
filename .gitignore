@@ -1,0 +1,215 @@
+
+# Created by https://www.gitignore.io/api/django
+# Edit at https://www.gitignore.io/?templates=django
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# If your build process includes running collectstatic, then you probably 
+# don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+# <django-project-name>/staticfiles/
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in
+# version control.
+#   However, in case of collaboration, if having platform-specific 
+# dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that 
+# don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# End of https://www.gitignore.io/api/django
+
+##############################################################################
+##############################################################################
+
+# DOTENV
+fun/.env
+
+# MEDIA
+media
+!fun/funstatic/media/
+
+# APP_FILES
+fun/funfile/files/
+
+# uwsgi.ini 
+fun/uwsgi.ini
+
+fun/funstatic/CACHE/
+
+# VIRTUAL_ENV
+venv/
+
+# LOG
+fun/funlog/django_fun.log
+
+# SETTINGS.JSON
+.vscode/
+
+# STATIC_FILES
+fun/staticfiles/node_modules
+fun/staticfiles/admin/
+fun/staticfiles/ckeditor/
+fun/staticfiles/node_modules/
+fun/funstatic/admin/
+fun/funstatic/ckeditor/
+fun/funstatic/node_modules/
+
+fun/thesis.md
+
+fun/uwsgi/uwsgi.status
+fun/uwsgi/uwsgi.pid
+
+# ADMINS.json
+fun/ADMINS.json
+
+# funtest
+fun/funtest/
+
+# data_privacy and legal information
+## templates/funhome/data_privacy.html
+## templates/funhome/legal_information.html
+
+# GIT_OUTGOING
+fun/outgoing/
+
+# BACKUP
+fun.lwcp/
+
+# appconf
+fun/appconf.json
+
+# .env.yaml
+fun/.env.yaml
+
+# staticfiles
+fun/staticfiles/
+
+# package-lock.json
+*/package-lock.json
+
+# yarn.lock
+*.lock
+
+# pdf.js
+fun/funstatic/pdf.js/
+
+# fun/nohup.out
+fun/nohup.out
+
+# fun/fun/settings.py
+fun/fun/settings.py
+
+# fun/funhome/static/node_modules
+node_modules/
+
+##############################################################################
+##############################################################################
+
+#

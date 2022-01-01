@@ -1,0 +1,40 @@
+
+
+{% load static %}
+
+{% load i18n %}
+{% load l10n %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <meta name="viewport" content=
+            "width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <title>{% trans 'Funtest content preview' %}</title>
+        
+
+    </head>
+
+    <body style=
+        "overflow-wrap: break-word;margin-left: 20px; margin-right: 20px;">
+
+        <div style="text-align: center;">
+            <h4 id="pre_title"></h4>
+            <h2 id="title"></h2>
+            <h4 id="last_title"></h4>
+        </div>
+        <div id="test_body">
+
+        </div>
+
+        <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}">
+        </script>
+        <script src="{% static 'node_modules/js-cookie/src/js.cookie.js' %}" >
+        </script>
+        <script src="{% static 'eduhub/funtest_onmessage.js' %}"></script>
+    </body>
+        
+</html>

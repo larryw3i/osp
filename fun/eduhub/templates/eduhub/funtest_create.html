@@ -1,0 +1,51 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Create a test' %}
+{% endblock title %}
+
+{% block optionalcss %}
+{% endblock optionalcss %}
+
+{% block content %} 
+
+    <div class="row text-center mt-5">
+        <div class="col col-12 ">
+            <form method="post"  enctype="multipart/form-data" class="">
+        
+                {% csrf_token %}
+                
+                {{ form|crispy }}
+                
+                <div class=" text-right" >
+                    <button class="btn btn-info" onclick=
+                        "event.preventDefault();" 
+                        id="id_funtest_content_live" >
+                        {% trans 'Live content' %}
+                    </button>
+                </div>
+
+                <div class=" text-center" >
+                    <input class="btn btn-outline-info " type="submit" 
+                        value="{% trans 'Upload' %}" />
+                </div>
+        
+            </form>    
+        </div>
+        
+    </div>
+
+{% endblock %}
+
+{% block optionaljs %}
+    <script src="{% static 'eduhub/funtest_post_message.js' %}"></script>
+{% endblock optionaljs %}

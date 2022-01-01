@@ -1,0 +1,68 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Home{% endblock title %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% load eduhub_tags %}
+
+{% block content %} 
+    <h2 class="text-center">{% trans 'Eduhub labels' %}</h2>
+    <hr/>
+    <div class="col col-12 text-right" >
+        <a href="{% url 'eduhub:label_create'  %}" 
+            class="btn btn-sm btn-outline-info ">
+            {% trans 'Add' %}
+        </a>
+        {% if user.is_authenticated %}
+            <a class="btn btn-sm btn-outline-info " 
+                id="id_label_list_view_mine_only">
+                {% if request.COOKIES.is_my_label_list %}
+                    {% trans 'Mine' %}
+                {% else %}
+                    {% trans 'All' %}
+                {% endif %}
+            </a>
+        {% endif %}
+    </div>
+    <div class="row">
+            {% for label in labels %}
+                <div class=
+                    "col col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 mt-2">
+                    <div class="card eduhub-label-card" 
+                        data-url=
+                        "{% url 'eduhub:funcontent_list' label_id=label.id %}">
+                        <img src=
+                        "{% url 'funfile:get_file' file_id=label.cover.name %}" 
+                            class="card-img-top" alt=""/>
+                        <div class="card-body">
+                            <p class="card-title small">{{ label.name }}</p>
+                            <p class="card-text small d-none d-md-block ">
+                                {{ label.comment }}
+                            </p>
+                            <a href=
+                        "{% url 'eduhub:funcontent_list' label_id=label.id %}" 
+                                class="small view_content_list">
+                                {% trans 'View' %}
+                            </a>
+                            {% if request.user == label.author %}                                
+                                <a href=
+                            "{% url 'eduhub:label_update' pk=label.id %}" 
+                                    class="small" >{% trans 'Edit' %}
+                                </a>
+                                <a href=
+                            "{% url 'eduhub:label_delete' pk=label.id %}" 
+                                    class="small">{% trans 'Delete' %}
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% include 'funhome/_common_pagination.html' %}
+{% endblock %}
+{% block optionaljs %} 
+    <script src="{% static 'eduhub/eduhub.js' %}"></script>
+{% endblock optionaljs %}

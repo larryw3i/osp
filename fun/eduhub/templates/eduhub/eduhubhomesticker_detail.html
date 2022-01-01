@@ -1,0 +1,53 @@
+{% extends 'eduhub/_eduhub_base.html' %}
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load tz %}
+
+
+{% block title %}
+    {% trans 'Eduhub home' %}
+{% endblock title %}
+
+{% block content %}
+    <h6 class="text-center">{{ eduhubhomesticker.title }}</h6>
+    <hr/> 
+
+    {% autoescape off %}
+        {{ eduhubhomesticker.content }}
+    {% endautoescape %}
+    <hr/>
+    <p class="text-right " >
+        <a href=
+    "{% url 'funuser:funuser_detail' user=eduhubhomesticker.promulgator.id %}">
+            {{ eduhubhomesticker.promulgator }}
+        </a> 
+    </p>
+    <p class="text-right small">{{ eduhubhomesticker.promulgating_date }}</p>
+    <hr/>
+    <p class="small">
+        {{ eduhubhomesticker.comment }}
+    </p> 
+
+    {% ifequal eduhubhomesticker.promulgator  request.user  %}
+
+        <div class="col col-12 text-right" >
+            <a class=" btn btn-sm btn-info" 
+                href=
+                "/admin/eduhub/eduhubhomesticker/{{ eduhubhomesticker.id }}">
+                {% trans 'Edit' %}
+            </a>
+        </div>
+    {% endifequal %}
+ 
+{% endblock %}
+
+{% block optionaljs %} 
+    <script src="{% static 'eduhub/eduhub.js' %}"></script>
+{% endblock optionaljs %}

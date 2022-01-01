@@ -1,0 +1,28 @@
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% load tz %}
+
+<div class="row justify-content-end">
+	<form action="{% url 'eduhub:eduhub_search' %}"  id="eduhub_search_form"  
+		class="col col-10 col-sm-10 col-md-6 col-lg-4 col-xl-4 input-group ">
+	
+		<input type="text" class="form-control " id="eduhub_search_q" name="q" 
+			placeholder="{% trans 'What are you thinking about' %}?" 
+			aria-label="{% trans 'What are you thinking about' %}?" 
+			aria-describedby="eduhub_search" autocomplete="off" 
+			value="{{ request.GET.q }}"/>
+
+			<div class="input-group-append">
+				<button class="btn btn-info btn-sm" type="button" 
+					id="eduhub_search_submit">{% trans 'search' %} &#128269;
+				</button>
+			</div>
+
+	</form>
+</div>
+<hr/>

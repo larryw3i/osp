@@ -1,0 +1,33 @@
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block content %}
+
+    <div class="col col-12 text-center">
+        <a class="btn btn-info classification-nav" data-nav_to="subject"> 
+            {% trans 'subject' %} 
+        </a>
+
+        <a class="btn btn-info  classification-nav" data-nav_to="food"> 
+            {% trans 'food' %} 
+        </a>
+        
+        <a class="btn btn-info  classification-nav"  data-nav_to="live"> 
+            {% trans 'live' %} 
+        </a>
+
+        <a class="btn btn-info  classification-nav" data-nav_to="develop"> 
+            {% trans 'develop' %} 
+        </a>
+
+        {# 'Waiting for you to add it' #}
+    </div>
+
+{% endblock content  %}

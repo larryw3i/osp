@@ -1,0 +1,96 @@
+
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+<p>
+    {% blocktrans %}
+        I don't bother to make a catalog right now, and I don't want to 
+        classify them now, because I'm the only one who develop it, and I 
+        don't know when I have free time, so you should classify your 
+        content yourself so as not to make a mess of everything. 
+    {% endblocktrans %}
+</p>
+
+<p >
+    <ol>
+        <li>
+            {% blocktrans %}
+                If you're writing about primary school (I don't know if 
+                anyone will write about kindergarten), 
+            {% endblocktrans %}
+            <br/>
+            {% blocktrans %}
+                you should categorize(remove bracket!): 
+            {% endblocktrans %}
+            
+            <div class="text-center eduhub-classification-tip" 
+            title="{% trans 'click to copy' %}" 
+            data-clipboard-text=
+    "{% trans 'primary school/(grade)/(semester)/(subjects)/(title)' %}">
+                {% blocktrans %}
+            primary school / (grade) / (semester) / (subjects) / (title)
+                {% endblocktrans %}
+            </div>
+
+        </li>
+        <li>
+            {% blocktrans %}
+                If you're writing about high school teaching,
+            {% endblocktrans %}
+            <br/>
+            {% blocktrans %}
+                you should categorize: 
+            {% endblocktrans %}
+            <div class="text-center eduhub-classification-tip" 
+                title="{% trans 'click to copy' %}" 
+                data-clipboard-text=
+"{% trans 'junior senior high school/(grade)/(semester)/(subjects)/(title)' %}"
+                >
+                {% blocktrans %}
+                    ('junior' or 'senior') high school / (grade) / 
+                    (semester) / (subjects) / (title)
+                {% endblocktrans %}
+            </div>
+
+        </li>
+        <li>
+            {% blocktrans %}
+                If you're writing about the college' teaching,
+            {% endblocktrans %}
+            <br/>
+            {% blocktrans %}
+                you should categorize: 
+            {% endblocktrans %}
+            <div class="text-center eduhub-classification-tip" 
+                title="{% trans 'click to copy' %}" 
+                data-clipboard-text=
+        "{% trans 'college/(grade)/(semester)/(subjects)/(title)' %}" >
+
+                {% blocktrans %}
+                    college/(major) / (grade) / (semester) / (subjects) / 
+                    (title)
+                {% endblocktrans %}
+            </div>
+
+        </li>
+        <li>
+            {% blocktrans %}
+                Other stages should also have classification, you can 
+                change it 
+
+            {% endblocktrans %}
+            <a href='{% get_classification_issue_url %}'>
+                {% trans 'here' %}
+            </a>  
+            
+            {% blocktrans %}
+                and make a pull request, or you look at it yourself
+            {% endblocktrans %}.
+        </li>
+    </ol>
+</p>

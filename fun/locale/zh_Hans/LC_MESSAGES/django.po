@@ -1,0 +1,3556 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# larry <larryw3i@163.com>, 2020-2021.
+# larryw3i <larryw3i@163.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: unnamed project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-11 18:15+0800\n"
+"PO-Revision-Date: 2021-10-11 18:25+0800\n"
+"Last-Translator: larryw3i <larryw3i@163.com>\n"
+"Language-Team: Chinese - China <larryw3i@163.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 40.0\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: eduhub/admin.py:147
+msgid "None"
+msgstr "空"
+
+#: eduhub/apps.py:9 eduhub/templates/eduhub/_eduhub_base.html:20
+#: funhome/templates/funhome/_navbar.html:27
+msgid "Eduhub"
+msgstr "教育"
+
+#: eduhub/modelforms.py:48 eduhub/modelforms.py:119 eduhub/models.py:120
+#: eduhub/models.py:233 eduhub/models.py:264
+msgid "Content"
+msgstr "内容"
+
+#: eduhub/modelforms.py:49
+#| msgid "Content classification"
+msgid "Sharing Content classification"
+msgstr "打卡分享类别"
+
+#: eduhub/modelforms.py:54 eduhub/modelforms.py:126 eduhub/models.py:117
+msgid "Content title"
+msgstr "标题"
+
+#: eduhub/modelforms.py:69
+msgid "ASharingGroup name"
+msgstr "打卡组名"
+
+#: eduhub/modelforms.py:70
+#| msgid "Sticker subtitle"
+msgid "ASharingGroup subtitle"
+msgstr "打卡组小问候"
+
+#: eduhub/modelforms.py:71
+#| msgid "Sticker comment"
+msgid "ASharingGroup comment"
+msgstr "打卡组备注"
+
+#: eduhub/modelforms.py:81 eduhub/models.py:56 eduhub/models.py:331
+msgid "Parent classification"
+msgstr "父类"
+
+#: eduhub/modelforms.py:82 eduhub/models.py:335
+#| msgid "Classification"
+msgid "Classification Name"
+msgstr "分类名"
+
+#: eduhub/modelforms.py:83 eduhub/models.py:338
+#| msgid "Classification comment"
+msgid "Classification Comment"
+msgstr "分类备注"
+
+#: eduhub/modelforms.py:93 eduhub/models.py:366
+msgid "applying info"
+msgstr "申请信息"
+
+#: eduhub/modelforms.py:103 eduhub/models.py:80
+msgid "Label name"
+msgstr "标签名"
+
+#: eduhub/modelforms.py:104
+msgid "Cover image"
+msgstr "封面图片"
+
+#: eduhub/modelforms.py:105 eduhub/modelforms.py:120 eduhub/models.py:242
+msgid "Comment"
+msgstr "备注"
+
+#: eduhub/modelforms.py:121 eduhub/models.py:114
+msgid "Content classification"
+msgstr "分类"
+
+#: eduhub/modelforms.py:140 funhome/modelforms.py:22 funhome/modelforms.py:52
+#: funhome/models.py:35 funhome/models.py:79
+msgid "Sticker title"
+msgstr "贴纸标题"
+
+#: eduhub/modelforms.py:141 funhome/modelforms.py:23 funhome/modelforms.py:53
+msgid "Sticker Cover"
+msgstr "贴纸背景"
+
+#: eduhub/modelforms.py:142 funhome/modelforms.py:54
+msgid "Sticker content"
+msgstr "备注"
+
+#: eduhub/modelforms.py:143 funhome/modelforms.py:25 funhome/modelforms.py:55
+msgid "Sticker Comment"
+msgstr "备注"
+
+#: eduhub/modelforms.py:144
+msgid "description"
+msgstr "描述"
+
+#: eduhub/modelforms.py:173
+msgid "name exists"
+msgstr "名称已存在"
+
+#: eduhub/models.py:37 eduhub/models.py:275 eduhub/models.py:278
+msgid "Classification"
+msgstr "分类"
+
+#: eduhub/models.py:38
+msgid "Classifications"
+msgstr "分类"
+
+#: eduhub/models.py:49 eduhub/models.py:326
+msgid "name includes '/' is not allowed"
+msgstr "不能包含('/')"
+
+#: eduhub/models.py:60
+msgid "Classification name('/' cannot be included)"
+msgstr "分类名(不能包含'/')"
+
+#: eduhub/models.py:64
+msgid "Classification comment"
+msgstr "分类备注"
+
+#: eduhub/models.py:70
+msgid "Eduhub label"
+msgstr "分类标签"
+
+#: eduhub/models.py:71
+msgid "Eduhub  labels"
+msgstr "分类标签"
+
+#: eduhub/models.py:82
+msgid "Label comment"
+msgstr "备注"
+
+#: eduhub/models.py:84
+msgid "Label cover"
+msgstr "封面"
+
+#: eduhub/models.py:86
+msgid "Label creating date"
+msgstr "创建时间"
+
+#: eduhub/models.py:88
+msgid "Label author"
+msgstr "作者"
+
+#: eduhub/models.py:90
+msgid "Is label legal"
+msgstr "合法"
+
+#: eduhub/models.py:96
+msgid "Eduhub content (NEW)"
+msgstr "内容(新)"
+
+#: eduhub/models.py:97
+msgid "Eduhub contents (NEW)"
+msgstr "内容(新)"
+
+#: eduhub/models.py:110
+msgid "Content label"
+msgstr "标签"
+
+#: eduhub/models.py:123
+msgid "Content uploading date"
+msgstr "上传时间"
+
+#: eduhub/models.py:125
+msgid "Content comment"
+msgstr "备注"
+
+#: eduhub/models.py:127 eduhub/models.py:284
+msgid "Is content legal"
+msgstr "合法"
+
+#: eduhub/models.py:132
+msgid "Eduhub homepage sticker"
+msgstr "主页贴纸"
+
+#: eduhub/models.py:133
+msgid "Eduhub homepage stickers"
+msgstr "主页贴纸"
+
+#: eduhub/models.py:142
+msgid "Eduhub homepage sticker title"
+msgstr "贴纸标题"
+
+#: eduhub/models.py:146
+msgid "Eduhub homepage sticker subtitle"
+msgstr "贴纸子标题"
+
+#: eduhub/models.py:150
+msgid "Eduhub homepage sicker cover"
+msgstr "贴纸背景"
+
+#: eduhub/models.py:154
+msgid "Eduhub homepage sticker promulgator"
+msgstr "贴纸的管理员"
+
+#: eduhub/models.py:162
+msgid "Eduhub homepage sticker promulgating date"
+msgstr "贴纸时间"
+
+#: eduhub/models.py:165 eduhub/models.py:281
+msgid "Eduhub homepage sticker comment"
+msgstr "备注"
+
+#: eduhub/models.py:168 funhome/models.py:60 funhome/models.py:104
+msgid "Hidden"
+msgstr "隐藏(不贴)"
+
+#: eduhub/models.py:174
+msgid "Eduhub Test"
+msgstr "标签"
+
+#: eduhub/models.py:175
+msgid "Eduhub Tests"
+msgstr "内容"
+
+#: eduhub/models.py:186 eduhub/models.py:206
+msgid "Test commit"
+msgstr "备注"
+
+#: eduhub/models.py:190
+msgid "Test owner"
+msgstr "测试属于"
+
+#: eduhub/models.py:194
+msgid "Template text"
+msgstr "模板文本"
+
+#: eduhub/models.py:198
+msgid "Test submitting date"
+msgstr "创建时间"
+
+#: eduhub/models.py:202
+msgid "Last modifying date"
+msgstr "创建时间"
+
+#: eduhub/models.py:219
+#| msgid "Appreciation"
+msgid "Appraising"
+msgstr "评价"
+
+#: eduhub/models.py:220
+#| msgid "Appreciation"
+msgid "Appraisings"
+msgstr "评价"
+
+#: eduhub/models.py:223
+#| msgid "Appreciation"
+msgid " appraise "
+msgstr "评价"
+
+#: eduhub/models.py:230
+msgid "Appraisings from"
+msgstr "打分者"
+
+#: eduhub/models.py:240
+msgid "Date of Appraising"
+msgstr "打分时间"
+
+#: eduhub/models.py:247
+msgid "Appraising content"
+msgstr "内容"
+
+#: eduhub/models.py:248 eduhub/templates/eduhub/appraising_c_list.html:11
+msgid "Appraising contents"
+msgstr "分享内容"
+
+#: eduhub/models.py:257
+msgid "Content from"
+msgstr "分享来自"
+
+#: eduhub/models.py:260
+#| msgid "Title name"
+msgid "Title"
+msgstr "标题"
+
+#: eduhub/models.py:268
+msgid "Date of appraising content creating"
+msgstr "创建时间"
+
+#: eduhub/models.py:272
+msgid "Date of appraising content updating"
+msgstr "更新时间"
+
+#: eduhub/models.py:289
+msgid "ASharingGroup"
+msgstr "打卡组"
+
+#: eduhub/models.py:290
+msgid "ASharingGroups"
+msgstr "打卡组"
+
+#: eduhub/models.py:297 eduhub/templates/eduhub/label_delete.html:38
+msgid "Name"
+msgstr "标题名"
+
+#: eduhub/models.py:299
+#| msgid "Sticker subtitle"
+msgid "Subtitle"
+msgstr "子标题"
+
+#: eduhub/models.py:301
+#| msgid "cover"
+msgid "Group cover"
+msgstr "组贴图"
+
+#: eduhub/models.py:304
+msgid "ASharingGroup Founder"
+msgstr "组长"
+
+#: eduhub/models.py:306
+#| msgid "Sticker Comment"
+msgid "ASharingGroup Comment"
+msgstr "组备注"
+
+#: eduhub/models.py:308
+#| msgid "Date of Appraising"
+msgid "Date of creating"
+msgstr "创建时间"
+
+#: eduhub/models.py:310
+#| msgid "Is label legal"
+msgid "Is legal?"
+msgstr "合法"
+
+#: eduhub/models.py:315
+#| msgid "Parent classification"
+msgid "ASharingGroup member Classification"
+msgstr "组员分类"
+
+#: eduhub/models.py:316
+#| msgid "Eduhub classifications"
+msgid "ASharingGroup member Classifications"
+msgstr "组员分类"
+
+#: eduhub/models.py:343
+msgid "ASharingGroup member"
+msgstr "打卡组员"
+
+#: eduhub/models.py:344
+msgid "ASharingGroup members"
+msgstr "打卡组员"
+
+#: eduhub/models.py:353
+msgid "Member Name"
+msgstr "组员昵称"
+
+#: eduhub/models.py:356
+msgid "funuser"
+msgstr "用户"
+
+#: eduhub/models.py:359
+msgid "ASharing group"
+msgstr "打卡组"
+
+#: eduhub/models.py:362
+#| msgid "Classifications"
+msgid "classifications"
+msgstr "分类"
+
+#: eduhub/models.py:364
+msgid "Is judge ?"
+msgstr "是打分组员"
+
+#: eduhub/models.py:368
+msgid "Is member enable?"
+msgstr "组员可用"
+
+#: eduhub/models.py:370
+#| msgid "Date of Appraising"
+msgid "Date of joining"
+msgstr "加入时间"
+
+#: eduhub/templates/eduhub/_classification_nav.html:15
+msgid "subject"
+msgstr "学科"
+
+#: eduhub/templates/eduhub/_classification_nav.html:19
+msgid "food"
+msgstr "菜肴"
+
+#: eduhub/templates/eduhub/_classification_nav.html:23
+msgid "live"
+msgstr "生活"
+
+#: eduhub/templates/eduhub/_classification_nav.html:27
+msgid "develop"
+msgstr "开发"
+
+#: eduhub/templates/eduhub/_classification_subject.html:11
+msgid ""
+"\n"
+"        I don't bother to make a catalog right now, and I don't want to \n"
+"        classify them now, because I'm the only one who develop it, and I \n"
+"        don't know when I have free time, so you should classify your \n"
+"        content yourself so as not to make a mess of everything. \n"
+"    "
+msgstr ""
+"\n"
+"            我已经不想去做一个分类了, 或者说我现在还不想做, 因为我一个人做这"
+"个repo, 也不知道我什么时候有时间, 所以你应该自己给你的内容分类好, 以免大家的"
+"内容杂乱无章。\n"
+"        "
+
+#: eduhub/templates/eduhub/_classification_subject.html:22
+msgid ""
+"\n"
+"                If you're writing about primary school (I don't know if \n"
+"                anyone will write about kindergarten), \n"
+"            "
+msgstr ""
+"\n"
+"                    如果你写的是小学的教学内容( 我不确定有没有人写幼儿园"
+"的 ), \n"
+"                "
+
+#: eduhub/templates/eduhub/_classification_subject.html:27
+msgid ""
+"\n"
+"                you should categorize(remove bracket!): \n"
+"            "
+msgstr ""
+"\n"
+"                    你可以这样分类( 把括号去掉! ): \n"
+"                "
+
+#: eduhub/templates/eduhub/_classification_subject.html:32
+#: eduhub/templates/eduhub/_classification_subject.html:50
+#: eduhub/templates/eduhub/_classification_subject.html:70
+msgid "click to copy"
+msgstr "点击复制"
+
+#: eduhub/templates/eduhub/_classification_subject.html:34
+msgid "primary school/(grade)/(semester)/(subjects)/(title)"
+msgstr "小学/(年级)/(学期)/(科目)/(标题)"
+
+#: eduhub/templates/eduhub/_classification_subject.html:35
+msgid ""
+"\n"
+"            primary school / (grade) / (semester) / (subjects) / (title)\n"
+"                "
+msgstr ""
+"\n"
+"                       小学/(年级)/(学期)/(科目)/(标题)\n"
+"                    "
+
+#: eduhub/templates/eduhub/_classification_subject.html:42
+msgid ""
+"\n"
+"                If you're writing about high school teaching,\n"
+"            "
+msgstr ""
+"\n"
+"                        如果你在写高中的教学内容,\n"
+"                    "
+
+#: eduhub/templates/eduhub/_classification_subject.html:46
+#: eduhub/templates/eduhub/_classification_subject.html:66
+msgid ""
+"\n"
+"                you should categorize: \n"
+"            "
+msgstr ""
+"\n"
+"                        你可以这样分类:\n"
+"                    "
+
+#: eduhub/templates/eduhub/_classification_subject.html:52
+msgid "junior senior high school/(grade)/(semester)/(subjects)/(title)"
+msgstr "初或高中/(年级)/(学期)/(科目)/(标题)"
+
+#: eduhub/templates/eduhub/_classification_subject.html:54
+msgid ""
+"\n"
+"                    ('junior' or 'senior') high school / (grade) / \n"
+"                    (semester) / (subjects) / (title)\n"
+"                "
+msgstr ""
+"\n"
+"                        初或高中/(年级)/(学期)/(科目)/(标题)\n"
+"                    "
+
+#: eduhub/templates/eduhub/_classification_subject.html:62
+msgid ""
+"\n"
+"                If you're writing about the college' teaching,\n"
+"            "
+msgstr ""
+"\n"
+"                        如果你在写大学的教学内容,\n"
+"                    "
+
+#: eduhub/templates/eduhub/_classification_subject.html:72
+msgid "college/(grade)/(semester)/(subjects)/(title)"
+msgstr "大学/(专业)/(年级)/(学期)/(科目)/(标题)"
+
+#: eduhub/templates/eduhub/_classification_subject.html:74
+msgid ""
+"\n"
+"                    college/(major) / (grade) / (semester) / (subjects) / \n"
+"                    (title)\n"
+"                "
+msgstr ""
+"\n"
+"                       小学/(年级)/(学期)/(科目)/(标题)\n"
+"                    "
+
+#: eduhub/templates/eduhub/_classification_subject.html:82
+msgid ""
+"\n"
+"                Other stages should also have classification, you can \n"
+"                change it \n"
+"\n"
+"            "
+msgstr ""
+"\n"
+"                    还有很多其它分类, 你可以 \n"
+"                    更改它 \n"
+"\n"
+"                "
+
+#: eduhub/templates/eduhub/_classification_subject.html:88
+msgid "here"
+msgstr "在这里"
+
+#: eduhub/templates/eduhub/_classification_subject.html:91
+msgid ""
+"\n"
+"                and make a pull request, or you look at it yourself\n"
+"            "
+msgstr ""
+"\n"
+"                        你可以这样分类:\n"
+"                    "
+
+#: eduhub/templates/eduhub/_eduhub_base.html:51
+#: eduhub/templates/eduhub/eduhub_search_result.html:23
+#: eduhub/templates/eduhub/label_list.html:11
+msgid "Eduhub labels"
+msgstr "标签"
+
+#: eduhub/templates/eduhub/_eduhub_base.html:58
+#: eduhub/templates/eduhub/appraising_list.html:17
+#: eduhub/templates/eduhub/eduhub_search_result.html:53
+#: eduhub/templates/eduhub/funcontent_list.html:17
+msgid "Eduhub contents"
+msgstr "内容"
+
+#: eduhub/templates/eduhub/_eduhub_base.html:67
+msgid "Eduhub appraising"
+msgstr "打卡区"
+
+#: eduhub/templates/eduhub/_eduhub_base.html:82
+#: eduhub/templates/eduhub/_eduhub_base.html:84
+#: eduhub/templates/eduhub/_search.html:15
+#: eduhub/templates/eduhub/_search.html:16
+msgid "What are you thinking about"
+msgstr "在想什么"
+
+#: eduhub/templates/eduhub/_eduhub_base.html:89
+#: eduhub/templates/eduhub/_search.html:22
+msgid "search"
+msgstr "搜索"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:15
+msgid "Preschool"
+msgstr "学前教育"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:22
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:51
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:97
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:152
+msgid "Math"
+msgstr "数学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:27
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:56
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:102
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:157
+msgid "Yuwen"
+msgstr "语文"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:32
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:61
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:107
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:162
+msgid "Yingyu"
+msgstr "英语"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:37
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:66
+msgid "Science"
+msgstr "科学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:44
+msgid "Primary school"
+msgstr "小学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:72
+msgid "Morality and Society"
+msgstr "品德与政治"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:78
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:133
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:187
+msgid "Information Technology"
+msgstr "信息技术"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:84
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:138
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:192
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:269
+msgid "Art"
+msgstr "艺术"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:91
+msgid "Junior high school"
+msgstr "初中"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:112
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:167
+msgid "Geography"
+msgstr "地理"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:117
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:172
+msgid "Physics"
+msgstr "物理"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:123
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:177
+msgid "Biology"
+msgstr "生物"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:128
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:182
+msgid "Politics"
+msgstr "政治"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:145
+msgid "Senior high school"
+msgstr "高中"
+
+# Collage
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:198
+msgid "Collage"
+msgstr "大学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:204
+msgid "Philosophy"
+msgstr "哲学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:209
+msgid "Economics"
+msgstr "经济学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:214
+msgid "Law"
+msgstr "法学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:219
+msgid "Pedagogy"
+msgstr "教育学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:224
+msgid "Jurisprudence"
+msgstr "法学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:229
+msgid "Literature"
+msgstr "文学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:234
+msgid "History"
+msgstr "历史"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:239
+msgid "Sciences"
+msgstr "理学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:244
+msgid "Engineering"
+msgstr "工学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:249
+msgid "Agriculture"
+msgstr "农学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:254
+msgid "Medicine"
+msgstr "医学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:259
+msgid "Military"
+msgstr "军事学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:264
+msgid "Management"
+msgstr "管理学"
+
+#: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:275
+#: eduhub/templates/eduhub/label_list.html:24
+#: eduhub/templatetags/eduhub_tags.py:64
+msgid "All"
+msgstr "全部"
+
+#: eduhub/templates/eduhub/appraising_c_create.html:22
+#: eduhub/templates/eduhub/funcontent_create.html:22
+#: eduhub/templates/eduhub/funtest_create.html:39
+#: eduhub/templates/eduhub/label_create.html:25
+#: eduhub/templates/eduhub/label_update.html:27
+#: funuser/templates/funuser/funuser_update.html:150
+msgid "Upload"
+msgstr "上传"
+
+#: eduhub/templates/eduhub/appraising_c_delete.html:10
+#: eduhub/templates/eduhub/appraising_delete.html:14
+#: eduhub/templates/eduhub/funcontent_delete.html:15
+#: eduhub/templates/eduhub/label_delete.html:14
+#: eduhub/templates/eduhub/label_detail.html:11
+msgid "Delete label"
+msgstr "删除标签"
+
+#: eduhub/templates/eduhub/appraising_c_delete.html:17
+#: eduhub/templates/eduhub/appraising_delete.html:22
+#: eduhub/templates/eduhub/funcontent_delete.html:23
+#: eduhub/templates/eduhub/label_delete.html:50
+msgid "Are you sure you want to delete"
+msgstr "确定要删除"
+
+#: eduhub/templates/eduhub/appraising_c_delete.html:21
+#: eduhub/templates/eduhub/appraising_c_detail.html:56
+#: eduhub/templates/eduhub/appraising_c_list.html:53
+#: eduhub/templates/eduhub/appraising_create.html:68
+#: eduhub/templates/eduhub/appraising_delete.html:26
+#: eduhub/templates/eduhub/appraising_detail.html:47
+#: eduhub/templates/eduhub/appraising_list.html:68
+#: eduhub/templates/eduhub/asharinggroup_list.html:41
+#: eduhub/templates/eduhub/funcontent_delete.html:27
+#: eduhub/templates/eduhub/funcontent_detail.html:42
+#: eduhub/templates/eduhub/funcontent_list.html:68
+#: eduhub/templates/eduhub/label_delete.html:53
+#: eduhub/templates/eduhub/label_list.html:56
+msgid "Delete"
+msgstr "删除"
+
+#: eduhub/templates/eduhub/appraising_c_detail.html:12
+#: eduhub/templates/eduhub/appraising_detail.html:14
+#: eduhub/templates/eduhub/funcontent_detail.html:9
+msgid "Content details"
+msgstr "标题"
+
+#: eduhub/templates/eduhub/appraising_c_detail.html:31
+#: eduhub/templates/eduhub/appraising_create.html:28
+#| msgid "Unknown"
+msgid "Unknown user"
+msgstr "未知用户"
+
+#: eduhub/templates/eduhub/appraising_c_detail.html:52
+#: eduhub/templates/eduhub/appraising_c_list.html:48
+#: eduhub/templates/eduhub/appraising_create.html:64
+#: eduhub/templates/eduhub/appraising_detail.html:44
+#: eduhub/templates/eduhub/appraising_list.html:62
+#: eduhub/templates/eduhub/asharinggroup_list.html:37
+#: eduhub/templates/eduhub/eduhubhomesticker_detail.html:44
+#: eduhub/templates/eduhub/funcontent_detail.html:39
+#: eduhub/templates/eduhub/funcontent_list.html:62
+#: eduhub/templates/eduhub/label_list.html:52
+#: funhome/templates/funhome/appreciation_detail.html:46
+#: funhome/templates/funhome/funhomesticker_detail.html:45
+msgid "Edit"
+msgstr "编辑"
+
+#: eduhub/templates/eduhub/appraising_c_list.html:15
+#: eduhub/templates/eduhub/appraising_list.html:25
+#: eduhub/templates/eduhub/funcontent_list.html:25
+#: eduhub/templates/eduhub/label_list.html:16
+msgid "Add"
+msgstr "添加"
+
+#: eduhub/templates/eduhub/appraising_c_list.html:42
+#: eduhub/templates/eduhub/appraising_list.html:55
+#: eduhub/templates/eduhub/asharinggroup_list.html:32
+#: eduhub/templates/eduhub/eduhubhomesticker_list.html:53
+#: eduhub/templates/eduhub/funcontent_list.html:55
+#: eduhub/templates/eduhub/label_list.html:47
+msgid "View"
+msgstr "查看"
+
+#: eduhub/templates/eduhub/appraising_c_update.html:11
+#: eduhub/templates/eduhub/appraising_update.html:13
+#: eduhub/templates/eduhub/funcontent_update.html:14
+#: eduhub/templates/eduhub/label_update.html:8
+msgid "Update label"
+msgstr "更新标签"
+
+#: eduhub/templates/eduhub/appraising_c_update.html:23
+#: eduhub/templates/eduhub/appraising_update.html:32
+#: eduhub/templates/eduhub/funcontent_update.html:33
+msgid "Update"
+msgstr "更新"
+
+#: eduhub/templates/eduhub/appraising_create.html:54
+#| msgid "Appreciation"
+msgid "Appraise"
+msgstr "评价"
+
+#: eduhub/templates/eduhub/asharinggroup_list.html:10
+#| msgid "Appraisings from"
+msgid "Appraising Sharing Group"
+msgstr "打卡组"
+
+#: eduhub/templates/eduhub/eduhub_search_result.html:14
+msgid "Eduhub search"
+msgstr "教育"
+
+#: eduhub/templates/eduhub/eduhub_search_result.html:97
+#: eduhub/templates/eduhub/eduhub_search_result.html:137
+#: funhome/templates/funhome/_common_pagination.html:15
+msgid "first page"
+msgstr "第一页"
+
+#: eduhub/templates/eduhub/eduhub_search_result.html:103
+#: eduhub/templates/eduhub/eduhub_search_result.html:143
+#: funhome/templates/funhome/_common_pagination.html:21
+msgid "previous page"
+msgstr "上一页"
+
+#: eduhub/templates/eduhub/eduhub_search_result.html:110
+#: eduhub/templates/eduhub/eduhub_search_result.html:150
+#: funhome/templates/funhome/_common_pagination.html:28
+msgid "Page"
+msgstr "页"
+
+#: eduhub/templates/eduhub/eduhub_search_result.html:116
+#: eduhub/templates/eduhub/eduhub_search_result.html:156
+#: funhome/templates/funhome/_common_pagination.html:33
+msgid "next page"
+msgstr "下一页"
+
+#: eduhub/templates/eduhub/eduhub_search_result.html:121
+#: eduhub/templates/eduhub/eduhub_search_result.html:162
+#: funhome/templates/funhome/_common_pagination.html:38
+msgid "last page"
+msgstr "最后页"
+
+#: eduhub/templates/eduhub/eduhubhomesticker_detail.html:15
+#: eduhub/templates/eduhub/eduhubhomesticker_list.html:15
+msgid "Eduhub home"
+msgstr "教育"
+
+#: eduhub/templates/eduhub/eduhubhomesticker_list.html:95
+#: eduhub/templates/eduhub/label_update.html:17
+msgid "cover"
+msgstr "封面"
+
+#: eduhub/templates/eduhub/funtest_content_preview.html:16
+msgid "Funtest content preview"
+msgstr "贴纸文件"
+
+#: eduhub/templates/eduhub/funtest_create.html:13
+msgid "Create a test"
+msgstr "创建于"
+
+#: eduhub/templates/eduhub/funtest_create.html:33
+msgid "Live content"
+msgstr "内容"
+
+#: eduhub/templates/eduhub/how_to_classification.html:20
+msgid "How to classification"
+msgstr "分类参考"
+
+#: eduhub/templates/eduhub/how_to_classification.html:38
+msgid "How to classify the eduhub content"
+msgstr "分类参考"
+
+#: eduhub/templates/eduhub/how_to_classification.html:66
+msgid "classification copied"
+msgstr "分类已复制"
+
+#: eduhub/templates/eduhub/label_create.html:16
+#: eduhub/templates/eduhub/label_update.html:13
+msgid "Preview"
+msgstr "预览"
+
+#: eduhub/templates/eduhub/label_delete.html:42
+msgid "Creating date"
+msgstr "创建时间"
+
+#: eduhub/templates/eduhub/label_list.html:22
+msgid "Mine"
+msgstr "我的"
+
+#: eduhub/templatetags/eduhub_tags.py:35
+msgid "ALL"
+msgstr "全部"
+
+#: eduhub/views.py:87
+msgid "Cover image is required"
+msgstr "未选择封面图片"
+
+#: eduhub/views.py:92
+msgid "Image allowed only"
+msgstr "只能选择图片"
+
+#: eduhub/views.py:98
+msgid "The length of cover should be less than"
+msgstr "封面图片的大小应该小于"
+
+#: eduhub/views.py:136
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr "页数不是最后一页也不是数字哦."
+
+#: fun/apps.py:7
+msgid "Fun"
+msgstr "Fun"
+
+#: fun/settings.py:184 fun/settings_.py:186
+msgid "English"
+msgstr "English"
+
+#: fun/settings.py:184 fun/settings.py:185
+msgid "Chinese Simplified"
+msgstr "简体中文"
+
+#: funauth/templates/account/account_inactive.html:5
+#: funauth/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr "账号未激活"
+
+#: funauth/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr "账号未激活."
+
+#: funauth/templates/account/email.html:6
+msgid "Account"
+msgstr "账号"
+
+#: funauth/templates/account/email.html:11
+msgid "E-mail Addresses"
+msgstr "邮箱地址"
+
+#: funauth/templates/account/email.html:15
+msgid ""
+"\n"
+"        The following e-mail addresses are associated with your account\n"
+"      "
+msgstr ""
+"\n"
+"  以下邮箱地址关联你的账号\n"
+"    "
+
+#: funauth/templates/account/email.html:41
+msgid "Verified"
+msgstr "已验证"
+
+#: funauth/templates/account/email.html:43
+msgid "Unverified"
+msgstr "未验证"
+
+#: funauth/templates/account/email.html:47
+msgid "Primary"
+msgstr "常用"
+
+#: funauth/templates/account/email.html:57
+msgid "Make Primary"
+msgstr "改为常用"
+
+#: funauth/templates/account/email.html:61
+msgid "Re-send Verification"
+msgstr "重新发送"
+
+#: funauth/templates/account/email.html:65
+#: funauth/templates/socialaccount/connections.html:35
+msgid "Remove"
+msgstr "移除"
+
+#: funauth/templates/account/email.html:74
+msgid "Warning"
+msgstr "警告"
+
+#: funauth/templates/account/email.html:76
+msgid ""
+"\n"
+"        You currently do not have any e-mail address set up. You should "
+"really \n"
+"        add an e-mail address so you can receive notifications, reset your \n"
+"        password, etc\n"
+"      "
+msgstr ""
+"\n"
+"   你还没有设置邮箱地址哦!  添加可用的邮箱地址然后重置密码\n"
+"\n"
+"    "
+
+#: funauth/templates/account/email.html:86
+msgid "Add E-mail Address"
+msgstr "添加邮箱地址"
+
+#: funauth/templates/account/email.html:92
+msgid "Add E-mail"
+msgstr "添加邮箱"
+
+#: funauth/templates/account/email.html:104
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "确定要移除吗?"
+
+#: funauth/templates/account/email/base_message.txt:1
+#, python-format
+msgid "Hello from %(site_name)s!"
+msgstr "来自 %(site_name)s 的问候!"
+
+#: funauth/templates/account/email/base_message.txt:5
+#, python-format
+msgid ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+"谢谢你使用 %(site_name)s!\n"
+"%(site_domain)s"
+
+#: funauth/templates/account/email/email_confirmation_message.html:8
+msgid "Hello from x-dove"
+msgstr "来自 x-dove 的问候"
+
+#: funauth/templates/account/email/email_confirmation_message.html:10
+msgid ""
+"\n"
+"            You're receiving this e-mail because user \n"
+"        "
+msgstr ""
+"\n"
+"            您收到这封邮件是因为用户\n"
+"        "
+
+#: funauth/templates/account/email/email_confirmation_message.html:15
+msgid ""
+"\n"
+"            has given yours as an e-mail address to connect their account.\n"
+"        "
+msgstr ""
+"\n"
+"            邮件已送出, 未收到请联系我们.\n"
+"        "
+
+#: funauth/templates/account/email/email_confirmation_message.html:18
+msgid "To confirm this is correct, go to"
+msgstr "确认邮件请 点击"
+
+#: funauth/templates/account/email/email_confirmation_message.html:20
+msgid "CONFIRM EMAIL"
+msgstr "确认邮箱"
+
+#: funauth/templates/account/email/email_confirmation_message.html:25
+msgid ""
+" \n"
+"            Thank you from x-dove!\n"
+"        "
+msgstr ""
+" \n"
+"         谢谢亲, (来自 x-dove )! \n"
+"        "
+
+#: funauth/templates/account/email/email_confirmation_message.txt:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because user %(user_display)s has given your e-"
+"mail address to register an account on %(site_domain)s.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s"
+msgstr ""
+"您收到此邮件是因为用户 %(user_display)s 使用你的邮件地址在我们的站点 "
+"%(site_domain)s 注册账号.\n"
+"\n"
+"如果是你注册, 请点击 %(activate_url)s 确认"
+
+#: funauth/templates/account/email/email_confirmation_subject.html:3
+#: funauth/templates/account/email/email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr "请验证你的邮箱地址"
+
+#: funauth/templates/account/email/password_reset_key_message.html:7
+msgid "Hello from"
+msgstr "问候来自"
+
+#: funauth/templates/account/email/password_reset_key_message.html:7
+#: funhome/views.py:153 funhome/views.py:186
+msgid "X-DOVE"
+msgstr "X-DOVE"
+
+#: funauth/templates/account/email/password_reset_key_message.html:9
+msgid ""
+"\n"
+"        You're receiving this e-mail because you or someone else has "
+"requested \n"
+"        a password for your user account.\n"
+"        It can be safely ignored if you did not request a password reset. \n"
+"        Click the link below to reset your password.\n"
+"    "
+msgstr ""
+"\n"
+"        亲! 您好, 重置密码邮件送达 \n"
+"        (亲没有重置密码请忽略).\n"
+"    "
+
+#: funauth/templates/account/email/password_reset_key_message.html:16
+msgid "RESET PASSWORD"
+msgstr "重置密码"
+
+#: funauth/templates/account/email/password_reset_key_message.html:19
+#, python-format
+msgid ""
+"\n"
+"            In case you forgot, your username is %(username)s.\n"
+"        "
+msgstr ""
+"\n"
+"                提前和亲说, 亲的用户名是: %(username)s.\n"
+"        "
+
+#: funauth/templates/account/email/password_reset_key_message.html:26
+msgid "Thank you for using"
+msgstr "很高兴为您服务"
+
+#: funauth/templates/account/email/password_reset_key_message.txt:4
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
+msgstr ""
+"您好, 重置密码邮件送达 \n"
+" (亲没有重置密码请忽略)."
+
+#: funauth/templates/account/email/password_reset_key_message.txt:9
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr "您的用户名是: %(username)s."
+
+#: funauth/templates/account/email/password_reset_key_subject.html:3
+msgid ""
+"\n"
+"    Password Reset E-mail\n"
+msgstr ""
+"\n"
+"    重置电子邮件\n"
+
+#: funauth/templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr "置电子邮件"
+
+#: funauth/templates/account/email_confirm.html:7
+#: funauth/templates/account/email_confirm.html:12
+msgid "Confirm E-mail Address"
+msgstr "确认电子邮件"
+
+#: funauth/templates/account/email_confirm.html:19
+#, python-format
+msgid ""
+"\n"
+"                Please confirm that \n"
+"                <a href=\"mailto:%(email)s\"\n"
+"                    style=\"font-size: larger;\">\n"
+"                    %(email)s\n"
+"                </a> is an e-mail address for user \n"
+"                <span style=\"font-weight: bolder;\">%(user_display)s</"
+"span>. \n"
+"            "
+msgstr ""
+"\n"
+"                请确认邮件📫 \n"
+"                <a href=\"mailto:%(email)s\"\n"
+"                    style=\"font-size: larger;\">\n"
+"                    %(email)s\n"
+"                </a> 是用户  \n"
+"                <span style=\"font-weight: bolder;\">%(user_display)s</span> "
+"的。 \n"
+"            "
+
+#: funauth/templates/account/email_confirm.html:34
+msgid "Confirm"
+msgstr "确认"
+
+#: funauth/templates/account/email_confirm.html:44
+msgid ""
+"\n"
+"                This e-mail confirmation link expired or is invalid. Please\n"
+"            "
+msgstr ""
+"\n"
+"   邮件链接非法或已失效。请\n"
+"     "
+
+#: funauth/templates/account/email_confirm.html:49
+msgid "issue a new e-mail confirmation request"
+msgstr "重新发送吧"
+
+#: funauth/templates/account/login.html:11
+#: funauth/templates/account/login.html:22
+#: funauth/templates/account/login.html:43
+msgid "Sign In"
+msgstr "登录"
+
+#: funauth/templates/account/login.html:26
+msgid "If you have not created an account yet, then please"
+msgstr "没有账号吗?  请"
+
+#: funauth/templates/account/login.html:27
+msgid "sign up"
+msgstr "注册"
+
+#: funauth/templates/account/login.html:50
+msgid "Forgot Password?"
+msgstr "忘记密码?"
+
+#: funauth/templates/account/logout.html:11
+#: funauth/templates/account/logout.html:23
+msgid "Sign Out"
+msgstr "退出"
+
+#: funauth/templates/account/logout.html:29
+msgid "Are you sure you want to sign out?"
+msgstr "亲要确认退出吗?"
+
+#: funauth/templates/account/logout.html:41
+msgid "Sign out now"
+msgstr "退出"
+
+#: funauth/templates/account/messages/cannot_delete_primary_email.html:2
+#, python-format
+msgid ""
+"\n"
+"    You cannot remove your primary e-mail address (%(email)s).\n"
+msgstr ""
+"\n"
+"    常用电子邮件不能移除哦! (%(email)s).\n"
+
+#: funauth/templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "常用电子邮件不能移除哦! (%(email)s)."
+
+#: funauth/templates/account/messages/email_confirmation_sent.html:2
+#, python-format
+msgid ""
+"\n"
+"    Confirmation e-mail sent to %(email)s.\n"
+msgstr ""
+"\n"
+"    去 %(email)s 邮箱检查邮件吧\n"
+
+#: funauth/templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr "去 %(email)s 邮箱检查邮件吧"
+
+#: funauth/templates/account/messages/email_confirmed.html:2
+#, python-format
+msgid ""
+"\n"
+"    You have confirmed %(email)s.\n"
+msgstr ""
+"\n"
+"     %(email)s 邮件已确认\n"
+
+#: funauth/templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "%(email)s 邮件已确认"
+
+#: funauth/templates/account/messages/email_deleted.html:2
+#, python-format
+msgid ""
+"\n"
+"    Removed e-mail address %(email)s.\n"
+msgstr ""
+"\n"
+"    移除邮件地址 %(email)s\n"
+
+#: funauth/templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr "移除邮件地址 %(email)s"
+
+#: funauth/templates/account/messages/logged_in.html:4
+#, python-format
+msgid ""
+"\n"
+"    Successfully signed in as %(name)s.\n"
+msgstr ""
+"\n"
+"    登录成功 !  %(name)s.\n"
+
+#: funauth/templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr "登录成功 !  %(name)s."
+
+#: funauth/templates/account/messages/logged_out.html:2
+msgid ""
+"\n"
+"    You have signed out.\n"
+msgstr ""
+"\n"
+"    已退出.\n"
+
+#: funauth/templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr "已退出."
+
+#: funauth/templates/account/messages/password_changed.html:2
+msgid ""
+"\n"
+"    Password successfully changed.\n"
+msgstr ""
+"\n"
+"更改密码成功.\n"
+
+#: funauth/templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr "更改密码成功."
+
+#: funauth/templates/account/messages/password_set.html:2
+msgid ""
+"\n"
+"    Password successfully set.\n"
+msgstr ""
+"\n"
+"设置密码成功.\n"
+
+#: funauth/templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr "设置密码成功."
+
+#: funauth/templates/account/messages/primary_email_set.html:2
+msgid ""
+"\n"
+"    Primary e-mail address set.\n"
+msgstr ""
+"\n"
+" \n"
+"已设为常用邮箱.\n"
+
+#: funauth/templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr "已设为常用邮箱."
+
+#: funauth/templates/account/messages/unverified_primary_email.html:2
+msgid ""
+"\n"
+"    Your primary e-mail address must be verified.\n"
+msgstr ""
+"\n"
+"    亲, 常用邮箱地址要被验证哦.\n"
+
+#: funauth/templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr "亲, 常用邮箱地址要被验证哦."
+
+#: funauth/templates/account/password_change.html:5
+#: funauth/templates/account/password_change.html:8
+#: funauth/templates/account/password_change.html:15
+#: funauth/templates/account/password_reset_from_key.html:4
+#: funauth/templates/account/password_reset_from_key.html:11
+#: funauth/templates/account/password_reset_from_key_done.html:6
+#: funauth/templates/account/password_reset_from_key_done.html:9
+msgid "Change Password"
+msgstr "更改密码"
+
+#: funauth/templates/account/password_reset.html:8
+#: funauth/templates/account/password_reset.html:15
+#: funauth/templates/account/password_reset_done.html:6
+#: funauth/templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr "重置密码"
+
+#: funauth/templates/account/password_reset.html:24
+msgid ""
+"\n"
+"                You are administrator, please reset password via terminal\n"
+"            "
+msgstr ""
+"\n"
+"            如果重置密码失败请联系我们.\n"
+"        "
+
+#: funauth/templates/account/password_reset.html:32
+msgid ""
+"\n"
+"                Forgotten your password? Enter your e-mail address below, \n"
+"                and we'll send you an e-mail allowing you to reset it\n"
+"            "
+msgstr ""
+"\n"
+"    忘记密码了? 填写电子邮箱然后发送重置密码邮件\n"
+"      "
+
+#: funauth/templates/account/password_reset.html:41
+msgid "Reset My Password"
+msgstr "重置密码"
+
+#: funauth/templates/account/password_reset.html:46
+msgid ""
+"\n"
+"                Please contact us if you have any trouble resetting \n"
+"                your password.\n"
+"            "
+msgstr ""
+"\n"
+"            如果重置密码失败请联系我们.\n"
+"        "
+
+#: funauth/templates/account/password_reset_done.html:16
+msgid ""
+"\n"
+"            We have sent you an e-mail. Please contact us if you do not "
+"receive \n"
+"            it within a few minutes.\n"
+"        "
+msgstr ""
+"\n"
+"            邮件已送出, 未收到请联系我们.\n"
+"        "
+
+#: funauth/templates/account/password_reset_from_key.html:9
+msgid "Bad Token"
+msgstr "令牌无效"
+
+#: funauth/templates/account/password_reset_from_key.html:18
+msgid ""
+"\n"
+"                The password reset link was invalid, possibly because it "
+"has \n"
+"                already been used.  Please request a \n"
+"            "
+msgstr ""
+"\n"
+"                链接非法, 可能链接已被使用.  请  \n"
+"            "
+
+#: funauth/templates/account/password_reset_from_key.html:23
+msgid "new password reset"
+msgstr "新密码已重置"
+
+#: funauth/templates/account/password_reset_from_key.html:33
+msgid "change password"
+msgstr "更改密码"
+
+#: funauth/templates/account/password_reset_from_key.html:37
+#: funauth/templates/account/password_reset_from_key_done.html:10
+msgid "Your password is now changed."
+msgstr "密码已更改."
+
+#: funauth/templates/account/password_set.html:5
+#: funauth/templates/account/password_set.html:8
+#: funauth/templates/account/password_set.html:15
+msgid "Set Password"
+msgstr "设置密码"
+
+#: funauth/templates/account/signup.html:11
+#: funauth/templates/socialaccount/signup.html:5
+msgid "Signup"
+msgstr "注册"
+
+#: funauth/templates/account/signup.html:22
+#: funauth/templates/account/signup.html:50
+#: funauth/templates/socialaccount/signup.html:8
+#: funauth/templates/socialaccount/signup.html:19
+#: funhome/templates/funhome/_navbar.html:68
+msgid "Sign Up"
+msgstr "注册"
+
+#: funauth/templates/account/signup.html:25
+msgid "Already have an account? Then please"
+msgstr "已有账号吗? 请"
+
+#: funauth/templates/account/signup.html:26
+#: funhome/templates/funhome/home_join_us.html:91
+msgid "sign in"
+msgstr "登录"
+
+#: funauth/templates/account/signup.html:42
+#: funhome/templates/funhome/_footer.html:24
+msgid "Legal information"
+msgstr "法律信息"
+
+#: funauth/templates/account/signup.html:45
+msgid "and_sign"
+msgstr "和"
+
+#: funauth/templates/account/signup.html:46
+msgid "Data privacy"
+msgstr "数据隐私"
+
+#: funauth/templates/account/signup_closed.html:5
+#: funauth/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr "注册已关闭"
+
+#: funauth/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "非常抱歉, 注册暂时关闭了."
+
+#: funauth/templates/account/snippets/already_logged_in.html:7
+msgid "You are already logged in as"
+msgstr "已登录, 用户名"
+
+#: funauth/templates/account/verification_sent.html:6
+#: funauth/templates/account/verification_sent.html:10
+#: funauth/templates/account/verified_email_required.html:6
+#: funauth/templates/account/verified_email_required.html:10
+msgid "Verify Your E-mail Address"
+msgstr "验证你的电子邮件"
+
+#: funauth/templates/account/verification_sent.html:13
+msgid ""
+"\n"
+"            We have sent an e-mail to you for verification. Follow the "
+"link \n"
+"            provided to finalize the signup process. Please contact us if "
+"you \n"
+"            do not receive it within a few minutes.\n"
+"        "
+msgstr ""
+"\n"
+"            验证邮件已送出, 查看邮箱并按要求完成注册, (未收到邮件? 重新发送或"
+"联系我们).\n"
+"        "
+
+#: funauth/templates/account/verified_email_required.html:15
+msgid ""
+"\n"
+"            This part of the site requires us to verify that\n"
+"            you are who you claim to be. For this purpose, we require that "
+"you\n"
+"            verify ownership of your e-mail address. \n"
+"        "
+msgstr ""
+"\n"
+"            This part of the site requires us to verify that\n"
+"            you are who you claim to be. For this purpose, we require that "
+"you\n"
+"            verify ownership of your e-mail address. \n"
+"        "
+
+#: funauth/templates/account/verified_email_required.html:23
+msgid ""
+"\n"
+"            We have sent an e-mail to you for\n"
+"            verification. Please click on the link inside this e-mail. "
+"Please\n"
+"            contact us if you do not receive it within a few minutes.\n"
+"        "
+msgstr ""
+"\n"
+"            验证邮件已送出 \n"
+"            点击邮箱内链接完成验证哦! \n"
+"            未收到邮件? 联系我们.\n"
+"        "
+
+#: funauth/templates/account/verified_email_required.html:31
+msgid "Note"
+msgstr "留心一下"
+
+#: funauth/templates/account/verified_email_required.html:31
+msgid "you can still"
+msgstr "你也可以"
+
+#: funauth/templates/account/verified_email_required.html:33
+msgid "change your e-mail address"
+msgstr "更改邮箱地址"
+
+#: funauth/templates/openid/login.html:9
+msgid "OpenID Sign In"
+msgstr "OpenID 登录"
+
+#: funauth/templates/socialaccount/authentication_error.html:5
+#: funauth/templates/socialaccount/authentication_error.html:8
+msgid "Social Network Login Failure"
+msgstr "登录失败"
+
+#: funauth/templates/socialaccount/authentication_error.html:10
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr "登录账户时出现异常了."
+
+#: funauth/templates/socialaccount/connections.html:5
+#: funauth/templates/socialaccount/connections.html:8
+msgid "Account Connections"
+msgstr "账号连接"
+
+#: funauth/templates/socialaccount/connections.html:11
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "账号已登录 :"
+
+#: funauth/templates/socialaccount/connections.html:43
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "没有关联账号哦."
+
+#: funauth/templates/socialaccount/connections.html:46
+msgid "Add a 3rd Party Account"
+msgstr "增加关联账号"
+
+#: funauth/templates/socialaccount/login_cancelled.html:5
+#: funauth/templates/socialaccount/login_cancelled.html:9
+msgid "Login Cancelled"
+msgstr "登录取消"
+
+#: funauth/templates/socialaccount/login_cancelled.html:13
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
+msgstr "确定取消吗?<a href=\"%(login_url)s\">登录</a>."
+
+#: funauth/templates/socialaccount/messages/account_connected.txt:2
+msgid "The social account has been connected."
+msgstr "关联账号被连接."
+
+#: funauth/templates/socialaccount/messages/account_connected_other.txt:2
+msgid "The social account is already connected to a different account."
+msgstr "亲! 这个第三方账号已被关联."
+
+#: funauth/templates/socialaccount/messages/account_disconnected.txt:2
+msgid "The social account has been disconnected."
+msgstr "第三方账号已取消连接."
+
+#: funauth/templates/socialaccount/signup.html:10
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"你将使用 %(provider_name)s 账号登录\n"
+"%(site_name)s. :"
+
+#: funhome/apps.py:7
+msgid "Fun home"
+msgstr "主页"
+
+#: funhome/modelforms.py:24 funhome/models.py:48
+msgid "Sticker content file"
+msgstr "贴纸文件"
+
+#: funhome/modelforms.py:30
+msgid "content file, pdf and video file is allowed only"
+msgstr "内容文件只能为pdf或视频哦"
+
+#: funhome/models.py:23 funhome/models.py:25
+msgid "Home sticker(deprecation)"
+msgstr "主页贴纸"
+
+#: funhome/models.py:38 funhome/models.py:83
+msgid "Sticker subtitle"
+msgstr "贴纸子标题"
+
+#: funhome/models.py:41 funhome/models.py:87
+msgid "Sticker cover"
+msgstr "贴纸背景"
+
+#: funhome/models.py:45 funhome/models.py:92
+msgid "Sticker promulgator"
+msgstr "贴纸的管理员"
+
+#: funhome/models.py:52 funhome/models.py:98
+msgid "Sticker promulgating date"
+msgstr "贴纸时间"
+
+#: funhome/models.py:56 funhome/models.py:101
+msgid "Sticker comment"
+msgstr "备注"
+
+#: funhome/models.py:66
+msgid "Home sticker"
+msgstr "主页贴纸"
+
+#: funhome/models.py:67
+msgid "Home stickers"
+msgstr "主页贴纸"
+
+#: funhome/models.py:110 funhome/models.py:111
+msgid "Appreciation"
+msgstr "评价"
+
+#: funhome/models.py:124
+msgid "invitee"
+msgstr "受邀人"
+
+#: funhome/models.py:129
+msgid "invitee title"
+msgstr "头衔"
+
+#: funhome/models.py:134
+msgid "brief comment"
+msgstr "主页短评"
+
+#: funhome/models.py:139
+msgid "illustration"
+msgstr "头贴"
+
+#: funhome/models.py:144
+msgid "home comment"
+msgstr "主页评价"
+
+#: funhome/models.py:149
+msgid "appreciation content"
+msgstr "评价内容"
+
+#: funhome/models.py:155
+msgid "Submitter"
+msgstr "提交者"
+
+#: funhome/models.py:160
+msgid "Submitting date"
+msgstr "创建时间"
+
+#: funhome/templates/funhome/_footer.html:16
+msgid ""
+"\n"
+"                        x-dove\n"
+"                    "
+msgstr ""
+"\n"
+"                        x-dove\n"
+"                    "
+
+#: funhome/templates/funhome/_footer.html:29
+msgid " Data privacy"
+msgstr " 隐私"
+
+#: funhome/templates/funhome/_footer.html:33
+msgid "Developer"
+msgstr "开发者"
+
+#: funhome/templates/funhome/_footer.html:43
+msgid "this site"
+msgstr "本站源码"
+
+#: funhome/templates/funhome/_footer_language.html:25
+msgid "language"
+msgstr "语言"
+
+#: funhome/templates/funhome/_footer_theme.html:10
+msgid "Theme"
+msgstr "主题"
+
+#: funhome/templates/funhome/_footer_theme.html:15
+msgid "Select theme"
+msgstr "选择主题"
+
+#: funhome/templates/funhome/_footer_theme.html:20
+msgid "cerulean"
+msgstr "天蓝色"
+
+#: funhome/templates/funhome/_footer_theme.html:23
+msgid "cyborg"
+msgstr "科技"
+
+#: funhome/templates/funhome/_footer_theme.html:26
+msgid "flatly"
+msgstr "干净利落"
+
+#: funhome/templates/funhome/_footer_theme.html:29
+msgid "litera"
+msgstr "文青"
+
+#: funhome/templates/funhome/_footer_theme.html:32
+msgid "lux"
+msgstr "照明"
+
+#: funhome/templates/funhome/_footer_theme.html:35
+msgid "minty"
+msgstr "薄荷"
+
+#: funhome/templates/funhome/_footer_theme.html:38
+msgid "sandstone"
+msgstr "岩石"
+
+#: funhome/templates/funhome/_footer_theme.html:41
+msgid "sketchy"
+msgstr "素描"
+
+#: funhome/templates/funhome/_footer_theme.html:44
+msgid "solar"
+msgstr "阳光"
+
+#: funhome/templates/funhome/_footer_theme.html:47
+msgid "superhero"
+msgstr "锐气"
+
+#: funhome/templates/funhome/_footer_theme.html:50
+msgid "yeti"
+msgstr "雪人"
+
+#: funhome/templates/funhome/_footer_theme.html:53
+msgid "cosmo"
+msgstr "都市"
+
+#: funhome/templates/funhome/_footer_theme.html:56
+msgid "darkly"
+msgstr "熬夜"
+
+#: funhome/templates/funhome/_footer_theme.html:59
+msgid "journal"
+msgstr "报纸"
+
+#: funhome/templates/funhome/_footer_theme.html:62
+msgid "lumen"
+msgstr "流光"
+
+#: funhome/templates/funhome/_footer_theme.html:65
+msgid "pulse"
+msgstr "电子"
+
+#: funhome/templates/funhome/_footer_theme.html:68
+msgid "simplex"
+msgstr "d调"
+
+#: funhome/templates/funhome/_footer_theme.html:71
+msgid "slate"
+msgstr "石片"
+
+#: funhome/templates/funhome/_footer_theme.html:74
+msgid "spacelab"
+msgstr "太空"
+
+#: funhome/templates/funhome/_footer_theme.html:77
+msgid "united"
+msgstr "一体"
+
+#: funhome/templates/funhome/_footer_theme.html:80
+msgid "materia"
+msgstr "材质"
+
+#: funhome/templates/funhome/_footer_theme.html:83
+msgid "default"
+msgstr "默认"
+
+#: funhome/templates/funhome/_navbar.html:22
+#: funhome/templates/funhome/legal_information.html:30
+msgid "Home"
+msgstr "主页"
+
+#: funhome/templates/funhome/_navbar.html:31
+msgid "Developers"
+msgstr "开发者"
+
+#: funhome/templates/funhome/_navbar.html:37
+msgid "Message"
+msgstr "消息"
+
+#: funhome/templates/funhome/_navbar.html:55
+msgid "Hello"
+msgstr "你好"
+
+#: funhome/templates/funhome/_navbar.html:59
+msgid "Log Out"
+msgstr "退出"
+
+#: funhome/templates/funhome/_navbar.html:63
+msgid "Log In"
+msgstr "登录"
+
+#: funhome/templates/funhome/appreciation_detail.html:13
+msgid "appreciation detail"
+msgstr "评价"
+
+#: funhome/templates/funhome/funhomesticker_detail.html:13
+#: funhome/templates/funhome/homesticker_detail.html:13
+msgid "Sticker detail"
+msgstr "贴纸详细"
+
+#: funhome/templates/funhome/funhomesticker_list.html:13
+#: funhome/templates/funhome/funhomesticker_list.html:18
+#: funhome/templates/funhome/homesticker_list.html:13
+#: funhome/templates/funhome/homesticker_list.html:18
+msgid "Sticker list"
+msgstr "所有贴纸"
+
+#: funhome/templates/funhome/funhomesticker_list.html:21
+msgid "Older"
+msgstr "旧的"
+
+#: funhome/templates/funhome/home_appreciation.html:11
+msgid "Why choose us"
+msgstr "我们的优势"
+
+#: funhome/templates/funhome/home_funhomesticker.html:101
+msgid "View all"
+msgstr "查看全部"
+
+#: funhome/templates/funhome/home_join_us.html:9
+msgid "Join us now"
+msgstr "现在加入X-DOVE"
+
+#: funhome/templates/funhome/home_join_us.html:24
+msgid "E-mail"
+msgstr "邮箱地址"
+
+#: funhome/templates/funhome/home_join_us.html:39
+msgid "Username"
+msgstr "用户名"
+
+#: funhome/templates/funhome/home_join_us.html:55
+msgid "Password"
+msgstr "设置密码"
+
+#: funhome/templates/funhome/home_join_us.html:67
+msgid "Password (again)"
+msgstr "确认密码"
+
+#: funhome/templates/funhome/home_join_us.html:80
+msgid "Join now"
+msgstr "现在加入"
+
+#: funhome/templates/funhome/home_join_us.html:90
+msgid "Already have an account"
+msgstr "已有账号吗"
+
+#: funhome/templates/funhome/legal_information.html:21
+msgid "LEGAL INFORMATION"
+msgstr "法律信息"
+
+#: funhome/views.py:154 funhome/views.py:187
+msgid "Larry`s sharing"
+msgstr "Larry 的分享"
+
+#: funhome/views.py:161 funhome/views.py:193
+msgid "larry"
+msgstr "larry"
+
+#: funuser/modelforms.py:31
+msgid "Full name"
+msgstr "姓名"
+
+#: funuser/models.py:21
+msgid "Avatar"
+msgstr "头像"
+
+#: funuser/models.py:24
+msgid "Brith date"
+msgstr "出生年月"
+
+#: funuser/models.py:26 funuser/models.py:31 funuser/models.py:36
+#: funuser/models.py:41 funuser/models.py:46 funuser/models.py:51
+#: funuser/models.py:56
+msgid "Is outward"
+msgstr "公开"
+
+#: funuser/models.py:29 funuser/templates/funuser/funuser_detail.html:55
+#: funuser/templates/funuser/funuser_update.html:64
+msgid "Address"
+msgstr "地址"
+
+#: funuser/models.py:34 funuser/templates/funuser/funuser_detail.html:62
+#: funuser/templates/funuser/funuser_update.html:83
+msgid "Hometown"
+msgstr "家乡"
+
+#: funuser/models.py:39 funuser/templates/funuser/funuser_detail.html:69
+#: funuser/templates/funuser/funuser_update.html:100
+msgid "College"
+msgstr "大学"
+
+#: funuser/models.py:44 funuser/templates/funuser/funuser_detail.html:76
+#: funuser/templates/funuser/funuser_update.html:116
+msgid "Occupation"
+msgstr "工作"
+
+#: funuser/models.py:49
+msgid "Hobby"
+msgstr "兴趣"
+
+#: funuser/models.py:54 funuser/templates/funuser/funuser_detail.html:83
+#: funuser/templates/funuser/funuser_update.html:132
+msgid "Motto"
+msgstr "座右铭"
+
+#: funuser/templates/funuser/_funuser_url.html:12
+msgid "Information"
+msgstr "用户信息"
+
+#: funuser/templates/funuser/_funuser_url.html:16
+msgid "Reset password"
+msgstr "重置密码"
+
+#: funuser/templates/funuser/funuser_detail.html:16
+#, python-format
+msgid ""
+"\n"
+"                %(funuser.user)s left nothing here\n"
+"            "
+msgstr ""
+"\n"
+"                %(funuser.user)s 什么都没有留下\n"
+"            "
+
+#: funuser/templates/funuser/funuser_detail.html:48
+#: funuser/templates/funuser/funuser_update.html:44
+msgid "Birth date"
+msgstr "出生年月"
+
+#: funuser/templates/funuser/funuser_update.html:50
+#: funuser/templates/funuser/funuser_update.html:72
+#: funuser/templates/funuser/funuser_update.html:89
+#: funuser/templates/funuser/funuser_update.html:106
+#: funuser/templates/funuser/funuser_update.html:122
+#: funuser/templates/funuser/funuser_update.html:138
+msgid "is outward"
+msgstr "公开"
+
+#: funuser/views.py:47
+msgid "Nice try"
+msgstr "干得不错哦"
+
+#~ msgid "Chinese(China)"
+#~ msgstr "中文(大陆)"
+
+#~ msgid "Label"
+#~ msgstr "标签"
+
+#~ msgid "classification : college/grade/semester/course"
+#~ msgstr "分类如: (大学/中学/小学)/年级/学期/课程"
+
+#~ msgid "Eduhub content"
+#~ msgstr "内容"
+
+#~ msgid "Eduhub classification"
+#~ msgstr "分类"
+
+#~ msgid "Classification level"
+#~ msgstr "级别"
+
+#~ msgid "Classification creating user"
+#~ msgstr "创建分类的用户"
+
+#~ msgid "Is classification disabled"
+#~ msgstr "禁用"
+
+#~ msgid "Frequently request"
+#~ msgstr "频繁访问"
+
+#~ msgid "Content file is required"
+#~ msgstr "未选择内容文件"
+
+#~ msgid "The length of video file should be less than"
+#~ msgstr "视频文件应该小于"
+
+#~ msgid "The length of pdf file should be less than"
+#~ msgstr "Pdf文件应该小于"
+
+#~ msgid "中文简体"
+#~ msgstr "中文简体"
+
+#~ msgid "avatar"
+#~ msgstr "头像"
+
+#~ msgid "User information"
+#~ msgstr "用户信息"
+
+#~ msgid "User informations"
+#~ msgstr "用户信息"
+
+#~ msgid "User"
+#~ msgstr "用户"
+
+#~ msgid "Funuser creating date"
+#~ msgstr "创建时间"
+
+#~ msgid "Search files"
+#~ msgstr "搜索文件"
+
+#~ msgid "Select an image to embed"
+#~ msgstr "选择主题"
+
+#~ msgid ""
+#~ "Browse for the image you want, then click 'Embed Image' to continue..."
+#~ msgstr "浏览所需图像，然后单击“嵌入图像”以继续..."
+
+#~ msgid ""
+#~ "No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+#~ "tab."
+#~ msgstr "找不到图像。使用“图像按钮”对话框的“上传”选项卡上传图像。"
+
+#~ msgid "Images in: "
+#~ msgstr "照片: "
+
+#~ msgid "Embed Image"
+#~ msgstr "嵌入照片"
+
+#~ msgid "Play Slideshow"
+#~ msgstr "播放幻灯片"
+
+#~ msgid "Pause Slideshow"
+#~ msgstr "暂停幻灯片"
+
+#~ msgid "&lsaquo; Previous Photo"
+#~ msgstr "&lsaquo; 上一张"
+
+#~ msgid "Next Photo &rsaquo;"
+#~ msgstr "下一张 &rsaquo;"
+
+#~ msgid "Next &rsaquo;"
+#~ msgstr "下翻 &rsaquo;"
+
+#~ msgid "&lsaquo; Prev"
+#~ msgstr "&lsaquo; 上翻"
+
+#~ msgid "This field is required."
+#~ msgstr "未选择内容文件."
+
+#~ msgid "i18n text"
+#~ msgstr "国际化文本"
+
+#~ msgid "i18n legend"
+#~ msgstr "国际化说明"
+
+#~ msgid "Enter a valid value."
+#~ msgstr "请输入一个合法的值."
+
+#~ msgid "Messages"
+#~ msgstr "消息"
+
+#~ msgid "Site Maps"
+#~ msgstr "网站地图"
+
+#~ msgid "Static Files"
+#~ msgstr "静态文件"
+
+#~ msgid "Syndication"
+#~ msgstr "组织"
+
+#~ msgid "That page number is not an integer"
+#~ msgstr "页数不是整数哦"
+
+#~ msgid "That page number is less than 1"
+#~ msgstr "页数小于1"
+
+#~ msgid "That page contains no results"
+#~ msgstr "没有这一页哦"
+
+#~ msgid "Enter a valid URL."
+#~ msgstr "请输入合法的URL."
+
+#~ msgid "Enter a valid integer."
+#~ msgstr "输入一个合法整数."
+
+#~ msgid "Enter a valid email address."
+#~ msgstr "更改邮箱地址."
+
+#~ msgid ""
+#~ "Enter a valid “slug” consisting of letters, numbers, underscores or "
+#~ "hyphens."
+#~ msgstr "输入由字母、数字、下划线或连字符组成的有效slug."
+
+#~ msgid ""
+#~ "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, "
+#~ "or hyphens."
+#~ msgstr "输入由Unicode字母、数字、下划线或连字符组成的有效slug."
+
+#~ msgid "Enter a valid IPv4 address."
+#~ msgstr "输入合法的IPv4地址."
+
+#~ msgid "Enter a valid IPv6 address."
+#~ msgstr "输入合法的IPv6地址."
+
+#~ msgid "Enter a valid IPv4 or IPv6 address."
+#~ msgstr "输入合法的IP地址."
+
+#~ msgid "Enter only digits separated by commas."
+#~ msgstr "输入由逗号分割的数字."
+
+#, python-format
+#~ msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+#~ msgstr "确保值是 %(limit_value)s (它是 %(show_value)s)."
+
+#, python-format
+#~ msgid "Ensure this value is less than or equal to %(limit_value)s."
+#~ msgstr "确保 值 小于 或 等于 %(limit_value)s."
+
+#, python-format
+#~ msgid "Ensure this value is greater than or equal to %(limit_value)s."
+#~ msgstr "确保 值 大于 或 等于 %(limit_value)s."
+
+#, python-format
+#~ msgid ""
+#~ "Ensure this value has at least %(limit_value)d character (it has "
+#~ "%(show_value)d)."
+#~ msgid_plural ""
+#~ "Ensure this value has at least %(limit_value)d characters (it has "
+#~ "%(show_value)d)."
+#~ msgstr[0] ""
+#~ "确保 值 少于 %(limit_value)d 个字符 (它已是 %(show_value)d) 个字符."
+
+#, python-format
+#~ msgid ""
+#~ "Ensure this value has at most %(limit_value)d character (it has "
+#~ "%(show_value)d)."
+#~ msgid_plural ""
+#~ "Ensure this value has at most %(limit_value)d characters (it has "
+#~ "%(show_value)d)."
+#~ msgstr[0] ""
+#~ "确保 值 大于 %(limit_value)d 个字符 (值已是 %(show_value)d) 个字符."
+
+#~ msgid "Enter a number."
+#~ msgstr "输入一个数字."
+
+#, python-format
+#~ msgid "Ensure that there are no more than %(max)s digit in total."
+#~ msgid_plural "Ensure that there are no more than %(max)s digits in total."
+#~ msgstr[0] "确保大于 %(max)s ."
+
+#, python-format
+#~ msgid "Ensure that there are no more than %(max)s decimal place."
+#~ msgid_plural "Ensure that there are no more than %(max)s decimal places."
+#~ msgstr[0] "确保不大于 %(max)s."
+
+#, python-format
+#~ msgid ""
+#~ "Ensure that there are no more than %(max)s digit before the decimal point."
+#~ msgid_plural ""
+#~ "Ensure that there are no more than %(max)s digits before the decimal "
+#~ "point."
+#~ msgstr[0] "确保小数点数位不大于 %(max)s ."
+
+#, python-format
+#~ msgid ""
+#~ "File extension “%(extension)s” is not allowed. Allowed extensions are: "
+#~ "%(allowed_extensions)s."
+#~ msgstr ""
+#~ "文件扩展 “%(extension)s” 被拒绝了. 允许的扩展有: %(allowed_extensions)s."
+
+#~ msgid "Null characters are not allowed."
+#~ msgstr "不允许为空."
+
+#~ msgid "and"
+#~ msgstr "并且"
+
+#, python-format
+#~ msgid "%(model_name)s with this %(field_labels)s already exists."
+#~ msgstr "%(model_name)s  %(field_labels)s 已经存在."
+
+#, python-format
+#~ msgid "Value %(value)r is not a valid choice."
+#~ msgstr "%(value)r 是一个非法选项."
+
+#~ msgid "This field cannot be null."
+#~ msgstr "这里不能为空哦."
+
+#~ msgid "This field cannot be blank."
+#~ msgstr "这里不能为空."
+
+#, python-format
+#~ msgid "%(model_name)s with this %(field_label)s already exists."
+#~ msgstr "%(model_name)s  %(field_label)s 已经存在."
+
+#, python-format
+#~ msgid ""
+#~ "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+#~ msgstr "%(field_label)s %(date_field_label)s %(lookup_type)s 必须唯一."
+
+#, python-format
+#~ msgid "Field of type: %(field_type)s"
+#~ msgstr "类型: %(field_type)s"
+
+#, python-format
+#~ msgid "“%(value)s” value must be either True or False."
+#~ msgstr "“%(value)s” 的值需为 True 或 False."
+
+#, python-format
+#~ msgid "“%(value)s” value must be either True, False, or None."
+#~ msgstr "“%(value)s” 需为 True,  False 或 None."
+
+#~ msgid "Boolean (Either True or False)"
+#~ msgstr "布尔值( True 或 False )"
+
+#, python-format
+#~ msgid "String (up to %(max_length)s)"
+#~ msgstr "字符串(最大长度 %(max_length)s)"
+
+#~ msgid "Comma-separated integers"
+#~ msgstr "由逗号分割的整数"
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+#~ "format."
+#~ msgstr "“%(value)s” 是日期格式. 它应该像 YYYY-MM-DD ."
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an "
+#~ "invalid date."
+#~ msgstr "“%(value)s” 的格式应为 (YYYY-MM-DD) 但是它获取一个非法的值."
+
+#~ msgid "Date (without time)"
+#~ msgstr "日期 ( 含有时间 )"
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:"
+#~ "ss[.uuuuuu]][TZ] format."
+#~ msgstr ""
+#~ "“%(value)s” 格式错误. 它应为 年年年年-月月-日日 时时:分分[:秒秒[.uuuuuu]]"
+#~ "[时区] ."
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+#~ "[TZ]) but it is an invalid date/time."
+#~ msgstr ""
+#~ "“%(value)s” 格式正确: (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) 但是内容无效."
+
+#~ msgid "Date (with time)"
+#~ msgstr "日期( 含有 时间 )"
+
+#, python-format
+#~ msgid "“%(value)s” value must be a decimal number."
+#~ msgstr "“%(value)s” 必须为 小数."
+
+#~ msgid "Decimal number"
+#~ msgstr "小数"
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+#~ "uuuuuu] format."
+#~ msgstr "“%(value)s” 格式错误. 它的格式应为 [DD] [[HH:]MM:]ss[.uuuuuu] ."
+
+#~ msgid "Duration"
+#~ msgstr "持续"
+
+#~ msgid "Email address"
+#~ msgstr "邮箱地址"
+
+#~ msgid "File path"
+#~ msgstr "文件路径"
+
+#, python-format
+#~ msgid "“%(value)s” value must be a float."
+#~ msgstr "“%(value)s” 需为浮点值."
+
+#~ msgid "Floating point number"
+#~ msgstr "浮点数"
+
+#, python-format
+#~ msgid "“%(value)s” value must be an integer."
+#~ msgstr "“%(value)s” 需为整数."
+
+#~ msgid "Integer"
+#~ msgstr "整数"
+
+#~ msgid "Big (8 byte) integer"
+#~ msgstr "(8位)整数"
+
+#~ msgid "Small integer"
+#~ msgstr "整数( 小于  8 位 )"
+
+#~ msgid "IPv4 address"
+#~ msgstr "IPv4 地址"
+
+#~ msgid "IP address"
+#~ msgstr "IP地址"
+
+#, python-format
+#~ msgid "“%(value)s” value must be either None, True or False."
+#~ msgstr "“%(value)s” 需为 True, False 或 None."
+
+#~ msgid "Boolean (Either True, False or None)"
+#~ msgstr "布尔( 含 True, False, None )"
+
+#, fuzzy
+#~| msgid "Positive integer"
+#~ msgid "Positive big integer"
+#~ msgstr "正整数"
+
+#~ msgid "Positive integer"
+#~ msgstr "正整数"
+
+#~ msgid "Positive small integer"
+#~ msgstr "正整数( 小于 8 位 )"
+
+#, python-format
+#~ msgid "Slug (up to %(max_length)s)"
+#~ msgstr "Slug (最大长度 %(max_length)s)"
+
+#~ msgid "Text"
+#~ msgstr "文本"
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[."
+#~ "uuuuuu]] format."
+#~ msgstr "“%(value)s” 的格式需为 HH:MM[:ss[.uuuuuu]] ."
+
+#, python-format
+#~ msgid ""
+#~ "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is "
+#~ "an invalid time."
+#~ msgstr "“%(value)s” 格式正确: (HH:MM[:ss[.uuuuuu]]) 但是内容无效."
+
+#~ msgid "Time"
+#~ msgstr "时间"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Raw binary data"
+#~ msgstr "二进制数据"
+
+#, python-format
+#~ msgid "“%(value)s” is not a valid UUID."
+#~ msgstr "“%(value)s” 不是 UUID."
+
+#~ msgid "Universally unique identifier"
+#~ msgstr "通用唯一标识符"
+
+#~ msgid "File"
+#~ msgstr "文件"
+
+#~ msgid "Image"
+#~ msgstr "照片"
+
+#, python-format
+#~ msgid "%(model)s instance with %(field)s %(value)r does not exist."
+#~ msgstr "%(model)s 实例的 %(field)s %(value)r 不存在."
+
+#~ msgid "Foreign Key (type determined by related field)"
+#~ msgstr "Foreign Key (type determined by related field)"
+
+#~ msgid "One-to-one relationship"
+#~ msgstr "One-to-one relationship"
+
+#, python-format
+#~ msgid "%(from)s-%(to)s relationship"
+#~ msgstr "%(from)s-%(to)s relationship"
+
+#, python-format
+#~ msgid "%(from)s-%(to)s relationships"
+#~ msgstr "%(from)s-%(to)s relationships"
+
+#~ msgid "Many-to-many relationship"
+#~ msgstr "Many-to-many relationship"
+
+#~ msgid ":?.!"
+#~ msgstr ":?.!"
+
+#~ msgid "Enter a whole number."
+#~ msgstr "输入一个整数."
+
+#~ msgid "Enter a valid date."
+#~ msgstr "输入一个合法的日期."
+
+#~ msgid "Enter a valid time."
+#~ msgstr "输入一个合法的时间."
+
+#~ msgid "Enter a valid date/time."
+#~ msgstr "输入一个合法的日期或时间."
+
+#~ msgid "Enter a valid duration."
+#~ msgstr "输入一个范围."
+
+#, python-brace-format
+#~ msgid "The number of days must be between {min_days} and {max_days}."
+#~ msgstr "The number of days must be between {min_days} and {max_days}."
+
+#~ msgid "No file was submitted. Check the encoding type on the form."
+#~ msgstr "没有文件被提交. 请检查表单."
+
+#~ msgid "No file was submitted."
+#~ msgstr "没有文件被提交."
+
+#~ msgid "The submitted file is empty."
+#~ msgstr "提交的文件为空."
+
+#, python-format
+#~ msgid ""
+#~ "Ensure this filename has at most %(max)d character (it has %(length)d)."
+#~ msgid_plural ""
+#~ "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+#~ msgstr[0] ""
+#~ "Ensure this filename has at most %(max)d character (it has %(length)d)."
+
+#~ msgid "Please either submit a file or check the clear checkbox, not both."
+#~ msgstr "Please either submit a file or check the clear checkbox, not both."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr "你上传的照片无效或内容有误. 请上传有效的照片 ."
+
+#, python-format
+#~ msgid ""
+#~ "Select a valid choice. %(value)s is not one of the available choices."
+#~ msgstr "请选择有效的选项. %(value)s 不是有效的选项."
+
+#~ msgid "Enter a list of values."
+#~ msgstr "输入一个列表."
+
+#~ msgid "Enter a complete value."
+#~ msgstr "输入一个完整的值."
+
+#~ msgid "Enter a valid UUID."
+#~ msgstr "输入一个有效的UUID."
+
+#, fuzzy
+#~| msgid "Enter a valid URL."
+#~ msgid "Enter a valid JSON."
+#~ msgstr "请输入合法的URL."
+
+#~ msgid ":"
+#~ msgstr ":"
+
+#, python-format
+#~ msgid "(Hidden field %(name)s) %(error)s"
+#~ msgstr "(Hidden field %(name)s) %(error)s"
+
+#, fuzzy, python-format
+#~| msgid "Please submit %d or more forms."
+#~| msgid_plural "Please submit %d or more forms."
+#~ msgid "Please submit at most %d form."
+#~ msgid_plural "Please submit at most %d forms."
+#~ msgstr[0] "Please submit %d or more forms."
+
+#, fuzzy, python-format
+#~| msgid "Please submit %d or more forms."
+#~| msgid_plural "Please submit %d or more forms."
+#~ msgid "Please submit at least %d form."
+#~ msgid_plural "Please submit at least %d forms."
+#~ msgstr[0] "Please submit %d or more forms."
+
+#~ msgid "Order"
+#~ msgstr "旧的"
+
+#, python-format
+#~ msgid "Please correct the duplicate data for %(field)s."
+#~ msgstr "请更正重复的数据 %(field)s."
+
+#, python-format
+#~ msgid ""
+#~ "Please correct the duplicate data for %(field)s, which must be unique."
+#~ msgstr ""
+#~ "Please correct the duplicate data for %(field)s, which must be unique."
+
+#, python-format
+#~ msgid ""
+#~ "Please correct the duplicate data for %(field_name)s which must be unique "
+#~ "for the %(lookup)s in %(date_field)s."
+#~ msgstr ""
+#~ "Please correct the duplicate data for %(field_name)s which must be unique "
+#~ "for the %(lookup)s in %(date_field)s."
+
+#~ msgid "Please correct the duplicate values below."
+#~ msgstr "Please correct the duplicate values below."
+
+#~ msgid "The inline value did not match the parent instance."
+#~ msgstr "The inline value did not match the parent instance."
+
+#~ msgid ""
+#~ "Select a valid choice. That choice is not one of the available choices."
+#~ msgstr ""
+#~ "Select a valid choice. That choice is not one of the available choices."
+
+#, python-format
+#~ msgid "“%(pk)s” is not a valid value."
+#~ msgstr "“%(pk)s” is not a valid value."
+
+#, python-format
+#~ msgid ""
+#~ "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; "
+#~ "it may be ambiguous or it may not exist."
+#~ msgstr ""
+#~ "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; "
+#~ "it may be ambiguous or it may not exist."
+
+#~ msgid "Clear"
+#~ msgstr "清除"
+
+#~ msgid "Currently"
+#~ msgstr "当前"
+
+#~ msgid "Change"
+#~ msgstr "更改"
+
+#~ msgid "Yes"
+#~ msgstr "好的"
+
+#~ msgid "No"
+#~ msgstr "不"
+
+#~ msgid "yes,no,maybe"
+#~ msgstr "yes,no,maybe"
+
+#, python-format
+#~ msgid "%(size)d byte"
+#~ msgid_plural "%(size)d bytes"
+#~ msgstr[0] "%(size)d byte"
+
+#, python-format
+#~ msgid "%s KB"
+#~ msgstr "%s KB"
+
+#, python-format
+#~ msgid "%s MB"
+#~ msgstr "%s MB"
+
+#, python-format
+#~ msgid "%s GB"
+#~ msgstr "%s GB"
+
+#, python-format
+#~ msgid "%s TB"
+#~ msgstr "%s TB"
+
+#, python-format
+#~ msgid "%s PB"
+#~ msgstr "%s PB"
+
+#~ msgid "p.m."
+#~ msgstr "下午."
+
+#~ msgid "a.m."
+#~ msgstr "早上."
+
+#~ msgid "PM"
+#~ msgstr "下午"
+
+#~ msgid "AM"
+#~ msgstr "早上"
+
+#~ msgid "midnight"
+#~ msgstr "午夜"
+
+#~ msgid "noon"
+#~ msgstr "中午"
+
+#~ msgid "Monday"
+#~ msgstr "周一"
+
+#~ msgid "Tuesday"
+#~ msgstr "周二"
+
+#~ msgid "Wednesday"
+#~ msgstr "周三"
+
+#~ msgid "Thursday"
+#~ msgstr "周四"
+
+#~ msgid "Friday"
+#~ msgstr "周五"
+
+#~ msgid "Saturday"
+#~ msgstr "周六"
+
+#~ msgid "Sunday"
+#~ msgstr "周日"
+
+#~ msgid "Mon"
+#~ msgstr "周一"
+
+#~ msgid "Tue"
+#~ msgstr "周二"
+
+#~ msgid "Wed"
+#~ msgstr "周三"
+
+#~ msgid "Thu"
+#~ msgstr "周四"
+
+#~ msgid "Fri"
+#~ msgstr "周五"
+
+#~ msgid "Sat"
+#~ msgstr "周六"
+
+#~ msgid "January"
+#~ msgstr "一月"
+
+#~ msgid "February"
+#~ msgstr "二月"
+
+#~ msgid "March"
+#~ msgstr "三月"
+
+#~ msgid "April"
+#~ msgstr "四月"
+
+#~ msgid "May"
+#~ msgstr "五月"
+
+#~ msgid "June"
+#~ msgstr "六月"
+
+#~ msgid "July"
+#~ msgstr "七月"
+
+#~ msgid "August"
+#~ msgstr "八月"
+
+#~ msgid "September"
+#~ msgstr "九月"
+
+#~ msgid "October"
+#~ msgstr "十月"
+
+#~ msgid "November"
+#~ msgstr "十一月"
+
+#~ msgid "December"
+#~ msgstr "十二月"
+
+#~ msgid "jan"
+#~ msgstr "一月"
+
+#~ msgid "feb"
+#~ msgstr "二月"
+
+#~ msgid "mar"
+#~ msgstr "三月"
+
+#~ msgid "apr"
+#~ msgstr "四月"
+
+#~ msgid "may"
+#~ msgstr "五月"
+
+#~ msgid "jun"
+#~ msgstr "六月"
+
+#~ msgid "jul"
+#~ msgstr "七月"
+
+#~ msgid "aug"
+#~ msgstr "八月"
+
+#~ msgid "sep"
+#~ msgstr "九月"
+
+#~ msgid "oct"
+#~ msgstr "十月"
+
+#~ msgid "nov"
+#~ msgstr "十一月"
+
+#~ msgid "dec"
+#~ msgstr "十二月"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Jan."
+#~ msgstr "一月."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Feb."
+#~ msgstr "二月."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "March"
+#~ msgstr "三月"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "April"
+#~ msgstr "四月"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "May"
+#~ msgstr "五月"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "June"
+#~ msgstr "六月"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "July"
+#~ msgstr "七月"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Aug."
+#~ msgstr "八月."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Sept."
+#~ msgstr "九月."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Oct."
+#~ msgstr "十月."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Nov."
+#~ msgstr "十一月."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Dec."
+#~ msgstr "十二月."
+
+#~ msgctxt "alt. month"
+#~ msgid "January"
+#~ msgstr "一月"
+
+#~ msgctxt "alt. month"
+#~ msgid "February"
+#~ msgstr "二月"
+
+#~ msgctxt "alt. month"
+#~ msgid "March"
+#~ msgstr "三月"
+
+#~ msgctxt "alt. month"
+#~ msgid "April"
+#~ msgstr "四月"
+
+#~ msgctxt "alt. month"
+#~ msgid "May"
+#~ msgstr "五月"
+
+#~ msgctxt "alt. month"
+#~ msgid "June"
+#~ msgstr "六月"
+
+#~ msgctxt "alt. month"
+#~ msgid "July"
+#~ msgstr "七月"
+
+#~ msgctxt "alt. month"
+#~ msgid "August"
+#~ msgstr "八月"
+
+#~ msgctxt "alt. month"
+#~ msgid "September"
+#~ msgstr "九月"
+
+#~ msgctxt "alt. month"
+#~ msgid "October"
+#~ msgstr "十月"
+
+#~ msgctxt "alt. month"
+#~ msgid "November"
+#~ msgstr "十一月"
+
+#~ msgctxt "alt. month"
+#~ msgid "December"
+#~ msgstr "十二月"
+
+#~ msgid "This is not a valid IPv6 address."
+#~ msgstr "无效IPv6地址."
+
+#, python-format
+#~ msgctxt "String to return when truncating text"
+#~ msgid "%(truncated_text)s…"
+#~ msgstr "%(truncated_text)s…"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#, python-format
+#~ msgid "%d year"
+#~ msgid_plural "%d years"
+#~ msgstr[0] "%d 年"
+
+#, python-format
+#~ msgid "%d month"
+#~ msgid_plural "%d months"
+#~ msgstr[0] "%d 月"
+
+#, python-format
+#~ msgid "%d week"
+#~ msgid_plural "%d weeks"
+#~ msgstr[0] "周 %d周"
+
+#, python-format
+#~ msgid "%d day"
+#~ msgid_plural "%d days"
+#~ msgstr[0] "%d 日"
+
+#, python-format
+#~ msgid "%d hour"
+#~ msgid_plural "%d hours"
+#~ msgstr[0] "%d 时"
+
+#, python-format
+#~ msgid "%d minute"
+#~ msgid_plural "%d minutes"
+#~ msgstr[0] "%d 分"
+
+#~ msgid "Forbidden"
+#~ msgstr "禁止访问"
+
+#~ msgid "CSRF verification failed. Request aborted."
+#~ msgstr "CSRF 验证失败. 请求被拒绝."
+
+#~ msgid ""
+#~ "You are seeing this message because this HTTPS site requires a “Referer "
+#~ "header” to be sent by your Web browser, but none was sent. This header is "
+#~ "required for security reasons, to ensure that your browser is not being "
+#~ "hijacked by third parties."
+#~ msgstr ""
+#~ "You are seeing this message because this HTTPS site requires a “Referer "
+#~ "header” to be sent by your Web browser, but none was sent. This header is "
+#~ "required for security reasons, to ensure that your browser is not being "
+#~ "hijacked by third parties."
+
+#~ msgid ""
+#~ "If you have configured your browser to disable “Referer” headers, please "
+#~ "re-enable them, at least for this site, or for HTTPS connections, or for "
+#~ "“same-origin” requests."
+#~ msgstr ""
+#~ "If you have configured your browser to disable “Referer” headers, please "
+#~ "re-enable them, at least for this site, or for HTTPS connections, or for "
+#~ "“same-origin” requests."
+
+#~ msgid ""
+#~ "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag "
+#~ "or including the “Referrer-Policy: no-referrer” header, please remove "
+#~ "them. The CSRF protection requires the “Referer” header to do strict "
+#~ "referer checking. If you’re concerned about privacy, use alternatives "
+#~ "like <a rel=\"noreferrer\" …> for links to third-party sites."
+#~ msgstr ""
+#~ "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag "
+#~ "or including the “Referrer-Policy: no-referrer” header, please remove "
+#~ "them. The CSRF protection requires the “Referer” header to do strict "
+#~ "referer checking. If you’re concerned about privacy, use alternatives "
+#~ "like <a rel=\"noreferrer\" …> for links to third-party sites."
+
+#~ msgid ""
+#~ "You are seeing this message because this site requires a CSRF cookie when "
+#~ "submitting forms. This cookie is required for security reasons, to ensure "
+#~ "that your browser is not being hijacked by third parties."
+#~ msgstr ""
+#~ "You are seeing this message because this site requires a CSRF cookie when "
+#~ "submitting forms. This cookie is required for security reasons, to ensure "
+#~ "that your browser is not being hijacked by third parties."
+
+#~ msgid ""
+#~ "If you have configured your browser to disable cookies, please re-enable "
+#~ "them, at least for this site, or for “same-origin” requests."
+#~ msgstr ""
+#~ "If you have configured your browser to disable cookies, please re-enable "
+#~ "them, at least for this site, or for “same-origin” requests."
+
+#~ msgid "More information is available with DEBUG=True."
+#~ msgstr "More information is available with DEBUG=True."
+
+#~ msgid "No year specified"
+#~ msgstr "年 没有被指定"
+
+#~ msgid "No month specified"
+#~ msgstr "月 没有被指定"
+
+#~ msgid "No day specified"
+#~ msgstr "日 没有被指定"
+
+#~ msgid "No week specified"
+#~ msgstr "周 没有被指定"
+
+#, python-format
+#~ msgid "No %(verbose_name_plural)s available"
+#~ msgstr "%(verbose_name_plural)s 不可用"
+
+#, python-format
+#~ msgid ""
+#~ "Future %(verbose_name_plural)s not available because %(class_name)s."
+#~ "allow_future is False."
+#~ msgstr ""
+#~ "Future %(verbose_name_plural)s not available because %(class_name)s."
+#~ "allow_future is False."
+
+#, python-format
+#~ msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+#~ msgstr "Invalid date string “%(datestr)s” given format “%(format)s”"
+
+#, python-format
+#~ msgid "No %(verbose_name)s found matching the query"
+#~ msgstr "No %(verbose_name)s found matching the query"
+
+#~ msgid "Page is not “last”, nor can it be converted to an int."
+#~ msgstr "Page is not “last”, nor can it be converted to an int."
+
+#, python-format
+#~ msgid "Invalid page (%(page_number)s): %(message)s"
+#~ msgstr "Invalid page (%(page_number)s): %(message)s"
+
+#, python-format
+#~ msgid "Empty list and “%(class_name)s.allow_empty” is False."
+#~ msgstr "Empty list and “%(class_name)s.allow_empty” is False."
+
+#~ msgid "Directory indexes are not allowed here."
+#~ msgstr "Directory indexes are not allowed here."
+
+#, python-format
+#~ msgid "“%(path)s” does not exist"
+#~ msgstr "路径 “%(path)s”  不存在"
+
+#, python-format
+#~ msgid "Index of %(directory)s"
+#~ msgstr "目录: %(directory)s"
+
+#~ msgid "The install worked successfully! Congratulations!"
+#~ msgstr "The install worked successfully! Congratulations!"
+
+#, python-format
+#~ msgid ""
+#~ "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+#~ "target=\"_blank\" rel=\"noopener\">release notes</a> for Django "
+#~ "%(version)s"
+#~ msgstr ""
+#~ "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+#~ "target=\"_blank\" rel=\"noopener\">release notes</a> for Django "
+#~ "%(version)s"
+
+#, python-format
+#~ msgid ""
+#~ "You are seeing this page because <a href=\"https://docs.djangoproject.com/"
+#~ "en/%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+#~ "\">DEBUG=True</a> is in your settings file and you have not configured "
+#~ "any URLs."
+#~ msgstr ""
+#~ "You are seeing this page because <a href=\"https://docs.djangoproject.com/"
+#~ "en/%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+#~ "\">DEBUG=True</a> is in your settings file and you have not configured "
+#~ "any URLs."
+
+#~ msgid "Django Documentation"
+#~ msgstr "Django Documentation"
+
+#~ msgid "Topics, references, &amp; how-to’s"
+#~ msgstr "Topics, references, &amp; how-to’s"
+
+#~ msgid "Tutorial: A Polling App"
+#~ msgstr "Tutorial: A Polling App"
+
+#~ msgid "Get started with Django"
+#~ msgstr "Get started with Django"
+
+#~ msgid "Django Community"
+#~ msgstr "Django Community"
+
+#~ msgid "Connect, get help, or contribute"
+#~ msgstr "Connect, get help, or contribute"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Thumbnail"
+
+#~ msgid "ManagementForm data is missing or has been tampered with"
+#~ msgstr "ManagementForm数据丢失或被篡改"
+
+#, python-format
+#~ msgid "Please submit %d or fewer forms."
+#~ msgid_plural "Please submit %d or fewer forms."
+#~ msgstr[0] "Please submit %d or fewer forms."
+
+#~ msgid "0 minutes"
+#~ msgstr "0 秒"
+
+#~ msgid "Django: the Web framework for perfectionists with deadlines."
+#~ msgstr "Django: the Web framework for perfectionists with deadlines."
+
+#, python-format
+#~ msgid "%s is not an acceptable file type"
+#~ msgstr "%s 不是可接受的文件类型"
+
+#, python-format
+#~ msgid "File size must be less than %s kb"
+#~ msgstr "文件大小应小于 %s kb"
+
+#, python-brace-format
+#~ msgid "{something}"
+#~ msgstr "{something}"
+
+#~ msgid "Please confirm that"
+#~ msgstr "请确认"
+
+#, fuzzy
+#~| msgid "is an e-mail address for user {{ user_display }}"
+#~ msgid "is an e-mail address for user:"
+#~ msgstr "用户 {{ user_display }} 的邮箱地址"
+
+#~ msgid "Basic file manager"
+#~ msgstr "Basic file manager"
+
+#~ msgid "Actions"
+#~ msgstr "Actions"
+
+#~ msgid "Filename"
+#~ msgstr "文件名"
+
+#~ msgid "Size"
+#~ msgstr "大小"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Type"
+#~ msgstr "类型"
+
+#~ msgid "Touch"
+#~ msgstr "Touch"
+
+#~ msgid "Rename"
+#~ msgstr "重命名"
+
+#~ msgid "Resize"
+#~ msgstr "改变大小"
+
+#~ msgid "Rename file"
+#~ msgstr "重命名"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Resize image"
+#~ msgstr "改变图片大小"
+
+#~ msgid "New width"
+#~ msgstr "新的宽"
+
+#~ msgid "New height"
+#~ msgstr "新的高"
+
+#~ msgid "Keep ratio"
+#~ msgstr "保持比例"
+
+#~ msgid "Resize filter"
+#~ msgstr "Resize filter"
+
+#~ msgid "Antialiasing"
+#~ msgstr "Antialiasing"
+
+#~ msgid "Bicubic"
+#~ msgstr "Bicubic"
+
+#~ msgid "Bilinear"
+#~ msgstr "Bilinear"
+
+#~ msgid "Nearest"
+#~ msgstr "Bilinear"
+
+#~ msgid "Uploader"
+#~ msgstr "上传"
+
+#~ msgid "Expand uploader"
+#~ msgstr "展开"
+
+#~ msgid "Minimize uploader"
+#~ msgstr "最小化"
+
+#~ msgid "Add files"
+#~ msgstr "添加文件"
+
+#~ msgid "Add folder (experimental)"
+#~ msgstr "添加文件夹"
+
+#~ msgid "Clear finished"
+#~ msgstr "清除结束"
+
+#~ msgid "Remove queued"
+#~ msgstr "移除队列"
+
+#~ msgid "Cancel this upload"
+#~ msgstr "取消上传"
+
+#~ msgid "Failed"
+#~ msgstr "失败"
+
+#~ msgid "Aborted"
+#~ msgstr "终止"
+
+#~ msgid "First page"
+#~ msgstr "第一页"
+
+#~ msgid "Last page"
+#~ msgstr "最后页"
+
+#~ msgid "Uploading in progress!"
+#~ msgstr "上传在进行!"
+
+#~ msgid "New directory"
+#~ msgstr "新目录"
+
+#~ msgid "Create new directory"
+#~ msgstr "新建目录"
+
+#~ msgid ""
+#~ "You are going to create a new directory inside '/<%%= rel_dir %%>'. Enter "
+#~ "it's name."
+#~ msgstr "新建目录 '/<%%= rel_dir %%>'. 输入目录名."
+
+#~ msgid "Create"
+#~ msgstr "创建"
+
+#~ msgid "Rename directory"
+#~ msgstr "重命名目录"
+
+#~ msgid "Delete directory"
+#~ msgstr "删除目录"
+
+#~ msgid ""
+#~ "You are going to delete a directory with all files and directories inside "
+#~ "it. Are you sure?"
+#~ msgstr "删除目录, 确定删除?"
+
+#~ msgid "Over my dead body!"
+#~ msgstr "不行!"
+
+#~ msgid "I'm sure"
+#~ msgstr "确任"
+
+#~ msgid "Just kill this dialog"
+#~ msgstr "Just kill this dialog"
+
+#~ msgid "Root directory"
+#~ msgstr "根目录"
+
+#~ msgid "Preschool education"
+#~ msgstr "学前教育"
+
+#~ msgid "Information Technology "
+#~ msgstr "信息技术 "
+
+#~ msgid "Survey"
+#~ msgstr "问卷调查"
+
+#~ msgid "Eduhub tests"
+#~ msgstr "内容"
+
+#~ msgid "Others"
+#~ msgstr "其它"
+
+#~ msgid "computer"
+#~ msgstr "计算机"
+
+#~ msgid "comment"
+#~ msgstr "备注"
+
+#~ msgid "Please reset password via terminal"
+#~ msgstr "请在终端修改密码"
+
+#~ msgid "college/(major) / (grade) / (semester) / (subjects) / (title)"
+#~ msgstr "大学/(专业)/(年级)/(学期)/(科目)/(标题)"
+
+#~ msgid ""
+#~ "\n"
+#~ "                    Other stages should also have classification, you can "
+#~ "change it \n"
+#~ "                    <a href='https://github.com/larryw3i/fun/blob/master/"
+#~ "fun/templates/eduhub/how_to_classification.html'>here</a>  \n"
+#~ "                    and make a pull request, or you look at it yourself.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "                    其它阶段的还有很多分类目录, 你可以  \n"
+#~ "                    <a href='https://github.com/larryw3i/fun/blob/master/"
+#~ "fun/templates/eduhub/how_to_classification.html'>在这里</a>  更改它 \n"
+#~ "                    然后让我合并, 或者你自己看着办。\n"
+#~ "                "
+
+#~ msgid "Author"
+#~ msgstr "作者"
+
+#~ msgid "Enable selected Emperor's Vassals"
+#~ msgstr "Enable selected Emperor's Vassals"
+
+#~ msgid "Disable selected Emperor's Vassals"
+#~ msgstr "Enable selected Emperor's Vassals"
+
+#~ msgid "INI file"
+#~ msgstr "INI 文件"
+
+#~ msgid "YAML file"
+#~ msgstr "YAML文件"
+
+#~ msgid "XML file"
+#~ msgstr "XML文件"
+
+#~ msgid "JSON file"
+#~ msgstr "JSON文件"
+
+#~ msgid "Name of uwsgi config file"
+#~ msgstr "Name of uwsgi config file"
+
+#~ msgid "Extension"
+#~ msgstr "Extension"
+
+#~ msgid "Config"
+#~ msgstr "Config"
+
+#~ msgid "Config file blob"
+#~ msgstr "Config file blob"
+
+#~ msgid "Unix Timestamp"
+#~ msgstr "Unix Timestamp"
+
+#~ msgid ""
+#~ "A number representing the modification time of this row in UNIX format"
+#~ msgstr ""
+#~ "A number representing the modification time of this row in UNIX format"
+
+#~ msgid "The UID of the vassal instance"
+#~ msgstr "The UID of the vassal instance"
+
+#~ msgid "Required in Tyrant mode (secure multi-user hosting) mode only."
+#~ msgstr "Required in Tyrant mode (secure multi-user hosting) mode only."
+
+#~ msgid "The GID of the vassal instance"
+#~ msgstr "The GID of the vassal instance"
+
+#~ msgid "Updated"
+#~ msgstr "已更新"
+
+#~ msgid "Enabled"
+#~ msgstr "启用"
+
+#~ msgid "Emperor's Vassal"
+#~ msgstr "Emperor's Vassal"
+
+#~ msgid "Emperor's Vassals"
+#~ msgstr "Emperor's Vassal"
+
+#~ msgid "uWSGI Status"
+#~ msgstr "uWSGI Status"
+
+#~ msgid "Version %s, %d Workers"
+#~ msgstr "Version %s, %d Workers"
+
+#~ msgid "uWSGI is missing =("
+#~ msgstr "uWSGI is missing =("
+
+#~ msgid "disabled"
+#~ msgstr "disabled"
+
+#~ msgid "enabled"
+#~ msgstr "enabled"
+
+#~ msgid "ERROR: uWSGI is not available!"
+#~ msgstr "ERROR: uWSGI is not available!"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Option"
+#~ msgstr "选项"
+
+#~ msgid "Value"
+#~ msgstr "值"
+
+#~ msgid "Options"
+#~ msgstr "选项"
+
+#~ msgid "Magic table"
+#~ msgstr "Magic table"
+
+#~ msgid "Workers"
+#~ msgstr "Workers"
+
+#~ msgid "id"
+#~ msgstr "id"
+
+#~ msgid "pid"
+#~ msgstr "pid"
+
+#~ msgid "status"
+#~ msgstr "状态"
+
+#~ msgid "requests"
+#~ msgstr "请求"
+
+#~ msgid "signals"
+#~ msgstr "信号"
+
+#~ msgid "running time(ms)"
+#~ msgstr "运行时间(毫秒)"
+
+#~ msgid "avg response time(ms)"
+#~ msgstr "平均响应时间(毫秒)"
+
+#~ msgid "load"
+#~ msgstr "加载"
+
+#~ msgid "last spawn"
+#~ msgstr "结果"
+
+#~ msgid "respawn count"
+#~ msgstr "respawn count"
+
+#~ msgid "address space (vsz)"
+#~ msgstr "address space (vsz)"
+
+#~ msgid "resident memory (rss)"
+#~ msgstr "占用内存 (rss)"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#~ msgid "modifier1"
+#~ msgstr "modifier1"
+
+#~ msgid "mountpoint"
+#~ msgstr "挂载点"
+
+#~ msgid "interpreter"
+#~ msgstr "解释器"
+
+#~ msgid "callable"
+#~ msgstr "可调用"
+
+#~ msgid "chdir"
+#~ msgstr "chdir"
+
+#~ msgid "Spooler"
+#~ msgstr "Spooler"
+
+#~ msgid "job filename"
+#~ msgstr "job filename"
+
+#~ msgid "environment"
+#~ msgstr "环境"
+
+#~ msgid "Send uWSGI Signal"
+#~ msgstr "Send uWSGI Signal"
+
+#~ msgid "Send uWSGI Log message"
+#~ msgstr "Send uWSGI Log message"
+
+#~ msgid "Signal number"
+#~ msgstr "信号数"
+
+#~ msgid "Send"
+#~ msgstr "发送"
+
+#~ msgid "Log message"
+#~ msgstr "日志信息"
+
+#~ msgid "Gracefully reload uWSGI"
+#~ msgstr "Gracefully reload uWSGI"
+
+#~ msgid "Clear uWSGI cache"
+#~ msgstr "Clear uWSGI cache"
+
+#~ msgid "uWSGI Stats"
+#~ msgstr "uWSGI Stats"
+
+#~ msgid "uWSGI"
+#~ msgstr "uWSGI"
+
+#~ msgid ""
+#~ "\n"
+#~ "        <span>%(total)s</span> uWSGI Worker\n"
+#~ "    "
+#~ msgid_plural ""
+#~ "\n"
+#~ "        <span>%(total)s</span> uWSGI Workers\n"
+#~ "    "
+#~ msgstr[0] ""
+#~ "\n"
+#~ "        <span>%(total)s</span> uWSGI Workers\n"
+#~ "    "
+
+#~ msgid "Settings"
+#~ msgstr "设置"
+
+#~ msgid "Magic Table"
+#~ msgstr "Magic Table"
+
+#~ msgid "uWSGI version"
+#~ msgstr "uWSGI version"
+
+#~ msgid "uWSGI Cache cleared!"
+#~ msgstr "uWSGI Cache cleared!"
+
+#~ msgid "The uWSGI master process is not active"
+#~ msgstr "The uWSGI master process is not active"
+
+#~ msgid "uWSGI reloaded!"
+#~ msgstr "uWSGI reloaded!"
+
+#~ msgid "uWSGI Log message has been sent!"
+#~ msgstr "uWSGI Log message has been sent!"
+
+#~ msgid "uWSGI is not available!"
+#~ msgstr "uWSGI is not available!"
+
+#~ msgid "uWSGI signal has been sent!"
+#~ msgstr "uWSGI signal has been sent!"
+
+#, fuzzy
+#~| msgid "Resize filter"
+#~ msgid "filter"
+#~ msgstr "Resize filter"
+
+#, fuzzy
+#~| msgid "Primary"
+#~ msgid "primary"
+#~ msgstr "常用"
+
+#, fuzzy
+#~| msgid "first page"
+#~ msgid "first grade"
+#~ msgstr "第一页"
+
+#~ msgid "Diary"
+#~ msgstr "日志"
+
+#~ msgid "View more homestickers"
+#~ msgstr "更多贴纸"
+
+#~ msgid "View more"
+#~ msgstr "更多"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "亚洲•中国•上海"
+
+#, fuzzy
+#~| msgid "Eduhub contents"
+#~ msgid "Home contents"
+#~ msgstr "教资 内容"
+
+#~ msgid "中文繁體"
+#~ msgstr "中文繁體"
+
+#~ msgid ""
+#~ "\n"
+#~ "      Already have an account? Then please \n"
+#~ "      <a href=\"%(login_url)s\">sign in</a>.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "      已有账号?  \n"
+#~ "      <a href=\"%(login_url)s\">登录</a>.\n"
+#~ "    "
+
+#~ msgid "Thank you from"
+#~ msgstr "谢谢亲"

@@ -1,0 +1,120 @@
+
+@keyframes common_hover_animation
+{
+  0%{
+      transform: scale(1);
+  }
+
+  50%{
+		transform: scale( 0.95 );
+  }
+
+  100%{
+      transform: scale( 1 );
+  }
+}
+
+@keyframes carousel_item_img_animation
+{
+
+  0%{
+    transform: scale(1);
+  }
+
+  100%{
+      transform: scale(1.05);
+  }
+}
+
+@keyframes homesticker_carousel_caption
+{
+
+  0%{
+    background-color: rgba(247, 119, 240, 0.164);
+  }
+
+  100%{
+    background-color: rgba(255, 0, 242, 0.26);
+  }
+}
+
+@keyframes homesticker_carousel_caption_hover
+{
+
+  0%{
+    background-color: rgba(235, 69, 235, 0.363);
+  }
+
+  100%{
+    background-color: rgba(208, 58, 228, 0.644);
+  }
+}
+
+@keyframes homesticker_card_hover_animation
+{
+  0%{
+    transform: scale(1);
+    background-color: rgba(245, 110, 222, 0.075);
+  }
+
+  50%{
+    transform: scale(0.9);
+  }
+
+  100%{
+    transform: scale(1);
+    background-color: rgba(204, 30, 210, 0.329);
+  }
+
+}
+@keyframes appreciation_card_hover_animation
+{
+  0%{
+    transform: scale(1);
+    background-color: rgba(245, 0, 123, 0.075);
+  }
+
+  50%{
+    transform: scale(0.9);
+  }
+
+  100%{
+    transform: scale(1);
+    background-color: rgba(247, 0, 255, 0.26);
+  }
+
+}
+
+@keyframes funhomesticker_col_odd_animatioin
+{
+  0%{
+    opacity: 0.5;
+    transform: translateX(-88px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes funhomesticker_col_even_animatioin
+{
+
+  0%{
+    opacity: 0.5;
+    transform: translateX(88px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sign_out_avatar_animation
+{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.92);
+  }
+}

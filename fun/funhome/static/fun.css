@@ -1,0 +1,157 @@
+
+html 
+{
+  position: relative;
+  min-height: 100%;
+}
+
+/* body and footer css is partially referenced from microsoft docs */
+body 
+{
+  /* Margin bottom by footer height */
+  padding-bottom: 88px; 
+} 
+
+.body-content
+{
+  margin-top: 10px;
+}
+
+.homeCarousel
+{
+  box-shadow:5px 4px 16px  #f03de170;
+  border-radius: 10px;
+}
+
+.homeCarousel *
+{
+  color: rgba(255, 78, 240, 0.705);
+}
+
+.footer 
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  height: 66px;
+}
+
+.carousel-control-next,.carousel-control-prev
+{
+  background-color: rgba(229, 92, 247, 0.068);
+  border-radius: 10px;
+}
+
+.fun_test
+{
+  height: fit-content;
+}
+
+img.preview
+{
+  width: 100%;
+}
+
+.eduhub-label-card:hover, .eduhub-content-card:hover
+{
+  z-index: 99;
+  border: solid #e281ff81;
+  background-color:#e281ff3a;
+  animation: common_hover_animation 0.2s 1 forwards;
+}
+
+ .home-carousel-inner
+ {
+   border-radius: 6px;
+ }
+
+ .homesticker-card
+ {
+   cursor: pointer;
+ }
+ 
+ .homesticker-card:hover ,  .eduhub-label-card:hover
+ {
+  animation: homesticker_card_hover_animation 0.25s 1 forwards;
+ }
+
+ .homesticker-carousel-caption
+ {
+  border-radius: 5px;
+  cursor: pointer;
+  animation: homesticker_carousel_caption 5s  infinite alternate;
+ }
+ .homesticker-carousel-caption:hover
+ {
+    animation: homesticker_carousel_caption_hover 0.5s 1 normal forwards;
+ }
+
+ .homesticker-carousel-caption *
+ {
+   color: rgb(255, 102, 0);
+   font-weight: bolder;
+   text-shadow: 2px 2px 6px rgba(18, 54, 65, 0.973);
+ }
+  
+ .homesticker-list-card-text
+ {
+   background-color: #ff660000;
+   border-radius: 6px;
+   padding: 2px;
+   font-size: small;
+}
+
+.carousel-item-img
+{
+  animation: carousel_item_img_animation 5s infinite alternate;
+}
+
+
+.custom-control-label
+{
+  cursor: pointer;
+}
+
+.second-filter
+{
+  display: none;
+}
+
+.login-border,.signup-border
+{
+  border: solid;
+  border-color: #ff00ff79;
+  border-width: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+#login_form #id_remember
+{
+  transform: scale(1.5);
+}
+
+.funhomesticker-col:nth-child(odd), .appreciation-col:nth-child(odd)
+{
+  animation: funhomesticker_col_odd_animatioin 1s 1 normal forwards;
+}
+.funhomesticker-col:nth-child(even), .appreciation-col:nth-child(even)
+{
+  animation: funhomesticker_col_even_animatioin 1s 1 normal forwards;
+}
+
+
+.appreciation-card
+{
+  cursor: pointer;
+}
+
+.appreciation-card:hover
+{
+ animation: appreciation_card_hover_animation 0.25s 1 forwards;
+}
+
+#sign_out_avatar
+{
+ animation: sign_out_avatar_animation 1.26s  infinite alternate;
+}

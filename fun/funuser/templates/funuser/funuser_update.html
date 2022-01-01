@@ -1,0 +1,159 @@
+{% extends 'funhome/_base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %} 
+    {% include 'funuser/_funuser_url.html' %}
+    
+    <form method="post"  enctype="multipart/form-data" class="mt-2" >
+            
+        {% csrf_token %}
+
+        {{ form.non_field_errors }} 
+        <div class="row">
+            <div class="col col-auto text-center" >
+                <img  click-to='#id_avatar' preview-for='#id_avatar' 
+                    src="
+        {% if form.instance.avatar.name %}
+            {%  url 'funfile:get_file' file_id=form.instance.avatar.name  %}
+        {% endif %}" alt="avatar" class="rounded-circle "   
+                    style="width: 150px;height:150px;object-fit: cover"/>
+
+                <div hidden>
+                    {{ form.avatar }} 
+                </div>
+
+                <div class="form-group mt-2">
+                    {{ form.full_name.errors }} 
+                    {{ form.full_name }}
+                </div>
+            </div>
+
+            <div class="col col-auto">
+
+                <div class="form-group">
+                        {{ form.birth_date.errors }}
+                    <label  >
+                        {% trans 'Birth date' %}
+                        <span class="custom-control custom-switch"  
+                            style="display: inline;">
+                            {{ form.is_birth_date_outward }}
+                            <span class="custom-control-label" 
+                                for="id_is_birth_date_outward">
+                                {% trans 'is outward' %}?
+                            </span>
+                        </s>
+                    </label>
+                    <input type="date" name="birth_date" 
+                        value='{{ form.birth_date.value|date:"Y-m-d" }}' 
+                        class="form-control" 
+                        id="{{ form.birth_date.id_for_label }}"/>
+                </div>
+                
+        
+                <div class="form-group">
+                    {{ form.address.errors }}
+                    <label >
+                        {% trans 'Address' %}
+        
+                        <div class="custom-control custom-switch"
+                            style="display: inline;">
+                            {{ form.is_address_outward }}
+                            
+                            <label class="custom-control-label" 
+                                for="id_is_address_outward">
+                                {% trans 'is outward' %}?
+                            </label>
+
+                        </div>
+                    </label>
+                    {{ form.address }}
+                </div>
+            
+                <div class="form-group">
+                    {{ form.hometown.errors }}
+                    <label >
+                        {% trans 'Hometown' %}
+                        <div class="custom-control custom-switch " 
+                            style="display: inline;">
+                            {{ form.is_hometown_outward }}
+                            <label class="custom-control-label" 
+                                for="id_is_hometown_outward">
+                                {% trans 'is outward' %}?
+                            </label>
+
+                        </div>
+                    </label>
+                    {{ form.hometown }}
+                </div>
+        
+                <div class="form-group">
+                    {{ form.college.errors }}
+                    <label >
+                        {% trans 'College' %}
+                        <div class="custom-control custom-switch" 
+                            style="display: inline;">
+                            {{ form.is_college_outward }}
+                            <label class="custom-control-label" 
+                                for="id_is_college_outward">
+                                {% trans 'is outward' %}?
+                            </label>
+                        </div>
+                    </label>
+                    {{ form.college }}
+                </div>
+        
+                <div class="form-group">
+                    {{ form.occupation.errors }}
+                    <label >
+                        {% trans 'Occupation' %}
+                        <div class="custom-control custom-switch" 
+                            style="display: inline;">
+                            {{ form.is_occupation_outward }}
+                            <label class="custom-control-label" 
+                                for="id_is_occupation_outward">
+                                {% trans 'is outward' %}?
+                            </label>
+                        </div>
+                    </label>
+                    {{ form.occupation }}
+                </div>
+        
+                <div class="form-group">
+                    {{ form.motto.errors }}
+                    <label >
+                        {% trans 'Motto' %}
+                        <div class="custom-control custom-switch" 
+                            style="display: inline;">
+                            {{ form.is_motto_outward }}
+                            <label class="custom-control-label" 
+                                for="id_is_motto_outward">
+                                {% trans 'is outward' %}?
+                            </label>
+                        </div>
+                    </label>
+                    {{ form.motto }}
+                </div>
+                            
+            </div>
+        </div>
+                               
+        <div class="col col-12 text-right" >                             
+            <input class="btn btn-outline-info " type="submit" 
+                value="{% trans 'Upload' %}" />
+        </div>
+    </form>    
+
+
+{% endblock content %}
+
+{% block optionaljs %}
+    <script src="{% static 'funuser/funuser.js' %}"></script>
+{% endblock optionaljs %}

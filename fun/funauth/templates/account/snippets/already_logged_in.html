@@ -1,0 +1,9 @@
+{% load i18n %}
+{% load account %}
+{% load funuser_tags %}
+
+{% user_display user as user_display %}
+<p>
+    {% trans 'You are already logged in as' %} 
+    <strong>{{ request.user }}</strong>.
+</p>

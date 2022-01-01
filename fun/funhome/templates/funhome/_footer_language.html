@@ -1,0 +1,36 @@
+
+{% load i18n %}
+{% load l10n %}
+ 
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+
+<form action="{% url 'set_language' %}" method="post" id="language_form" 
+    hidden>
+    {% csrf_token %}
+    <input name="next" value="{{ request.path }}"/>
+    <input name="language" /> 
+</form>
+
+<div class="btn-group dropup">
+    <button type="button" class="btn  dropdown-toggle " id="languageDropdown" 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ LANGUAGE_CODE|language_name_local }}
+    </button>
+    <div class="dropdown-menu  language-dropdown-menu"  
+        aria-labelledby='languageDropdown'>
+
+        <span class="dropdown-item-text btn-sm" >{% trans 'language' %}</span>
+        <div class="dropdown-divider small"></div> 
+        
+        {% for language in languages %} 
+            <a class="language-dropdown-item dropdown-item btn-link btn-sm" 
+                data-language="{{ language.code }}" >
+                {{ language.name_local }}
+            </a>
+            
+        {% endfor %} 
+    </div>
+</div>

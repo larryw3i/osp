@@ -1,0 +1,30 @@
+
+{% extends 'funhome/_base.html' %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% load funhome_tags %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+    {% if user.is_authenticated %}
+        {# workspace #}
+        Hello!
+        {% comment %}
+        <script> location.href = `{% url 'eduhub:label_list' %}`; </script>
+        {% endcomment %}
+    {% else %}
+        {# welcome #}
+        {% include 'funhome/home_funhomesticker.html' %}
+        <hr/>
+        {% include 'funhome/home_appreciation.html' %}
+    {% endif %}
+
+    {% get_allow_registration as allow_registration %}
+    {% if allow_registration %}
+        <hr/>
+        {% include 'funhome/home_join_us.html' %}
+    {% endif %}
+
+{% endblock content %}

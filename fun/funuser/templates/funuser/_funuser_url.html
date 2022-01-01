@@ -1,0 +1,19 @@
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load l10n %}
+
+<ul class="nav nav-pills nav-item text-right user-info-nav-pills">
+    <li class="nav-item">
+        <a class="btn btn-sm" href="{% url 'funuser:funuser_update' %}">
+            {% trans 'Information' %}</a>
+    </li>
+    <li class="nav-item ml-2">
+        <a class="btn btn-sm" href="/accounts/password/reset/">
+            {% trans 'Reset password' %}</a>
+    </li>
+</ul>
+<hr/>

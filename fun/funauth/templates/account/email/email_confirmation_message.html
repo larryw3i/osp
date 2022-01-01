@@ -1,0 +1,32 @@
+
+{% load account %}
+{% load i18n %}
+{% user_display user as user_display %}
+
+{% autoescape off %}
+
+    <h2>{% trans 'Hello from x-dove'%}!</h2>
+    <p>
+        {% blocktrans %}
+            You're receiving this e-mail because user 
+        {% endblocktrans %}
+        <h3>{{ user_display }}</h3> 
+        
+        {% blocktrans %}
+            has given yours as an e-mail address to connect their account.
+        {% endblocktrans %}
+        {% trans 'To confirm this is correct, go to' %} 
+        
+        <a href='{{ activate_url  }}'>{% trans 'CONFIRM EMAIL' %}</a>
+    </p>
+ 
+    <div style='width:100%;text-align:right'>
+        
+        {% blocktrans  %} 
+            Thank you from x-dove!
+        {% endblocktrans %}
+        <br/>
+        {{  current_site.domain  }}
+    </div> 
+
+{% endautoescape %}

@@ -1,0 +1,113 @@
+
+{% extends 'funhome/_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% load eduhub_tags %}
+{% block title %} {% endblock title %}
+{% block optionalcss %}
+    <link rel="stylesheet" href="{% static 'eduhub/eduhub.css' %}"/>
+{% endblock optionalcss %}
+{% block subnavbar %}
+    <nav class="
+            navbar navbar-inverse 
+            navbar-fixed-top  navbar-expand-sm">
+        <div class="container ">
+            <a class="navbar-brand" href="{% url 'eduhub:label_list' %}" 
+                style="font-weight: 700;" >
+                {% trans 'Eduhub' %}
+            </a>
+
+            <button class="navbar-toggler " type="button" 
+                data-toggle="collapse" 
+                data-target="#eduhubNavbarContent" 
+                aria-controls="eduhubNavbarContent" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span>=</span>
+            </button>
+            <div class="collapse navbar-collapse" id="eduhubNavbarContent">
+                <ul class="navbar-nav mr-auto align-middle 
+                    align-items-center">
+
+                    <li class="nav-item"
+                        style=" 
+                            border: solid violet; padding: 2px;
+                            border-radius: 20px; text-align: center;">
+                        <a class="text text-primary"
+                            style="font-weight: 700;"
+                            data-toggle="collapse" 
+                            href="#top_classification_collapse" 
+                            aria-expanded="false" 
+                            aria-controls="top_classification_collapse">
+                            {% curr_classification %}
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link "  
+                            href="{% url 'eduhub:label_list' %}">
+                            {% trans 'Eduhub labels' %}
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link "  
+                            href="{% url 'eduhub:funcontent_list_all' %}">
+                            {% trans 'Eduhub contents' %}
+                        </a>
+                    </li>
+                    {% if user_in_asgroup %}
+                        <li class="nav-item">
+                            <a class="nav-link "  
+                                href=
+                            "{% url 'eduhub:asgroup_list' %}">
+                                {% trans 'Eduhub appraising' %}
+                            </a>
+                        </li>
+                    {% endif %}
+
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0" 
+                    action="{% url 'eduhub:eduhub_search' %}" 
+                    id="eduhub_search_form">
+                    
+                    <input class="form-control mr-sm-2"  
+                        id="eduhub_search_q" 
+                        name="q" 
+                        placeholder=
+                        "{% trans 'What are you thinking about' %}?" 
+                        aria-label=
+                        "{% trans 'What are you thinking about' %}?" 
+                        aria-describedby="eduhub_search" autocomplete="off" 
+                        value="{{ request.GET.q }}"/>
+                    <button class="btn btn-outline-success my-2 my-sm-0"  
+                        type="button" id="eduhub_search_submit">
+                        {% trans 'search' %} &#128269;
+                    </button>
+
+                </form>
+
+            </div>
+        </div> 
+    </nav>
+
+    {# Classification #}
+    <div class="collapse container" id="top_classification_collapse">
+        <div class="card card-body col col-12">
+            {% autoescape off %}
+                {% get_classification %}
+            {% endautoescape %}
+        </div>
+    </div>
+
+{% endblock subnavbar %}
+{% block content %} 
+{% endblock content%}
+{% block optionaljs %}     
+    <script src="{% static 'eduhub/eduhub.js' %}"></script>
+    {% block eduhub_optionaljs %} 
+    {% endblock eduhub_optionaljs %}
+{% endblock optionaljs %}

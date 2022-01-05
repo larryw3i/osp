@@ -45,7 +45,7 @@
         "{% url 'eduhub:appraising_create' appraising_c_id=asharingcontent.id %}">
         </div>
     {% endif %}
-    {% ifequal asharingcontent.cfrom request.user %} 
+    {% if asharingcontent.cfrom == request.user %} 
         <div class="col col-12 text-center" >
             <a href=
             "{% url 'eduhub:appraising_c_update' pk=asharingcontent.id %}" 
@@ -56,7 +56,7 @@
                 class="btn btn-sm btn-danger">{% trans 'Delete' %}
             </a>
         </div>
-    {% endifequal %}
+    {% endif %}
  
 
 {% endblock %}

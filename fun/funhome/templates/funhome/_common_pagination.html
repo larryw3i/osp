@@ -10,11 +10,11 @@
         <span class="step-links">
             {% if page_obj.has_previous %}
 
-                {% ifnotequal page_obj.number|add:'-1' 1 %}
+                {% if page_obj.number|add:'-1' != 1 %}
                     <a href="?page=1" class="btn btn-primary btn-sm">
                         &laquo; {% trans 'first page' %}
                     </a>
-                {% endifnotequal %} 
+                {% endif %} 
 
                 <a href="?page={{ page_obj.previous_page_number }}"  
                     class="btn btn-primary btn-sm">
@@ -32,12 +32,12 @@
                 <a href="?page={{ page_obj.next_page_number }}"  
                     class="btn btn-primary btn-sm">{% trans 'next page' %}</a>
 
-        {% ifnotequal page_obj.number|add:'1' page_obj.paginator.num_pages %}
+        {% if page_obj.number|add:'1' != page_obj.paginator.num_pages %}
                     <a href="?page={{ page_obj.paginator.num_pages }}"  
                         class="btn btn-primary btn-sm">
                         {% trans 'last page' %} &raquo;
                     </a>
-        {% endifnotequal %}
+        {% endif %}
             
             {% endif %}
 

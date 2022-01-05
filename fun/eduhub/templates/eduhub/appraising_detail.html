@@ -38,7 +38,7 @@
     <p class="small">
         {{ funcontent.comment }}
     </p>
-    {% ifequal funcontent.label.author request.user %} 
+    {% if funcontent.label.author == request.user %} 
         <div class="col col-12 text-center" >
             <a href="{% url 'eduhub:funcontent_update'  pk=funcontent.id %}" 
                 class="btn btn-sm btn-info">{% trans 'Edit' %}
@@ -47,7 +47,7 @@
                 class="btn btn-sm btn-danger">{% trans 'Delete' %}
             </a>
         </div>
-    {% endifequal %}
+    {% endif %}
  
 
 {% endblock %}

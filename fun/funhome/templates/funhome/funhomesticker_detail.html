@@ -37,7 +37,7 @@
         {{ funhomesticker.comment }}
     </p> 
 
-    {% ifequal funhomesticker.promulgator  request.user  %}
+    {% if funhomesticker.promulgator == request.user  %}
 
         <div class="col col-12 text-right" >
             <a class=" btn btn-sm btn-info" 
@@ -46,7 +46,7 @@
             </a>
         </div>
 
-    {% endifequal %}
+    {% endif %}
  
 
 {% endblock %}

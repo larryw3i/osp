@@ -29,9 +29,9 @@
               <input id="email_radio_{{forloop.counter}}" type="radio" 
             name="email" 
 
-            {% ifequal emailaddress.primary or user.emailaddress_set.count 1 %}
+            {% if emailaddress.primary or user.emailaddress_set.count == 1 %}
               checked="checked"
-            {% endifequal %} 
+            {% endif %} 
 
               value="{{emailaddress.email}}"/>
 

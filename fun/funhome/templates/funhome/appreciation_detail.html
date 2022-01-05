@@ -38,7 +38,7 @@
     <p class="text-right small">{{ appreciation.submitting_date }}</p>
     <hr/>
     
-    {% ifequal appreciation.submitter  request.user  %}
+    {% if appreciation.submitter == request.user  %}
 
         <div class="col col-12 text-right" >
             <a class=" btn btn-sm btn-info" 
@@ -47,7 +47,7 @@
             </a>
         </div>
 
-    {% endifequal %}
+    {% endif %}
 
 {% endblock content%}
 

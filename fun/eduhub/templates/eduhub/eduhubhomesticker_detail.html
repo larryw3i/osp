@@ -35,7 +35,7 @@
         {{ eduhubhomesticker.comment }}
     </p> 
 
-    {% ifequal eduhubhomesticker.promulgator  request.user  %}
+    {% if eduhubhomesticker.promulgator == request.user  %}
 
         <div class="col col-12 text-right" >
             <a class=" btn btn-sm btn-info" 
@@ -44,7 +44,7 @@
                 {% trans 'Edit' %}
             </a>
         </div>
-    {% endifequal %}
+    {% endif %}
  
 {% endblock %}
 

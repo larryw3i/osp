@@ -15,21 +15,34 @@ class FunuserModelForm(ModelForm):
         model = Funuser
         exclude = ['user', ]
 
+        fields = ['avatar', 'birth_date', 'first_name', 'last_name', 'address',
+                  'hometown', 'college', 
+                  'occupation',
+                  'hobby',
+                  'motto',
+                  'is_birth_date_outward',
+                  'is_address_outward',
+                  'is_hometown_outward',
+                  'is_college_outward',
+                  'is_occupation_outward',
+                  'is_hobby_outward',
+                  'is_motto_outward']
+
         widgets = {
             'avatar': forms.FileInput(
-                attrs={'class':
-                       'custom-file-input preview-image',
+                attrs={'class': 'custom-file-input',
                        'aria-describedby': "avatarInputGroupFileAddon",
-                       'accept': 'image/*', }),
+                       'accept': 'image/*',
+                       'src-for': '#id_avatar_show'}),
             'birth_date': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}),
+            'first_name': forms.TextInput(attrs={
+                'class': 'form-control'}),
+            'last_name': forms.TextInput(attrs={
+                'class': 'form-control'}),
             'address': forms.TextInput(attrs={'class': 'form-control'}),
             'hometown': forms.TextInput(attrs={'class': 'form-control'}),
             'college': forms.TextInput(attrs={'class': 'form-control'}),
-            'full_name': forms.TextInput(
-                attrs={'class': 'form-control ',
-                       'placeholder': _('Full name'),
-                       'style': 'text-align: center;'}),
             'occupation': forms.TextInput(attrs={'class': 'form-control'}),
             'hobby': forms.TextInput(attrs={'class': 'form-control'}),
             'motto': forms.TextInput(attrs={'class': 'form-control'}),

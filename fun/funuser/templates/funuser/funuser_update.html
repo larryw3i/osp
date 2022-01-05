@@ -19,7 +19,7 @@
         {{ form.non_field_errors }} 
         <div class="row">
             <div class="col col-auto text-center" >
-                <img  click-to='#id_avatar' preview-for='#id_avatar' 
+                <img  click-to='#id_avatar' id='id_avatar_show' 
                     src="
         {% if form.instance.avatar.name %}
             {%  url 'funfile:get_file' file_id=form.instance.avatar.name  %}
@@ -29,11 +29,14 @@
                 <div hidden>
                     {{ form.avatar }} 
                 </div>
+                
+                <div class="input-group">
+                    {{ form.first_name.errors }} 
+                    {{ form.first_name }}
+                    {{ form.last_name.errors }} 
+                    {{ form.last_name }}
+                </div>  
 
-                <div class="form-group mt-2">
-                    {{ form.full_name.errors }} 
-                    {{ form.full_name }}
-                </div>
             </div>
 
             <div class="col col-auto">

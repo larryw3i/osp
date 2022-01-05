@@ -31,6 +31,7 @@ funuser_list_template = f'funuser/funuser_list.html'
 
 
 class FunuserUpdateView(LoginRequiredMixin, UpdateView):
+
     model = Funuser
     form_class = FunuserModelForm
     template_name = funuser_update_template
@@ -39,14 +40,11 @@ class FunuserUpdateView(LoginRequiredMixin, UpdateView):
     def get_object(self, queryset=None):
         return self.request.user
 
-    def form_valid(self, form):
-
-        if not Funuser.objects.filter(
-                user=self.request.user, id=form.instance.id).exists():
-            form.add_error('full_name', _('Nice try'))
-            return render(
-                self.request, funuser_update_template, context={'form': form})
-        return super().form_valid(form)
+    def post(self, request, *args, **kwargs):
+        print(request)
+        if not Funuser.objects.filter(id=request.user.id).exists():
+            return Http404()
+        return super().post(request, *args, **kwargs)
 
 
 class FunuserDetailView(LoginRequiredMixin, DetailView):

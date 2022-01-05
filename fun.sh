@@ -84,6 +84,13 @@ update_gitignore(){
     echo "gitignore updated!"
 }
 
+_msgfmt(){
+    for _po in $(find ./fun/locale -name "*.po"); do
+        echo -e "$_po ${_po/.po/.mo}"
+        msgfmt -v -o ${_po/.po/.mo}  $_po
+    done
+}
+
 _start(){
     activate_source
     cd ./fun
@@ -108,6 +115,7 @@ _s(){       _start;             }
 gita(){     p8; git add . ;     }
 
 as(){       activate_source;    }
+_msg(){     _msgfmt;            }
 
 
 ${_args[0]}

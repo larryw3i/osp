@@ -30,6 +30,8 @@ urlpatterns = [
 
     path('eduhub/', include('eduhub.urls')),
 
+    path('funblog/', include('funblog.urls')),
+
     path('accounts/', include('allauth.urls')),
 
     path('funuser/', include('funuser.urls')),

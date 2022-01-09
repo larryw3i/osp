@@ -16,7 +16,7 @@ class FunuserModelForm(ModelForm):
         exclude = ['user', ]
 
         fields = ['avatar', 'birth_date', 'first_name', 'last_name', 'address',
-                  'hometown', 'college', 
+                  'hometown', 'college',
                   'occupation',
                   'hobby',
                   'motto',
@@ -37,7 +37,7 @@ class FunuserModelForm(ModelForm):
             'birth_date': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}),
             'first_name': forms.TextInput(attrs={
-                'class': 'form-control'}),
+                'class': 'form-control text-right'}),
             'last_name': forms.TextInput(attrs={
                 'class': 'form-control'}),
             'address': forms.TextInput(attrs={'class': 'form-control'}),

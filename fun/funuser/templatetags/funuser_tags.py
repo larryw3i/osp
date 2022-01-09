@@ -1,6 +1,8 @@
 
 from django import template
 from django.conf import settings
+from django.shortcuts import (Http404, HttpResponseRedirect, redirect, render,
+                              reverse)
 from funuser.models import Funuser
 
 register = template.Library()

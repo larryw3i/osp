@@ -215,7 +215,7 @@ STATICFILES_FINDERS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'funfile', 'media')
-CKEDITOR_UPLOAD_PATH = MEDIA_ROOT
+CKEDITOR_UPLOAD_PATH = ''
 CKEDITOR_RESTRICT_BY_USER = True
 CKEDITOR_RESTRICT_BY_DATE = False
 CKEDITOR_CONFIGS = {
@@ -236,7 +236,7 @@ CKEDITOR_CONFIGS = {
         'tabSpaces': 4,
         'toolbarCanCollapse': True,
         'filebrowserWindowHeight':'50%' ,
-        'filebrowserWindowWidth':'60%' ,
+        'filebrowserWindowWidth':'80%' ,
     },
 }
 CKEDITOR_IMAGE_BACKEND = 'pillow'

@@ -47,26 +47,51 @@
 
             {% get_allow_registration as allow_registration %}
             
-            <ul class="form-inline my-2 my-lg-0"> 
+            <ul class="form-inline navbar-nav my-2 my-lg-0"> 
             
                 {% if user.is_authenticated %}
-                    <a class="p-2 text-dark" 
-                        href="{% url 'funuser:funuser_update'  %}">
-                        {% trans 'Hello' %}! {{ request.user }}
-                    </a>
-
-                    <a class="p-2 text-dark" href="{% url 'account_logout' %}">
-                        {% trans 'Log Out' %}
-                    </a>
-                {% else %}
-                    <a class="p-2 text-dark" href="{% url 'account_login' %}">
-                        {% trans 'Log In' %}
-                    </a>
-                    {% if allow_registration %}
-                        <a class="btn btn-outline-primary" 
-                            href="{% url 'account_signup' %}">
-                            {% trans 'Sign Up' %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  
+                            id="user_dropdown" 
+                            role="button" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="false">
+                            {{ request.user }}
                         </a>
+                        <div class="dropdown-menu" 
+                            aria-labelledby="user_dropdown">
+                            <a class="dropdown-item" 
+                                href="{% url 'funuser:funuser_update' %}">
+                                {% trans "Information" %}
+                            </a>
+                            <a class="dropdown-item" 
+                                href="{% url 'funblog:list' %}">
+                                {% trans "My blog" %}
+                            </a>
+                            <a class="dropdown-item" 
+                                href="/accounts/password/reset/">
+                                {% trans "Change password" %}
+                            </a>
+                            <a class="dropdown-item" 
+                                href="{% url 'account_logout' %}">
+                                {% trans 'Log Out' %}
+                            </a>
+                        </div>
+                    </li>
+
+                {% else %}                
+                    <li class="nav-item">
+                        <a class="p-2 text-dark" 
+                            href="{% url 'account_login' %}">
+                            {% trans 'Log In' %}
+                        </a>
+                    <li/>
+                    {% if allow_registration %}
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" 
+                                href="{% url 'account_signup' %}">
+                                {% trans 'Sign Up' %}
+                            </a>
+                        <li/>
                     {% endif %}
                 {% endif %}
             

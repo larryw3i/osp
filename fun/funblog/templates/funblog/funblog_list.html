@@ -14,5 +14,14 @@
 {% endblock title %}
 
 {% block content %}
-
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a class="btn btn-primary me-md-2" type="button"
+            href="{% url "funblog:create"%}">
+            {% trans "Add" %}
+        </a>
+        &nbsp;
+        <a class="btn btn-primary" type="button">
+            {% trans "My Blog" %}
+        </a>
+    </div>
 {% endblock %}

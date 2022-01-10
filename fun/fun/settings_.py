@@ -235,8 +235,8 @@ CKEDITOR_CONFIGS = {
         'width': '100%',
         'tabSpaces': 4,
         'toolbarCanCollapse': True,
-        'filebrowserWindowHeight': '50%',
-        'filebrowserWindowWidth': '80%',
+        'filebrowserWindowHeight': '60%',
+        'filebrowserWindowWidth': '50%',
     },
 }
 CKEDITOR_IMAGE_BACKEND = 'pillow'

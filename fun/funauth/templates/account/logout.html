@@ -12,39 +12,26 @@
 {% endblock %}
 
 {% block content %}
-
   <div class="container mt-4">
     <div class="col col-12 text-center">
-
-      <img id="sign_out_avatar" src="{% get_funuser_avatar_url user %}" 
-        alt="avatar" class="rounded-circle  "   
+      <img id="sign_out_avatar" src="/media/{{ request.user.avatar }}"
+        alt="avatar" class="rounded-circle  "
         style="width: 150px;height:150px;object-fit: cover"/>
-
       <h1>{% trans "Sign Out" %}</h1>
-
       {% if user.is_authenticated %}
         {% include "account/snippets/already_logged_in.html" %}
       {% endif %}
-
-      <p>{% trans 'Are you sure you want to sign out?' %}</p>
-    
-      <form method="post" action="{% url 'account_logout' %}">
-        
-        {% csrf_token %}
-      
+      <p>{% trans 'Are you sure you want to sign out?' %}</p>    
+      <form method="post" action="{% url 'account_logout' %}">        
+        {% csrf_token %}      
         {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}"
             value="{{ redirect_field_value }}"/>
-        {% endif %}
-        
+        {% endif %}        
         <button type="submit" class="btn btn-danger">
           {% trans 'Sign out now' %}
-        </button>
-      
-      </form>
-    
+        </button>      
+      </form>    
     </div>
-
   </div>
-
 {% endblock %}

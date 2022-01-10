@@ -5,7 +5,6 @@ from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from funfile.storage import upload_to
 from imagekit.models import ImageSpecField
 
 # Create your models here.
@@ -13,6 +12,8 @@ from imagekit.models import ImageSpecField
 
 funuser_mame = 'funuser'
 
+def upload_to(instance, filename):
+    return '{0}/{1}'.format(instance.username, filename)
 
 class Funuser(AbstractUser):
 

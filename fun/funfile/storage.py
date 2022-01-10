@@ -7,9 +7,7 @@ from django.core.files.storage import FileSystemStorage
 
 
 def upload_to(instance, filename):
-    _upload_to = os.path.join('fun', 'funfile', 'files')
-    return _upload_to
-
+    return 'user_{0}/{1}'.format(instance.user.id, filename)
 
 class FunFileStorage(FileSystemStorage):
     def _save(self, name, content):

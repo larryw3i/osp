@@ -41,8 +41,7 @@
                         <div class=
                     "carousel-item {% if forloop.first %} active {% endif %}">
                             
-                            <img src=
-            "{% url 'funfile:get_file' file_id=eduhubhomesticker.cover.name %}" 
+                            <img src="/media/{{ eduhubhomesticker.cover.name }}" 
                                 class="d-block w-100 carousel-item-img" 
                                 alt=""/>
 
@@ -90,8 +89,7 @@
                         <div class="card homesticker-card" 
                             style="width: 18rem;">
                             
-                            <img src=
-            "{% url 'funfile:get_file' file_id=eduhubhomesticker.cover.name %}" 
+                            <img src="/media/{{ eduhubhomesticker.cover.name }}" 
                             class="card-img-top" alt="{% trans 'cover' %}">
                             
                             <div class="card-body">

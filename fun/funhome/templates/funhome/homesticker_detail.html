@@ -19,8 +19,8 @@
     <hr/> 
 
     {% if  is_video %}
-        <video class="eduhub-content-video"  src=
-        "{% url 'funfile:get_file' file_id=homesticker.content_file.name %}" 
+        <video class="eduhub-content-video"
+            src="/media/{{ homesticker.content_file.name }}" 
             width="100%" controls>
         </video>
         

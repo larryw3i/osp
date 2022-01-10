@@ -48,6 +48,8 @@ function changeTheme(event){
 (function(){
     
     checkCookies();
+    
+    $('<br/>').insertBefore('.django-ckeditor-widget')
 
     $(document).on('click', `.theme-dropdown-menu a` , (event) =>{
         changeTheme(event);

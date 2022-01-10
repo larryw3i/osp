@@ -27,8 +27,7 @@
                     data-url=
             "{% url 'homesticker_detail' pk=homesticker.id %}">
 
-                    <img src=
-            "{% url 'funfile:get_file' file_id=homesticker.cover.name %}" 
+                    <img src="/media/{{ homesticker.cover.name }}" 
                         class="card-img" alt="cover">
 
                     <div class="card-img-overlay">

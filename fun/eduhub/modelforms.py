@@ -48,7 +48,6 @@ class ASharingCModelForm(ModelForm):
         model = ASharingContent
         fields = ['title', 'content', 'classification']
         labels = {
-            'content': _('Content'),
             'classification': _('Sharing Content classification'),
         }
         widgets = {

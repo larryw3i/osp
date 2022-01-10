@@ -22,7 +22,7 @@
                 <img  click-to='#id_avatar' id='id_avatar_show' 
                     src="
         {% if form.instance.avatar.name %}
-            {%  url 'funfile:get_file' file_id=form.instance.avatar.name  %}
+            /media/{{ form.instance.avatar.name }}
         {% endif %}" alt="avatar" class="rounded-circle "   
                     style="width: 150px;height:150px;object-fit: cover"/>
 

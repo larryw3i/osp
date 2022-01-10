@@ -17,8 +17,7 @@
                         data-url=
                         "{% url 'eduhub:appraising_c_list' asg_id=g.id %}">
                         {% if g.cover %}
-                            <img src=
-                            "{% url 'funfile:get_file' file_id=g.cover.name %}" 
+                            <img src="/media/{{ g.cover.name }}" 
                                 class="card-img-top" alt=""/>
                         {% endif %}
                         <div class="card-body">

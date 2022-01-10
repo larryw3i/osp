@@ -15,4 +15,19 @@
 
 {% block content %}
 
+    <div class="row text-center mt-5">
+        <div class="col offset-xl-2  col-auto ">
+            <form method="post"  enctype="multipart/form-data" class="">
+                {% csrf_token %}
+                {{ form.media }}
+                {{ form|crispy }}
+                <div class="col col-12 text-center" >
+                    <input class="btn btn-outline-info " type="submit" 
+                        value="{% trans 'Upload' %}" />
+                </div>
+            </form> 
+        </div>
+    </div>
+    {% include 'funhome/_ckeditor.html' %}
+
 {% endblock %}

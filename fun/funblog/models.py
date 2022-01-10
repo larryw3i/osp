@@ -44,14 +44,15 @@ class Fblog(models.Model):
 
     DOC = models.DateTimeField(
         auto_now_add=True,
-        verbose_name=_('Date of appraising content creating'))
+        verbose_name=_('Date of creating'))
 
     DOU = models.DateTimeField(
         auto_now=True,
-        verbose_name=_('Date of appraising content updating'))
+        verbose_name=_('Date of updating'))
 
-    comment = models.TextField(max_length=128, verbose_name=_(
-        'Eduhub homepage sticker comment'))
+    comment = models.TextField(
+        max_length=128, 
+        verbose_name=_('Comment'))
     
     author = models.ForeignKey(
         to=Funuser, on_delete=models.CASCADE, verbose_name=_('Author'))

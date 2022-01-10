@@ -16,9 +16,8 @@ from .models import Fblog
 class FblogModelForm(ModelForm):
     class Meta:
         model = Fblog
-        fields = ['title', 'content', 'is_legal']
+        fields = ['title', 'content','comment']
         labels = {
             'title': _('title'),
-            'content': _('Content'),
-            'is_legal': _('is legal?'),
+            'comment':_('Comment')
         }

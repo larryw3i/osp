@@ -11,8 +11,7 @@
     <div class="row">
         <div class="col col-sm-4 col-md-4 col-lg-3 text-center">
             <p>{% trans 'Preview' %}</p>
-            <img src=
-                "{% url 'funfile:get_file' file_id=form.instance.cover.name %}" 
+            <img src="/media/{{ form.instance.cover.name }}" 
                 class="preview" preview-for='#id_cover' 
                 alt="{% trans 'cover'%}"/>
         </div>

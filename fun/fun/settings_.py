@@ -213,9 +213,11 @@ STATICFILES_FINDERS = [
 ]
 
 
-MEDIA_URL = '/funfile/get_file/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'funfile', 'files')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'funfile', 'media')
 CKEDITOR_UPLOAD_PATH = MEDIA_ROOT
+CKEDITOR_RESTRICT_BY_USER = True
+CKEDITOR_RESTRICT_BY_DATE = False
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': [
@@ -228,10 +230,13 @@ CKEDITOR_CONFIGS = {
                 "Subscript", "Superscript"], ['Undo', 'Redo'], ["Source"],
             ["Maximize"]
         ],
+        "removePlugins": ["exportpdf"],
         'height': 300,
         'width': '100%',
         'tabSpaces': 4,
         'toolbarCanCollapse': True,
+        'filebrowserWindowHeight':'50%' ,
+        'filebrowserWindowWidth':'60%' ,
     },
 }
 CKEDITOR_IMAGE_BACKEND = 'pillow'

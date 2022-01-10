@@ -20,8 +20,7 @@
 {% block content %} 
 
     <div class="text-center ">
-        <img src=
-            "{% url 'funfile:get_file' file_id=appreciation.illustration  %}" 
+        <img src="/media/{{ appreciation.illustration }}" 
             class="rounded-circle" style="width: 20%;" />
     </div>
     <hr/> 

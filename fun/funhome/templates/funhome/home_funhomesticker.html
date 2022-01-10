@@ -26,9 +26,8 @@
                         <div class="carousel-item 
                             {% if forloop.first %} active {% endif %}">
                             {% if not is_funhomestickers_null %}
-                                <img src="
-                {% url 'funfile:get_file' file_id=funhomesticker.cover.name %}
-                            "   class="d-block w-100 carousel-item-img" alt=""/>
+                            <img src="/media/{{ funhomesticker.cover.name }}"   
+                            class="d-block w-100 carousel-item-img" alt=""/>
                             {% endif %}
                             
                             <div class="carousel-caption 

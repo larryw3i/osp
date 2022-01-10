@@ -66,6 +66,7 @@ class Classification(models.Model):
 def label_upload_to(instance, filename):
     return '{0}/{1}'.format(instance.author.username, filename)
 
+
 class Label(models.Model):
 
     class Meta:
@@ -131,6 +132,7 @@ class Funcontent(models.Model):
 
 def eduhubhomesticker_upload_to(instance, filename):
     return '{0}/{1}'.format(instance.promulgator.username, filename)
+
 
 class Eduhubhomesticker(models.Model):
     class Meta:
@@ -290,8 +292,10 @@ class ASharingContent(models.Model):
     is_legal = models.BooleanField(
         default=True, verbose_name=_('Is content legal'))
 
+
 def asharinggroup_upload_to(instance, filename):
     return '{0}/{1}'.format(instance.founder.username, filename)
+
 
 class ASharingGroup(models.Model):
     class Meta:
@@ -307,7 +311,9 @@ class ASharingGroup(models.Model):
     subtitle = models.CharField(
         max_length=64, blank=False, verbose_name=_('Subtitle'))
     cover = models.ImageField(
-        upload_to=asharinggroup_upload_to, blank=True, verbose_name=_('Group cover'))
+        upload_to=asharinggroup_upload_to,
+        blank=True,
+        verbose_name=_('Group cover'))
     founder = models.ForeignKey(
         to=Funuser, on_delete=models.CASCADE,
         verbose_name=_('ASharingGroup Founder'))

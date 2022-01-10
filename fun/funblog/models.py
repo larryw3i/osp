@@ -51,9 +51,9 @@ class Fblog(models.Model):
         verbose_name=_('Date of updating'))
 
     comment = models.TextField(
-        max_length=128, 
+        max_length=128,
         verbose_name=_('Comment'))
-    
+
     author = models.ForeignKey(
         to=Funuser, on_delete=models.CASCADE, verbose_name=_('Author'))
 

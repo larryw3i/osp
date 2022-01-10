@@ -12,8 +12,10 @@ from imagekit.models import ImageSpecField
 
 funuser_mame = 'funuser'
 
+
 def upload_to(instance, filename):
     return '{0}/{1}'.format(instance.username, filename)
+
 
 class Funuser(AbstractUser):
 

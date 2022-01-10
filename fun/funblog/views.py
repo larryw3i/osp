@@ -60,6 +60,7 @@ class FblogListView(LoginRequiredMixin, ListView):
             page = paginator.page(1)
             return (paginator, page, page.object_list, page.has_other_pages())
 
+
 class FblogCreateView(LoginRequiredMixin, CreateView):
     model = Fblog
     form_class = FblogModelForm

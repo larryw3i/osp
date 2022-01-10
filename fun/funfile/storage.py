@@ -9,6 +9,7 @@ from django.core.files.storage import FileSystemStorage
 def upload_to(instance, filename):
     return 'user_{0}/{1}'.format(instance.user.id, filename)
 
+
 class FunFileStorage(FileSystemStorage):
     def _save(self, name, content):
         sha256 = hashlib.sha256()

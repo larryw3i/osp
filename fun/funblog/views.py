@@ -29,7 +29,7 @@ from .models import Fblog
 class FblogListView(LoginRequiredMixin, ListView):
     model = Fblog
     form_class = FblogModelForm
-    template_name = 'funblog/funblog_create.html'
+    template_name = 'funblog/funblog_list.html'
     ordering = ['-DOC', ]
     paginate_by = 5
     paginate_orphans = 1

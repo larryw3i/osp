@@ -137,6 +137,7 @@ media
 
 # APP_FILES
 fun/funfile/files/
+fun/funfile/media/
 
 # uwsgi.ini 
 fun/uwsgi.ini

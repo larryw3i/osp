@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-11 18:15+0800\n"
+"POT-Creation-Date: 2022-01-11 16:06+0800\n"
 "PO-Revision-Date: 2021-10-11 18:25+0800\n"
 "Last-Translator: larryw3i <larryw3i@163.com>\n"
 "Language-Team: Chinese - China <larryw3i@163.com>\n"
@@ -29,363 +29,346 @@ msgstr "空"
 msgid "Eduhub"
 msgstr "教育"
 
-#: eduhub/modelforms.py:48 eduhub/modelforms.py:119 eduhub/models.py:120
-#: eduhub/models.py:233 eduhub/models.py:264
-msgid "Content"
-msgstr "内容"
-
-#: eduhub/modelforms.py:49
-#| msgid "Content classification"
+#: eduhub/modelforms.py:51
 msgid "Sharing Content classification"
 msgstr "打卡分享类别"
 
-#: eduhub/modelforms.py:54 eduhub/modelforms.py:126 eduhub/models.py:117
+#: eduhub/modelforms.py:56 eduhub/modelforms.py:128 eduhub/models.py:120
 msgid "Content title"
 msgstr "标题"
 
-#: eduhub/modelforms.py:69
+#: eduhub/modelforms.py:71
 msgid "ASharingGroup name"
 msgstr "打卡组名"
 
-#: eduhub/modelforms.py:70
-#| msgid "Sticker subtitle"
+#: eduhub/modelforms.py:72
 msgid "ASharingGroup subtitle"
 msgstr "打卡组小问候"
 
-#: eduhub/modelforms.py:71
-#| msgid "Sticker comment"
+#: eduhub/modelforms.py:73
 msgid "ASharingGroup comment"
 msgstr "打卡组备注"
 
-#: eduhub/modelforms.py:81 eduhub/models.py:56 eduhub/models.py:331
+#: eduhub/modelforms.py:83 eduhub/models.py:55 eduhub/models.py:346
 msgid "Parent classification"
 msgstr "父类"
 
-#: eduhub/modelforms.py:82 eduhub/models.py:335
-#| msgid "Classification"
+#: eduhub/modelforms.py:84 eduhub/models.py:350
 msgid "Classification Name"
 msgstr "分类名"
 
-#: eduhub/modelforms.py:83 eduhub/models.py:338
-#| msgid "Classification comment"
+#: eduhub/modelforms.py:85 eduhub/models.py:353
 msgid "Classification Comment"
 msgstr "分类备注"
 
-#: eduhub/modelforms.py:93 eduhub/models.py:366
+#: eduhub/modelforms.py:95 eduhub/models.py:381
 msgid "applying info"
 msgstr "申请信息"
 
-#: eduhub/modelforms.py:103 eduhub/models.py:80
+#: eduhub/modelforms.py:105 eduhub/models.py:83
 msgid "Label name"
 msgstr "标签名"
 
-#: eduhub/modelforms.py:104
+#: eduhub/modelforms.py:106
 msgid "Cover image"
 msgstr "封面图片"
 
-#: eduhub/modelforms.py:105 eduhub/modelforms.py:120 eduhub/models.py:242
+#: eduhub/modelforms.py:107 eduhub/modelforms.py:122 eduhub/models.py:251
+#: funblog/modelforms.py:22 funblog/models.py:55
 msgid "Comment"
 msgstr "备注"
 
-#: eduhub/modelforms.py:121 eduhub/models.py:114
+#: eduhub/modelforms.py:121 eduhub/models.py:123 eduhub/models.py:240
+#: eduhub/models.py:273 funblog/models.py:43
+msgid "Content"
+msgstr "内容"
+
+#: eduhub/modelforms.py:123 eduhub/models.py:117
 msgid "Content classification"
 msgstr "分类"
 
-#: eduhub/modelforms.py:140 funhome/modelforms.py:22 funhome/modelforms.py:52
+#: eduhub/modelforms.py:142 funhome/modelforms.py:22 funhome/modelforms.py:52
 #: funhome/models.py:35 funhome/models.py:79
 msgid "Sticker title"
 msgstr "贴纸标题"
 
-#: eduhub/modelforms.py:141 funhome/modelforms.py:23 funhome/modelforms.py:53
+#: eduhub/modelforms.py:143 funhome/modelforms.py:23 funhome/modelforms.py:53
 msgid "Sticker Cover"
 msgstr "贴纸背景"
 
-#: eduhub/modelforms.py:142 funhome/modelforms.py:54
+#: eduhub/modelforms.py:144 funhome/modelforms.py:54
 msgid "Sticker content"
 msgstr "备注"
 
-#: eduhub/modelforms.py:143 funhome/modelforms.py:25 funhome/modelforms.py:55
+#: eduhub/modelforms.py:145 funhome/modelforms.py:25 funhome/modelforms.py:55
 msgid "Sticker Comment"
 msgstr "备注"
 
-#: eduhub/modelforms.py:144
+#: eduhub/modelforms.py:146
 msgid "description"
 msgstr "描述"
 
-#: eduhub/modelforms.py:173
+#: eduhub/modelforms.py:175
 msgid "name exists"
 msgstr "名称已存在"
 
-#: eduhub/models.py:37 eduhub/models.py:275 eduhub/models.py:278
+#: eduhub/models.py:36 eduhub/models.py:284 eduhub/models.py:287
 msgid "Classification"
 msgstr "分类"
 
-#: eduhub/models.py:38
+#: eduhub/models.py:37
 msgid "Classifications"
 msgstr "分类"
 
-#: eduhub/models.py:49 eduhub/models.py:326
+#: eduhub/models.py:48 eduhub/models.py:341
 msgid "name includes '/' is not allowed"
 msgstr "不能包含('/')"
 
-#: eduhub/models.py:60
+#: eduhub/models.py:59
 msgid "Classification name('/' cannot be included)"
 msgstr "分类名(不能包含'/')"
 
-#: eduhub/models.py:64
+#: eduhub/models.py:63
 msgid "Classification comment"
 msgstr "分类备注"
 
-#: eduhub/models.py:70
+#: eduhub/models.py:73
 msgid "Eduhub label"
 msgstr "分类标签"
 
-#: eduhub/models.py:71
+#: eduhub/models.py:74
 msgid "Eduhub  labels"
 msgstr "分类标签"
 
-#: eduhub/models.py:82
+#: eduhub/models.py:85
 msgid "Label comment"
 msgstr "备注"
 
-#: eduhub/models.py:84
+#: eduhub/models.py:87
 msgid "Label cover"
 msgstr "封面"
 
-#: eduhub/models.py:86
+#: eduhub/models.py:89
 msgid "Label creating date"
 msgstr "创建时间"
 
-#: eduhub/models.py:88
+#: eduhub/models.py:91
 msgid "Label author"
 msgstr "作者"
 
-#: eduhub/models.py:90
+#: eduhub/models.py:93
 msgid "Is label legal"
 msgstr "合法"
 
-#: eduhub/models.py:96
+#: eduhub/models.py:99
 msgid "Eduhub content (NEW)"
 msgstr "内容(新)"
 
-#: eduhub/models.py:97
+#: eduhub/models.py:100
 msgid "Eduhub contents (NEW)"
 msgstr "内容(新)"
 
-#: eduhub/models.py:110
+#: eduhub/models.py:113
 msgid "Content label"
 msgstr "标签"
 
-#: eduhub/models.py:123
+#: eduhub/models.py:126
 msgid "Content uploading date"
 msgstr "上传时间"
 
-#: eduhub/models.py:125
+#: eduhub/models.py:128
 msgid "Content comment"
 msgstr "备注"
 
-#: eduhub/models.py:127 eduhub/models.py:284
+#: eduhub/models.py:130 eduhub/models.py:293
 msgid "Is content legal"
 msgstr "合法"
 
-#: eduhub/models.py:132
+#: eduhub/models.py:139
 msgid "Eduhub homepage sticker"
 msgstr "主页贴纸"
 
-#: eduhub/models.py:133
+#: eduhub/models.py:140
 msgid "Eduhub homepage stickers"
 msgstr "主页贴纸"
 
-#: eduhub/models.py:142
+#: eduhub/models.py:149
 msgid "Eduhub homepage sticker title"
 msgstr "贴纸标题"
 
-#: eduhub/models.py:146
+#: eduhub/models.py:153
 msgid "Eduhub homepage sticker subtitle"
 msgstr "贴纸子标题"
 
-#: eduhub/models.py:150
+#: eduhub/models.py:157
 msgid "Eduhub homepage sicker cover"
 msgstr "贴纸背景"
 
-#: eduhub/models.py:154
+#: eduhub/models.py:161
 msgid "Eduhub homepage sticker promulgator"
 msgstr "贴纸的管理员"
 
-#: eduhub/models.py:162
+#: eduhub/models.py:169
 msgid "Eduhub homepage sticker promulgating date"
 msgstr "贴纸时间"
 
-#: eduhub/models.py:165 eduhub/models.py:281
+#: eduhub/models.py:172 eduhub/models.py:290
 msgid "Eduhub homepage sticker comment"
 msgstr "备注"
 
-#: eduhub/models.py:168 funhome/models.py:60 funhome/models.py:104
+#: eduhub/models.py:175 funhome/models.py:60 funhome/models.py:104
 msgid "Hidden"
 msgstr "隐藏(不贴)"
 
-#: eduhub/models.py:174
+#: eduhub/models.py:181
 msgid "Eduhub Test"
 msgstr "标签"
 
-#: eduhub/models.py:175
+#: eduhub/models.py:182
 msgid "Eduhub Tests"
 msgstr "内容"
 
-#: eduhub/models.py:186 eduhub/models.py:206
+#: eduhub/models.py:193 eduhub/models.py:213
 msgid "Test commit"
 msgstr "备注"
 
-#: eduhub/models.py:190
+#: eduhub/models.py:197
 msgid "Test owner"
 msgstr "测试属于"
 
-#: eduhub/models.py:194
+#: eduhub/models.py:201
 msgid "Template text"
 msgstr "模板文本"
 
-#: eduhub/models.py:198
+#: eduhub/models.py:205
 msgid "Test submitting date"
 msgstr "创建时间"
 
-#: eduhub/models.py:202
+#: eduhub/models.py:209
 msgid "Last modifying date"
 msgstr "创建时间"
 
-#: eduhub/models.py:219
-#| msgid "Appreciation"
+#: eduhub/models.py:226
 msgid "Appraising"
 msgstr "评价"
 
-#: eduhub/models.py:220
-#| msgid "Appreciation"
+#: eduhub/models.py:227
 msgid "Appraisings"
 msgstr "评价"
 
-#: eduhub/models.py:223
-#| msgid "Appreciation"
+#: eduhub/models.py:230
 msgid " appraise "
 msgstr "评价"
 
-#: eduhub/models.py:230
+#: eduhub/models.py:237
 msgid "Appraisings from"
 msgstr "打分者"
 
-#: eduhub/models.py:240
+#: eduhub/models.py:249
 msgid "Date of Appraising"
 msgstr "打分时间"
 
-#: eduhub/models.py:247
+#: eduhub/models.py:256
 msgid "Appraising content"
 msgstr "内容"
 
-#: eduhub/models.py:248 eduhub/templates/eduhub/appraising_c_list.html:11
+#: eduhub/models.py:257 eduhub/templates/eduhub/appraising_c_list.html:11
 msgid "Appraising contents"
 msgstr "分享内容"
 
-#: eduhub/models.py:257
+#: eduhub/models.py:266
 msgid "Content from"
 msgstr "分享来自"
 
-#: eduhub/models.py:260
-#| msgid "Title name"
+#: eduhub/models.py:269 funblog/models.py:39
 msgid "Title"
 msgstr "标题"
 
-#: eduhub/models.py:268
+#: eduhub/models.py:277
 msgid "Date of appraising content creating"
 msgstr "创建时间"
 
-#: eduhub/models.py:272
+#: eduhub/models.py:281
 msgid "Date of appraising content updating"
 msgstr "更新时间"
 
-#: eduhub/models.py:289
+#: eduhub/models.py:302
 msgid "ASharingGroup"
 msgstr "打卡组"
 
-#: eduhub/models.py:290
+#: eduhub/models.py:303
 msgid "ASharingGroups"
 msgstr "打卡组"
 
-#: eduhub/models.py:297 eduhub/templates/eduhub/label_delete.html:38
+#: eduhub/models.py:310 eduhub/templates/eduhub/label_delete.html:38
 msgid "Name"
 msgstr "标题名"
 
-#: eduhub/models.py:299
-#| msgid "Sticker subtitle"
+#: eduhub/models.py:312
 msgid "Subtitle"
 msgstr "子标题"
 
-#: eduhub/models.py:301
-#| msgid "cover"
+#: eduhub/models.py:316
 msgid "Group cover"
 msgstr "组贴图"
 
-#: eduhub/models.py:304
+#: eduhub/models.py:319
 msgid "ASharingGroup Founder"
 msgstr "组长"
 
-#: eduhub/models.py:306
-#| msgid "Sticker Comment"
+#: eduhub/models.py:321
 msgid "ASharingGroup Comment"
 msgstr "组备注"
 
-#: eduhub/models.py:308
-#| msgid "Date of Appraising"
+#: eduhub/models.py:323 funblog/models.py:47
 msgid "Date of creating"
 msgstr "创建时间"
 
-#: eduhub/models.py:310
-#| msgid "Is label legal"
+#: eduhub/models.py:325
 msgid "Is legal?"
 msgstr "合法"
 
-#: eduhub/models.py:315
-#| msgid "Parent classification"
+#: eduhub/models.py:330
 msgid "ASharingGroup member Classification"
 msgstr "组员分类"
 
-#: eduhub/models.py:316
-#| msgid "Eduhub classifications"
+#: eduhub/models.py:331
 msgid "ASharingGroup member Classifications"
 msgstr "组员分类"
 
-#: eduhub/models.py:343
+#: eduhub/models.py:358
 msgid "ASharingGroup member"
 msgstr "打卡组员"
 
-#: eduhub/models.py:344
+#: eduhub/models.py:359
 msgid "ASharingGroup members"
 msgstr "打卡组员"
 
-#: eduhub/models.py:353
+#: eduhub/models.py:368
 msgid "Member Name"
 msgstr "组员昵称"
 
-#: eduhub/models.py:356
+#: eduhub/models.py:371
 msgid "funuser"
 msgstr "用户"
 
-#: eduhub/models.py:359
+#: eduhub/models.py:374
 msgid "ASharing group"
 msgstr "打卡组"
 
-#: eduhub/models.py:362
-#| msgid "Classifications"
+#: eduhub/models.py:377
 msgid "classifications"
 msgstr "分类"
 
-#: eduhub/models.py:364
+#: eduhub/models.py:379
 msgid "Is judge ?"
 msgstr "是打分组员"
 
-#: eduhub/models.py:368
+#: eduhub/models.py:383
 msgid "Is member enable?"
 msgstr "组员可用"
 
-#: eduhub/models.py:370
-#| msgid "Date of Appraising"
+#: eduhub/models.py:385
 msgid "Date of joining"
 msgstr "加入时间"
 
@@ -564,18 +547,18 @@ msgstr "标签"
 msgid "Eduhub contents"
 msgstr "内容"
 
-#: eduhub/templates/eduhub/_eduhub_base.html:67
+#: eduhub/templates/eduhub/_eduhub_base.html:66
 msgid "Eduhub appraising"
 msgstr "打卡区"
 
-#: eduhub/templates/eduhub/_eduhub_base.html:82
-#: eduhub/templates/eduhub/_eduhub_base.html:84
+#: eduhub/templates/eduhub/_eduhub_base.html:81
+#: eduhub/templates/eduhub/_eduhub_base.html:83
 #: eduhub/templates/eduhub/_search.html:15
 #: eduhub/templates/eduhub/_search.html:16
 msgid "What are you thinking about"
 msgstr "在想什么"
 
-#: eduhub/templates/eduhub/_eduhub_base.html:89
+#: eduhub/templates/eduhub/_eduhub_base.html:88
 #: eduhub/templates/eduhub/_search.html:22
 msgid "search"
 msgstr "搜索"
@@ -718,7 +701,7 @@ msgstr "管理学"
 
 #: eduhub/templates/eduhub/_top_filters/_eduhub_base_top_filter.html:275
 #: eduhub/templates/eduhub/label_list.html:24
-#: eduhub/templatetags/eduhub_tags.py:64
+#: eduhub/templatetags/eduhub_tags.py:63
 msgid "All"
 msgstr "全部"
 
@@ -726,8 +709,9 @@ msgstr "全部"
 #: eduhub/templates/eduhub/funcontent_create.html:22
 #: eduhub/templates/eduhub/funtest_create.html:39
 #: eduhub/templates/eduhub/label_create.html:25
-#: eduhub/templates/eduhub/label_update.html:27
-#: funuser/templates/funuser/funuser_update.html:150
+#: eduhub/templates/eduhub/label_update.html:26
+#: funblog/templates/funblog/funblog_create.html:26
+#: funuser/templates/funuser/funuser_update.html:153
 msgid "Upload"
 msgstr "上传"
 
@@ -749,16 +733,16 @@ msgstr "确定要删除"
 #: eduhub/templates/eduhub/appraising_c_delete.html:21
 #: eduhub/templates/eduhub/appraising_c_detail.html:56
 #: eduhub/templates/eduhub/appraising_c_list.html:53
-#: eduhub/templates/eduhub/appraising_create.html:68
+#: eduhub/templates/eduhub/appraising_create.html:69
 #: eduhub/templates/eduhub/appraising_delete.html:26
 #: eduhub/templates/eduhub/appraising_detail.html:47
 #: eduhub/templates/eduhub/appraising_list.html:68
-#: eduhub/templates/eduhub/asharinggroup_list.html:41
+#: eduhub/templates/eduhub/asharinggroup_list.html:40
 #: eduhub/templates/eduhub/funcontent_delete.html:27
 #: eduhub/templates/eduhub/funcontent_detail.html:42
 #: eduhub/templates/eduhub/funcontent_list.html:68
 #: eduhub/templates/eduhub/label_delete.html:53
-#: eduhub/templates/eduhub/label_list.html:56
+#: eduhub/templates/eduhub/label_list.html:55
 msgid "Delete"
 msgstr "删除"
 
@@ -770,21 +754,20 @@ msgstr "标题"
 
 #: eduhub/templates/eduhub/appraising_c_detail.html:31
 #: eduhub/templates/eduhub/appraising_create.html:28
-#| msgid "Unknown"
 msgid "Unknown user"
 msgstr "未知用户"
 
 #: eduhub/templates/eduhub/appraising_c_detail.html:52
 #: eduhub/templates/eduhub/appraising_c_list.html:48
-#: eduhub/templates/eduhub/appraising_create.html:64
+#: eduhub/templates/eduhub/appraising_create.html:65
 #: eduhub/templates/eduhub/appraising_detail.html:44
 #: eduhub/templates/eduhub/appraising_list.html:62
-#: eduhub/templates/eduhub/asharinggroup_list.html:37
+#: eduhub/templates/eduhub/asharinggroup_list.html:36
 #: eduhub/templates/eduhub/eduhubhomesticker_detail.html:44
 #: eduhub/templates/eduhub/funcontent_detail.html:39
 #: eduhub/templates/eduhub/funcontent_list.html:62
-#: eduhub/templates/eduhub/label_list.html:52
-#: funhome/templates/funhome/appreciation_detail.html:46
+#: eduhub/templates/eduhub/label_list.html:51
+#: funhome/templates/funhome/appreciation_detail.html:45
 #: funhome/templates/funhome/funhomesticker_detail.html:45
 msgid "Edit"
 msgstr "编辑"
@@ -793,15 +776,16 @@ msgstr "编辑"
 #: eduhub/templates/eduhub/appraising_list.html:25
 #: eduhub/templates/eduhub/funcontent_list.html:25
 #: eduhub/templates/eduhub/label_list.html:16
+#: funblog/templates/funblog/funblog_list.html:20
 msgid "Add"
 msgstr "添加"
 
 #: eduhub/templates/eduhub/appraising_c_list.html:42
 #: eduhub/templates/eduhub/appraising_list.html:55
-#: eduhub/templates/eduhub/asharinggroup_list.html:32
-#: eduhub/templates/eduhub/eduhubhomesticker_list.html:53
+#: eduhub/templates/eduhub/asharinggroup_list.html:31
+#: eduhub/templates/eduhub/eduhubhomesticker_list.html:52
 #: eduhub/templates/eduhub/funcontent_list.html:55
-#: eduhub/templates/eduhub/label_list.html:47
+#: eduhub/templates/eduhub/label_list.html:46
 msgid "View"
 msgstr "查看"
 
@@ -818,13 +802,11 @@ msgstr "更新标签"
 msgid "Update"
 msgstr "更新"
 
-#: eduhub/templates/eduhub/appraising_create.html:54
-#| msgid "Appreciation"
+#: eduhub/templates/eduhub/appraising_create.html:55
 msgid "Appraise"
 msgstr "评价"
 
 #: eduhub/templates/eduhub/asharinggroup_list.html:10
-#| msgid "Appraisings from"
 msgid "Appraising Sharing Group"
 msgstr "打卡组"
 
@@ -867,8 +849,8 @@ msgstr "最后页"
 msgid "Eduhub home"
 msgstr "教育"
 
-#: eduhub/templates/eduhub/eduhubhomesticker_list.html:95
-#: eduhub/templates/eduhub/label_update.html:17
+#: eduhub/templates/eduhub/eduhubhomesticker_list.html:93
+#: eduhub/templates/eduhub/label_update.html:16
 msgid "cover"
 msgstr "封面"
 
@@ -909,7 +891,7 @@ msgstr "创建时间"
 msgid "Mine"
 msgstr "我的"
 
-#: eduhub/templatetags/eduhub_tags.py:35
+#: eduhub/templatetags/eduhub_tags.py:34
 msgid "ALL"
 msgstr "全部"
 
@@ -921,11 +903,11 @@ msgstr "未选择封面图片"
 msgid "Image allowed only"
 msgstr "只能选择图片"
 
-#: eduhub/views.py:98
+#: eduhub/views.py:99
 msgid "The length of cover should be less than"
 msgstr "封面图片的大小应该小于"
 
-#: eduhub/views.py:136
+#: eduhub/views.py:140 funblog/views.py:55
 msgid "Page is not 'last', nor can it be converted to an int."
 msgstr "页数不是最后一页也不是数字哦."
 
@@ -933,13 +915,9 @@ msgstr "页数不是最后一页也不是数字哦."
 msgid "Fun"
 msgstr "Fun"
 
-#: fun/settings.py:184 fun/settings_.py:186
+#: fun/settings_.py:189
 msgid "English"
 msgstr "English"
-
-#: fun/settings.py:184 fun/settings.py:185
-msgid "Chinese Simplified"
-msgstr "简体中文"
 
 #: funauth/templates/account/account_inactive.html:5
 #: funauth/templates/account/account_inactive.html:8
@@ -1102,7 +1080,7 @@ msgid "Hello from"
 msgstr "问候来自"
 
 #: funauth/templates/account/email/password_reset_key_message.html:7
-#: funhome/views.py:153 funhome/views.py:186
+#: funhome/views.py:152 funhome/views.py:185
 msgid "X-DOVE"
 msgstr "X-DOVE"
 
@@ -1232,15 +1210,15 @@ msgid "Forgot Password?"
 msgstr "忘记密码?"
 
 #: funauth/templates/account/logout.html:11
-#: funauth/templates/account/logout.html:23
+#: funauth/templates/account/logout.html:20
 msgid "Sign Out"
 msgstr "退出"
 
-#: funauth/templates/account/logout.html:29
+#: funauth/templates/account/logout.html:24
 msgid "Are you sure you want to sign out?"
 msgstr "亲要确认退出吗?"
 
-#: funauth/templates/account/logout.html:41
+#: funauth/templates/account/logout.html:32
 msgid "Sign out now"
 msgstr "退出"
 
@@ -1484,7 +1462,7 @@ msgstr "注册"
 #: funauth/templates/account/signup.html:50
 #: funauth/templates/socialaccount/signup.html:8
 #: funauth/templates/socialaccount/signup.html:19
-#: funhome/templates/funhome/_navbar.html:68
+#: funhome/templates/funhome/_navbar.html:92
 msgid "Sign Up"
 msgstr "注册"
 
@@ -1655,6 +1633,46 @@ msgid ""
 msgstr ""
 "你将使用 %(provider_name)s 账号登录\n"
 "%(site_name)s. :"
+
+#: funblog/apps.py:10
+msgid "funblog"
+msgstr ""
+
+#: funblog/modelforms.py:21
+#, fuzzy
+#| msgid "Title"
+msgid "title"
+msgstr "标题"
+
+#: funblog/models.py:26 funblog/templates/funblog/funblog_create.html:13
+#: funblog/templates/funblog/funblog_list.html:13
+msgid "Blog"
+msgstr ""
+
+#: funblog/models.py:27
+msgid "Blogs"
+msgstr ""
+
+#: funblog/models.py:51
+#, fuzzy
+#| msgid "Date of creating"
+msgid "Date of updating"
+msgstr "创建时间"
+
+#: funblog/models.py:58
+msgid "Author"
+msgstr "作者"
+
+#: funblog/models.py:61
+#, fuzzy
+#| msgid "Is content legal"
+msgid "Is content legal?"
+msgstr "合法"
+
+#: funblog/templates/funblog/funblog_list.html:24
+#: funuser/templates/funuser/_funuser_url.html:20
+msgid "My Blog"
+msgstr ""
 
 #: funhome/apps.py:7
 msgid "Fun home"
@@ -1871,15 +1889,26 @@ msgstr "开发者"
 msgid "Message"
 msgstr "消息"
 
-#: funhome/templates/funhome/_navbar.html:55
-msgid "Hello"
-msgstr "你好"
+#: funhome/templates/funhome/_navbar.html:64
+#: funuser/templates/funuser/_funuser_url.html:12
+msgid "Information"
+msgstr "用户信息"
 
-#: funhome/templates/funhome/_navbar.html:59
+#: funhome/templates/funhome/_navbar.html:68
+msgid "My blog"
+msgstr ""
+
+#: funhome/templates/funhome/_navbar.html:72
+#, fuzzy
+#| msgid "change password"
+msgid "Change password"
+msgstr "更改密码"
+
+#: funhome/templates/funhome/_navbar.html:76
 msgid "Log Out"
 msgstr "退出"
 
-#: funhome/templates/funhome/_navbar.html:63
+#: funhome/templates/funhome/_navbar.html:85
 msgid "Log In"
 msgstr "登录"
 
@@ -1907,7 +1936,7 @@ msgstr "旧的"
 msgid "Why choose us"
 msgstr "我们的优势"
 
-#: funhome/templates/funhome/home_funhomesticker.html:101
+#: funhome/templates/funhome/home_funhomesticker.html:100
 msgid "View all"
 msgstr "查看全部"
 
@@ -1943,64 +1972,56 @@ msgstr "已有账号吗"
 msgid "LEGAL INFORMATION"
 msgstr "法律信息"
 
-#: funhome/views.py:154 funhome/views.py:187
+#: funhome/views.py:153 funhome/views.py:186
 msgid "Larry`s sharing"
 msgstr "Larry 的分享"
 
-#: funhome/views.py:161 funhome/views.py:193
+#: funhome/views.py:160 funhome/views.py:192
 msgid "larry"
 msgstr "larry"
 
-#: funuser/modelforms.py:31
-msgid "Full name"
-msgstr "姓名"
-
-#: funuser/models.py:21
+#: funuser/models.py:23
 msgid "Avatar"
 msgstr "头像"
 
-#: funuser/models.py:24
+#: funuser/models.py:26
 msgid "Brith date"
 msgstr "出生年月"
 
-#: funuser/models.py:26 funuser/models.py:31 funuser/models.py:36
-#: funuser/models.py:41 funuser/models.py:46 funuser/models.py:51
-#: funuser/models.py:56
+#: funuser/models.py:28 funuser/models.py:33 funuser/models.py:38
+#: funuser/models.py:44 funuser/models.py:49 funuser/models.py:54
+#: funuser/models.py:60
 msgid "Is outward"
 msgstr "公开"
 
-#: funuser/models.py:29 funuser/templates/funuser/funuser_detail.html:55
-#: funuser/templates/funuser/funuser_update.html:64
+#: funuser/models.py:31 funuser/templates/funuser/funuser_detail.html:55
+#: funuser/templates/funuser/funuser_update.html:67
 msgid "Address"
 msgstr "地址"
 
-#: funuser/models.py:34 funuser/templates/funuser/funuser_detail.html:62
-#: funuser/templates/funuser/funuser_update.html:83
+#: funuser/models.py:36 funuser/templates/funuser/funuser_detail.html:62
+#: funuser/templates/funuser/funuser_update.html:86
 msgid "Hometown"
 msgstr "家乡"
 
-#: funuser/models.py:39 funuser/templates/funuser/funuser_detail.html:69
-#: funuser/templates/funuser/funuser_update.html:100
+#: funuser/models.py:41 funuser/templates/funuser/funuser_detail.html:69
+#: funuser/templates/funuser/funuser_update.html:103
 msgid "College"
 msgstr "大学"
 
-#: funuser/models.py:44 funuser/templates/funuser/funuser_detail.html:76
-#: funuser/templates/funuser/funuser_update.html:116
+#: funuser/models.py:47 funuser/templates/funuser/funuser_detail.html:76
+#: funuser/templates/funuser/funuser_update.html:119
 msgid "Occupation"
 msgstr "工作"
 
-#: funuser/models.py:49
+#: funuser/models.py:52
 msgid "Hobby"
 msgstr "兴趣"
 
-#: funuser/models.py:54 funuser/templates/funuser/funuser_detail.html:83
-#: funuser/templates/funuser/funuser_update.html:132
+#: funuser/models.py:57 funuser/templates/funuser/funuser_detail.html:83
+#: funuser/templates/funuser/funuser_update.html:135
 msgid "Motto"
 msgstr "座右铭"
-
-#: funuser/templates/funuser/_funuser_url.html:12
-msgid "Information"
-msgstr "用户信息"
 
 #: funuser/templates/funuser/_funuser_url.html:16
 msgid "Reset password"
@@ -2018,22 +2039,30 @@ msgstr ""
 "            "
 
 #: funuser/templates/funuser/funuser_detail.html:48
-#: funuser/templates/funuser/funuser_update.html:44
+#: funuser/templates/funuser/funuser_update.html:47
 msgid "Birth date"
 msgstr "出生年月"
 
-#: funuser/templates/funuser/funuser_update.html:50
-#: funuser/templates/funuser/funuser_update.html:72
-#: funuser/templates/funuser/funuser_update.html:89
-#: funuser/templates/funuser/funuser_update.html:106
-#: funuser/templates/funuser/funuser_update.html:122
-#: funuser/templates/funuser/funuser_update.html:138
+#: funuser/templates/funuser/funuser_update.html:53
+#: funuser/templates/funuser/funuser_update.html:75
+#: funuser/templates/funuser/funuser_update.html:92
+#: funuser/templates/funuser/funuser_update.html:109
+#: funuser/templates/funuser/funuser_update.html:125
+#: funuser/templates/funuser/funuser_update.html:141
 msgid "is outward"
 msgstr "公开"
 
-#: funuser/views.py:47
-msgid "Nice try"
-msgstr "干得不错哦"
+#~ msgid "Chinese Simplified"
+#~ msgstr "简体中文"
+
+#~ msgid "Hello"
+#~ msgstr "你好"
+
+#~ msgid "Full name"
+#~ msgstr "姓名"
+
+#~ msgid "Nice try"
+#~ msgstr "干得不错哦"
 
 #~ msgid "Chinese(China)"
 #~ msgstr "中文(大陆)"
@@ -3277,9 +3306,6 @@ msgstr "干得不错哦"
 #~ "fun/templates/eduhub/how_to_classification.html'>在这里</a>  更改它 \n"
 #~ "                    然后让我合并, 或者你自己看着办。\n"
 #~ "                "
-
-#~ msgid "Author"
-#~ msgstr "作者"
 
 #~ msgid "Enable selected Emperor's Vassals"
 #~ msgstr "Enable selected Emperor's Vassals"

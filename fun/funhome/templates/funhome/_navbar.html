@@ -30,6 +30,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">{% trans 'Developers' %}</a>
                 </li>
+                {% comment %}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle"  id="messageDropdown" 
                         role="button" data-toggle="dropdown" 
@@ -43,6 +44,7 @@
                         {% endfor %}
                     </div>
                 </li>
+                {% endcomment %}
             </ul>
 
             {% get_allow_registration as allow_registration %}

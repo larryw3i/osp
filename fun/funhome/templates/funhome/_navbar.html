@@ -61,19 +61,23 @@
                             aria-labelledby="user_dropdown">
                             <a class="dropdown-item" 
                                 href="{% url 'funuser:funuser_update' %}">
-                                {% trans "Information" %}
+                                &#128458;{% trans "Information" %}
                             </a>
                             <a class="dropdown-item" 
                                 href="{% url 'funblog:list' %}">
-                                {% trans "My blog" %}
+                                &#128276;{% trans "Notification" %}
+                            </a>
+                            <a class="dropdown-item" 
+                                href="{% url 'funblog:list' %}">
+                                &#128221;{% trans "Blog" %}
                             </a>
                             <a class="dropdown-item" 
                                 href="/accounts/password/reset/">
-                                {% trans "Change password" %}
+                                &#128584;{% trans "Password" %}
                             </a>
                             <a class="dropdown-item" 
                                 href="{% url 'account_logout' %}">
-                                {% trans 'Log Out' %}
+                                &#8627;{% trans 'Log Out' %}
                             </a>
                         </div>
                     </li>

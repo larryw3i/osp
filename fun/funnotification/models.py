@@ -20,15 +20,13 @@ class Fnotification():
         max_length=64, blank=False,verbose_name=_('Title'))
     
     groups = models.ManyToManyField(
-        Group,
-        verbose_name=_('groups'),
-        blank=True,
+        Group,verbose_name=_('groups'),blank=True,
         help_text=_(
             'The groups this user belongs to. A user will get all permissions '
             'granted to each of their groups.'
         ),
-        related_name="user_set",
-        related_query_name="user",
+        related_name="notification_set",
+        related_query_name="notification",
     )
 
     content = RichTextUploadingField(

@@ -32,7 +32,7 @@ urlpatterns = [
 
     path('funblog/', include('funblog.urls')),
 
-    path('notification/', include('funnotification.urls')),
+    path('notification/', include('fnotification.urls')),
 
     path('accounts/', include('allauth.urls')),
 

@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'allauth.account',
 
     'funblog.apps.FunblogConfig',
-    'funnotification.apps.FunnotificationConfig',
+    'fnotification.apps.FnotificationConfig',
     'funhome.apps.FunhomeConfig',
     'fulog.apps.FulogConfig',
     'funstatic.apps.FunstaticConfig',

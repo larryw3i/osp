@@ -1,0 +1,22 @@
+
+{% extends 'funhome/_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% load fnotification_tags %}
+{% block title %} {% endblock title %}
+{% block optionalcss %}
+    <link rel="stylesheet" 
+    href="{% static 'fnotification/fnotification.css' %}"/>
+{% endblock optionalcss %}
+
+{% block content %} 
+{% endblock content%}
+
+{% block optionaljs %}     
+    <script src="{% static 'fnotification/fnotification.js' %}"></script>
+    {% block fnotification_optionaljs %} 
+    {% endblock fnotification_optionaljs %}
+{% endblock optionaljs %}

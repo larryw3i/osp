@@ -15,6 +15,9 @@ from django.utils.translation import gettext_lazy as _
 from funfile.storage import upload_to
 from funuser.models import Funuser
 
+from fun import bleach_clean
+
+
 # Create your models here.
 
 
